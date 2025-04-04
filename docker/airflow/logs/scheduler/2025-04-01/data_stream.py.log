@@ -1,0 +1,126 @@
+[2025-04-01T06:46:49.176+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:46:49.177+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:46:49.182+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:46:49.181+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:46:49.570+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:46:49.630+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:46:49.629+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:46:49.669+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:46:49.669+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-03-31T00:00:00+00:00, run_after=2025-04-01T00:00:00+00:00
+[2025-04-01T06:46:49.695+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.525 seconds
+[2025-04-01T06:47:19.948+0000] {processor.py:157} INFO - Started process (PID=34) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:47:19.951+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:47:19.957+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:47:19.957+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:47:20.210+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:47:20.238+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:47:20.238+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:47:20.261+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:47:20.261+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:47:20.277+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.349 seconds
+[2025-04-01T06:48:18.410+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:48:18.414+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:48:18.417+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:48:18.417+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:48:18.672+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:48:18.731+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:48:18.731+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:48:18.754+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:48:18.754+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:48:18.776+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.369 seconds
+[2025-04-01T06:48:48.942+0000] {processor.py:157} INFO - Started process (PID=34) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:48:48.944+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:48:48.949+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:48:48.948+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:48:49.201+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:48:49.227+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:48:49.227+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:48:49.250+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:48:49.249+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:48:49.269+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.332 seconds
+[2025-04-01T06:49:19.496+0000] {processor.py:157} INFO - Started process (PID=35) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:49:19.499+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:49:19.503+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:49:19.502+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:49:19.794+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:49:19.826+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:49:19.825+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:49:19.857+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:49:19.857+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:49:19.880+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.387 seconds
+[2025-04-01T06:49:50.136+0000] {processor.py:157} INFO - Started process (PID=36) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:49:50.137+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:49:50.141+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:49:50.141+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:49:50.436+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:49:50.469+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:49:50.469+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:49:50.493+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:49:50.493+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:49:50.513+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.382 seconds
+[2025-04-01T06:50:20.383+0000] {processor.py:157} INFO - Started process (PID=37) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:50:20.386+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:50:20.391+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:50:20.390+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:50:21.014+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:50:21.065+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:50:21.065+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:50:21.109+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:50:21.109+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:50:21.139+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.763 seconds
+[2025-04-01T06:51:04.138+0000] {processor.py:157} INFO - Started process (PID=32) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:51:04.140+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:51:04.144+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:51:04.144+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:51:04.490+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:51:04.591+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:51:04.591+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:51:04.634+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:51:04.633+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:51:04.667+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.536 seconds
+[2025-04-01T06:51:34.897+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:51:34.902+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:51:34.915+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:51:34.912+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:51:35.192+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:51:35.218+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:51:35.217+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:51:35.240+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:51:35.239+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:51:35.256+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.375 seconds
+[2025-04-01T06:52:05.538+0000] {processor.py:157} INFO - Started process (PID=34) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:52:05.540+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:52:05.545+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:52:05.544+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:52:05.755+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:52:05.782+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:52:05.781+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:52:05.803+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:52:05.803+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:52:05.820+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.290 seconds
+[2025-04-01T06:52:36.055+0000] {processor.py:157} INFO - Started process (PID=35) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:52:36.057+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:52:36.061+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:52:36.061+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:52:36.343+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:52:36.373+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:52:36.373+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:52:36.401+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:52:36.400+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:52:36.418+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.367 seconds
+[2025-04-01T06:53:06.703+0000] {processor.py:157} INFO - Started process (PID=36) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:53:06.709+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:53:06.720+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:53:06.719+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:53:07.006+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:53:07.035+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:53:07.035+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:53:07.058+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:53:07.058+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:53:07.076+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.393 seconds
+[2025-04-01T06:53:37.305+0000] {processor.py:157} INFO - Started process (PID=37) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:53:37.307+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:53:37.310+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:53:37.310+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:53:37.573+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:53:37.605+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:53:37.605+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:53:37.635+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:53:37.635+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:53:37.660+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.361 seconds
+[2025-04-01T06:54:08.087+0000] {processor.py:157} INFO - Started process (PID=38) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:54:08.090+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:54:08.097+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:54:08.096+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:54:08.221+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:54:08.254+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:54:08.254+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:54:08.283+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:54:08.282+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:54:08.301+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.226 seconds
+[2025-04-01T06:54:38.555+0000] {processor.py:157} INFO - Started process (PID=39) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:54:38.557+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:54:38.561+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:54:38.560+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:54:38.694+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:54:38.738+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:54:38.737+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:54:38.772+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:54:38.772+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:54:38.794+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.248 seconds
+[2025-04-01T06:55:09.040+0000] {processor.py:157} INFO - Started process (PID=40) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:55:09.042+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:55:09.046+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:55:09.046+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:55:09.181+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:55:09.214+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:55:09.214+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:55:09.237+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:55:09.237+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:55:09.256+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.222 seconds
+[2025-04-01T06:55:39.347+0000] {processor.py:157} INFO - Started process (PID=41) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:55:39.360+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:55:39.376+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:55:39.374+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:55:39.573+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:55:39.616+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:55:39.615+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:55:39.651+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:55:39.651+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:55:39.674+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.361 seconds
+[2025-04-01T06:56:09.895+0000] {processor.py:157} INFO - Started process (PID=42) to work on /opt/airflow/dags/data_stream.py
+[2025-04-01T06:56:09.897+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_stream.py for tasks to queue
+[2025-04-01T06:56:09.902+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:56:09.901+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:56:10.049+0000] {processor.py:839} INFO - DAG(s) dict_keys(['job_data_stream']) retrieved from /opt/airflow/dags/data_stream.py
+[2025-04-01T06:56:10.086+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:56:10.085+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2025-04-01T06:56:10.112+0000] {logging_mixin.py:151} INFO - [2025-04-01T06:56:10.112+0000] {dag.py:3677} INFO - Setting next_dagrun for job_data_stream to 2025-04-01T00:00:00+00:00, run_after=2025-04-02T00:00:00+00:00
+[2025-04-01T06:56:10.132+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_stream.py took 0.243 seconds

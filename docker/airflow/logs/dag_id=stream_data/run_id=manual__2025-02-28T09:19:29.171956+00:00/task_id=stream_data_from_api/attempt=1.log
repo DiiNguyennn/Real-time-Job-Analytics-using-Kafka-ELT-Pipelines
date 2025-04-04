@@ -1,0 +1,5240 @@
+[2025-02-28T09:19:30.370+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stream_data.stream_data_from_api manual__2025-02-28T09:19:29.171956+00:00 [queued]>
+[2025-02-28T09:19:30.380+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stream_data.stream_data_from_api manual__2025-02-28T09:19:29.171956+00:00 [queued]>
+[2025-02-28T09:19:30.380+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-02-28T09:19:30.394+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): stream_data_from_api> on 2025-02-28 09:19:29.171956+00:00
+[2025-02-28T09:19:30.400+0000] {standard_task_runner.py:57} INFO - Started process 52 to run task
+[2025-02-28T09:19:30.403+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'stream_data', 'stream_data_from_api', 'manual__2025-02-28T09:19:29.171956+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/data_stream.py', '--cfg-path', '/tmp/tmp7p0k6g0p']
+[2025-02-28T09:19:30.404+0000] {standard_task_runner.py:85} INFO - Job 38: Subtask stream_data_from_api
+[2025-02-28T09:19:30.461+0000] {task_command.py:415} INFO - Running <TaskInstance: stream_data.stream_data_from_api manual__2025-02-28T09:19:29.171956+00:00 [running]> on host 68b4b2b8ab10
+[2025-02-28T09:19:30.554+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='dii' AIRFLOW_CTX_DAG_ID='stream_data' AIRFLOW_CTX_TASK_ID='stream_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2025-02-28T09:19:29.171956+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-28T09:19:29.171956+00:00'
+[2025-02-28T09:19:30.559+0000] {conn.py:384} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.18.0.9', 29092)]>: connecting to broker:29092 [('172.18.0.9', 29092) IPv4]
+[2025-02-28T09:19:30.560+0000] {conn.py:1219} INFO - Probing node bootstrap-0 broker version
+[2025-02-28T09:19:30.561+0000] {conn.py:414} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.18.0.9', 29092)]>: Connection complete.
+[2025-02-28T09:19:30.676+0000] {conn.py:1282} INFO - Broker version identified as 2.6.0
+[2025-02-28T09:19:30.677+0000] {conn.py:1283} INFO - Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+[2025-02-28T09:19:30.933+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x556c6ccb64e3 <unknown>
+#1 0x556c6c9e5c76 <unknown>
+#2 0x556c6ca1304a <unknown>
+#3 0x556c6ca0e4a1 <unknown>
+#4 0x556c6ca0b029 <unknown>
+#5 0x556c6ca49ccc <unknown>
+#6 0x556c6ca4947f <unknown>
+#7 0x556c6ca40de3 <unknown>
+#8 0x556c6ca162dd <unknown>
+#9 0x556c6ca1734e <unknown>
+#10 0x556c6cc763e4 <unknown>
+#11 0x556c6cc7a3d7 <unknown>
+#12 0x556c6cc84b20 <unknown>
+#13 0x556c6cc7b023 <unknown>
+#14 0x556c6cc491aa <unknown>
+#15 0x556c6cc9f6b8 <unknown>
+#16 0x556c6cc9f847 <unknown>
+#17 0x556c6ccaf243 <unknown>
+#18 0x7f9df27feea7 start_thread
+
+[2025-02-28T09:19:31.160+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56357e3e74e3 <unknown>
+#1 0x56357e116c76 <unknown>
+#2 0x56357e14404a <unknown>
+#3 0x56357e13f4a1 <unknown>
+#4 0x56357e13c029 <unknown>
+#5 0x56357e17accc <unknown>
+#6 0x56357e17a47f <unknown>
+#7 0x56357e171de3 <unknown>
+#8 0x56357e1472dd <unknown>
+#9 0x56357e14834e <unknown>
+#10 0x56357e3a73e4 <unknown>
+#11 0x56357e3ab3d7 <unknown>
+#12 0x56357e3b5b20 <unknown>
+#13 0x56357e3ac023 <unknown>
+#14 0x56357e37a1aa <unknown>
+#15 0x56357e3d06b8 <unknown>
+#16 0x56357e3d0847 <unknown>
+#17 0x56357e3e0243 <unknown>
+#18 0x7fa21c18dea7 start_thread
+
+[2025-02-28T09:19:31.416+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55fefae754e3 <unknown>
+#1 0x55fefaba4c76 <unknown>
+#2 0x55fefabd204a <unknown>
+#3 0x55fefabcd4a1 <unknown>
+#4 0x55fefabca029 <unknown>
+#5 0x55fefac08ccc <unknown>
+#6 0x55fefac0847f <unknown>
+#7 0x55fefabffde3 <unknown>
+#8 0x55fefabd52dd <unknown>
+#9 0x55fefabd634e <unknown>
+#10 0x55fefae353e4 <unknown>
+#11 0x55fefae393d7 <unknown>
+#12 0x55fefae43b20 <unknown>
+#13 0x55fefae3a023 <unknown>
+#14 0x55fefae081aa <unknown>
+#15 0x55fefae5e6b8 <unknown>
+#16 0x55fefae5e847 <unknown>
+#17 0x55fefae6e243 <unknown>
+#18 0x7f45da718ea7 start_thread
+
+[2025-02-28T09:19:31.682+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x561d908a84e3 <unknown>
+#1 0x561d905d7c76 <unknown>
+#2 0x561d9060504a <unknown>
+#3 0x561d906004a1 <unknown>
+#4 0x561d905fd029 <unknown>
+#5 0x561d9063bccc <unknown>
+#6 0x561d9063b47f <unknown>
+#7 0x561d90632de3 <unknown>
+#8 0x561d906082dd <unknown>
+#9 0x561d9060934e <unknown>
+#10 0x561d908683e4 <unknown>
+#11 0x561d9086c3d7 <unknown>
+#12 0x561d90876b20 <unknown>
+#13 0x561d9086d023 <unknown>
+#14 0x561d9083b1aa <unknown>
+#15 0x561d908916b8 <unknown>
+#16 0x561d90891847 <unknown>
+#17 0x561d908a1243 <unknown>
+#18 0x7f5cdf359ea7 start_thread
+
+[2025-02-28T09:19:31.919+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5594f47894e3 <unknown>
+#1 0x5594f44b8c76 <unknown>
+#2 0x5594f44e604a <unknown>
+#3 0x5594f44e14a1 <unknown>
+#4 0x5594f44de029 <unknown>
+#5 0x5594f451cccc <unknown>
+#6 0x5594f451c47f <unknown>
+#7 0x5594f4513de3 <unknown>
+#8 0x5594f44e92dd <unknown>
+#9 0x5594f44ea34e <unknown>
+#10 0x5594f47493e4 <unknown>
+#11 0x5594f474d3d7 <unknown>
+#12 0x5594f4757b20 <unknown>
+#13 0x5594f474e023 <unknown>
+#14 0x5594f471c1aa <unknown>
+#15 0x5594f47726b8 <unknown>
+#16 0x5594f4772847 <unknown>
+#17 0x5594f4782243 <unknown>
+#18 0x7f484a640ea7 start_thread
+
+[2025-02-28T09:19:32.173+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55add2ed24e3 <unknown>
+#1 0x55add2c01c76 <unknown>
+#2 0x55add2c2f04a <unknown>
+#3 0x55add2c2a4a1 <unknown>
+#4 0x55add2c27029 <unknown>
+#5 0x55add2c65ccc <unknown>
+#6 0x55add2c6547f <unknown>
+#7 0x55add2c5cde3 <unknown>
+#8 0x55add2c322dd <unknown>
+#9 0x55add2c3334e <unknown>
+#10 0x55add2e923e4 <unknown>
+#11 0x55add2e963d7 <unknown>
+#12 0x55add2ea0b20 <unknown>
+#13 0x55add2e97023 <unknown>
+#14 0x55add2e651aa <unknown>
+#15 0x55add2ebb6b8 <unknown>
+#16 0x55add2ebb847 <unknown>
+#17 0x55add2ecb243 <unknown>
+#18 0x7fc85566eea7 start_thread
+
+[2025-02-28T09:19:32.413+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55d998f274e3 <unknown>
+#1 0x55d998c56c76 <unknown>
+#2 0x55d998c8404a <unknown>
+#3 0x55d998c7f4a1 <unknown>
+#4 0x55d998c7c029 <unknown>
+#5 0x55d998cbaccc <unknown>
+#6 0x55d998cba47f <unknown>
+#7 0x55d998cb1de3 <unknown>
+#8 0x55d998c872dd <unknown>
+#9 0x55d998c8834e <unknown>
+#10 0x55d998ee73e4 <unknown>
+#11 0x55d998eeb3d7 <unknown>
+#12 0x55d998ef5b20 <unknown>
+#13 0x55d998eec023 <unknown>
+#14 0x55d998eba1aa <unknown>
+#15 0x55d998f106b8 <unknown>
+#16 0x55d998f10847 <unknown>
+#17 0x55d998f20243 <unknown>
+#18 0x7f359ce89ea7 start_thread
+
+[2025-02-28T09:19:32.693+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x557c223784e3 <unknown>
+#1 0x557c220a7c76 <unknown>
+#2 0x557c220d504a <unknown>
+#3 0x557c220d04a1 <unknown>
+#4 0x557c220cd029 <unknown>
+#5 0x557c2210bccc <unknown>
+#6 0x557c2210b47f <unknown>
+#7 0x557c22102de3 <unknown>
+#8 0x557c220d82dd <unknown>
+#9 0x557c220d934e <unknown>
+#10 0x557c223383e4 <unknown>
+#11 0x557c2233c3d7 <unknown>
+#12 0x557c22346b20 <unknown>
+#13 0x557c2233d023 <unknown>
+#14 0x557c2230b1aa <unknown>
+#15 0x557c223616b8 <unknown>
+#16 0x557c22361847 <unknown>
+#17 0x557c22371243 <unknown>
+#18 0x7f5322148ea7 start_thread
+
+[2025-02-28T09:19:32.987+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56320297c4e3 <unknown>
+#1 0x5632026abc76 <unknown>
+#2 0x5632026d904a <unknown>
+#3 0x5632026d44a1 <unknown>
+#4 0x5632026d1029 <unknown>
+#5 0x56320270fccc <unknown>
+#6 0x56320270f47f <unknown>
+#7 0x563202706de3 <unknown>
+#8 0x5632026dc2dd <unknown>
+#9 0x5632026dd34e <unknown>
+#10 0x56320293c3e4 <unknown>
+#11 0x5632029403d7 <unknown>
+#12 0x56320294ab20 <unknown>
+#13 0x563202941023 <unknown>
+#14 0x56320290f1aa <unknown>
+#15 0x5632029656b8 <unknown>
+#16 0x563202965847 <unknown>
+#17 0x563202975243 <unknown>
+#18 0x7f9348a00ea7 start_thread
+
+[2025-02-28T09:19:33.239+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56114ede94e3 <unknown>
+#1 0x56114eb18c76 <unknown>
+#2 0x56114eb4604a <unknown>
+#3 0x56114eb414a1 <unknown>
+#4 0x56114eb3e029 <unknown>
+#5 0x56114eb7cccc <unknown>
+#6 0x56114eb7c47f <unknown>
+#7 0x56114eb73de3 <unknown>
+#8 0x56114eb492dd <unknown>
+#9 0x56114eb4a34e <unknown>
+#10 0x56114eda93e4 <unknown>
+#11 0x56114edad3d7 <unknown>
+#12 0x56114edb7b20 <unknown>
+#13 0x56114edae023 <unknown>
+#14 0x56114ed7c1aa <unknown>
+#15 0x56114edd26b8 <unknown>
+#16 0x56114edd2847 <unknown>
+#17 0x56114ede2243 <unknown>
+#18 0x7f811f976ea7 start_thread
+
+[2025-02-28T09:19:33.565+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x560a294294e3 <unknown>
+#1 0x560a29158c76 <unknown>
+#2 0x560a2918604a <unknown>
+#3 0x560a291814a1 <unknown>
+#4 0x560a2917e029 <unknown>
+#5 0x560a291bcccc <unknown>
+#6 0x560a291bc47f <unknown>
+#7 0x560a291b3de3 <unknown>
+#8 0x560a291892dd <unknown>
+#9 0x560a2918a34e <unknown>
+#10 0x560a293e93e4 <unknown>
+#11 0x560a293ed3d7 <unknown>
+#12 0x560a293f7b20 <unknown>
+#13 0x560a293ee023 <unknown>
+#14 0x560a293bc1aa <unknown>
+#15 0x560a294126b8 <unknown>
+#16 0x560a29412847 <unknown>
+#17 0x560a29422243 <unknown>
+#18 0x7f7e8a5bfea7 start_thread
+
+[2025-02-28T09:19:33.940+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x562a6d6e24e3 <unknown>
+#1 0x562a6d411c76 <unknown>
+#2 0x562a6d43f04a <unknown>
+#3 0x562a6d43a4a1 <unknown>
+#4 0x562a6d437029 <unknown>
+#5 0x562a6d475ccc <unknown>
+#6 0x562a6d47547f <unknown>
+#7 0x562a6d46cde3 <unknown>
+#8 0x562a6d4422dd <unknown>
+#9 0x562a6d44334e <unknown>
+#10 0x562a6d6a23e4 <unknown>
+#11 0x562a6d6a63d7 <unknown>
+#12 0x562a6d6b0b20 <unknown>
+#13 0x562a6d6a7023 <unknown>
+#14 0x562a6d6751aa <unknown>
+#15 0x562a6d6cb6b8 <unknown>
+#16 0x562a6d6cb847 <unknown>
+#17 0x562a6d6db243 <unknown>
+#18 0x7fcc3fdedea7 start_thread
+
+[2025-02-28T09:19:34.265+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x559030aac4e3 <unknown>
+#1 0x5590307dbc76 <unknown>
+#2 0x55903080904a <unknown>
+#3 0x5590308044a1 <unknown>
+#4 0x559030801029 <unknown>
+#5 0x55903083fccc <unknown>
+#6 0x55903083f47f <unknown>
+#7 0x559030836de3 <unknown>
+#8 0x55903080c2dd <unknown>
+#9 0x55903080d34e <unknown>
+#10 0x559030a6c3e4 <unknown>
+#11 0x559030a703d7 <unknown>
+#12 0x559030a7ab20 <unknown>
+#13 0x559030a71023 <unknown>
+#14 0x559030a3f1aa <unknown>
+#15 0x559030a956b8 <unknown>
+#16 0x559030a95847 <unknown>
+#17 0x559030aa5243 <unknown>
+#18 0x7fdace789ea7 start_thread
+
+[2025-02-28T09:19:34.564+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x564bf1aa74e3 <unknown>
+#1 0x564bf17d6c76 <unknown>
+#2 0x564bf180404a <unknown>
+#3 0x564bf17ff4a1 <unknown>
+#4 0x564bf17fc029 <unknown>
+#5 0x564bf183accc <unknown>
+#6 0x564bf183a47f <unknown>
+#7 0x564bf1831de3 <unknown>
+#8 0x564bf18072dd <unknown>
+#9 0x564bf180834e <unknown>
+#10 0x564bf1a673e4 <unknown>
+#11 0x564bf1a6b3d7 <unknown>
+#12 0x564bf1a75b20 <unknown>
+#13 0x564bf1a6c023 <unknown>
+#14 0x564bf1a3a1aa <unknown>
+#15 0x564bf1a906b8 <unknown>
+#16 0x564bf1a90847 <unknown>
+#17 0x564bf1aa0243 <unknown>
+#18 0x7f537d91aea7 start_thread
+
+[2025-02-28T09:19:34.834+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x557919d5a4e3 <unknown>
+#1 0x557919a89c76 <unknown>
+#2 0x557919ab704a <unknown>
+#3 0x557919ab24a1 <unknown>
+#4 0x557919aaf029 <unknown>
+#5 0x557919aedccc <unknown>
+#6 0x557919aed47f <unknown>
+#7 0x557919ae4de3 <unknown>
+#8 0x557919aba2dd <unknown>
+#9 0x557919abb34e <unknown>
+#10 0x557919d1a3e4 <unknown>
+#11 0x557919d1e3d7 <unknown>
+#12 0x557919d28b20 <unknown>
+#13 0x557919d1f023 <unknown>
+#14 0x557919ced1aa <unknown>
+#15 0x557919d436b8 <unknown>
+#16 0x557919d43847 <unknown>
+#17 0x557919d53243 <unknown>
+#18 0x7f22ae1e9ea7 start_thread
+
+[2025-02-28T09:19:35.121+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55b6c81c24e3 <unknown>
+#1 0x55b6c7ef1c76 <unknown>
+#2 0x55b6c7f1f04a <unknown>
+#3 0x55b6c7f1a4a1 <unknown>
+#4 0x55b6c7f17029 <unknown>
+#5 0x55b6c7f55ccc <unknown>
+#6 0x55b6c7f5547f <unknown>
+#7 0x55b6c7f4cde3 <unknown>
+#8 0x55b6c7f222dd <unknown>
+#9 0x55b6c7f2334e <unknown>
+#10 0x55b6c81823e4 <unknown>
+#11 0x55b6c81863d7 <unknown>
+#12 0x55b6c8190b20 <unknown>
+#13 0x55b6c8187023 <unknown>
+#14 0x55b6c81551aa <unknown>
+#15 0x55b6c81ab6b8 <unknown>
+#16 0x55b6c81ab847 <unknown>
+#17 0x55b6c81bb243 <unknown>
+#18 0x7f2cceef3ea7 start_thread
+
+[2025-02-28T09:19:35.383+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x562d0e0a94e3 <unknown>
+#1 0x562d0ddd8c76 <unknown>
+#2 0x562d0de0604a <unknown>
+#3 0x562d0de014a1 <unknown>
+#4 0x562d0ddfe029 <unknown>
+#5 0x562d0de3cccc <unknown>
+#6 0x562d0de3c47f <unknown>
+#7 0x562d0de33de3 <unknown>
+#8 0x562d0de092dd <unknown>
+#9 0x562d0de0a34e <unknown>
+#10 0x562d0e0693e4 <unknown>
+#11 0x562d0e06d3d7 <unknown>
+#12 0x562d0e077b20 <unknown>
+#13 0x562d0e06e023 <unknown>
+#14 0x562d0e03c1aa <unknown>
+#15 0x562d0e0926b8 <unknown>
+#16 0x562d0e092847 <unknown>
+#17 0x562d0e0a2243 <unknown>
+#18 0x7f791d332ea7 start_thread
+
+[2025-02-28T09:19:35.631+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55e1e33e34e3 <unknown>
+#1 0x55e1e3112c76 <unknown>
+#2 0x55e1e314004a <unknown>
+#3 0x55e1e313b4a1 <unknown>
+#4 0x55e1e3138029 <unknown>
+#5 0x55e1e3176ccc <unknown>
+#6 0x55e1e317647f <unknown>
+#7 0x55e1e316dde3 <unknown>
+#8 0x55e1e31432dd <unknown>
+#9 0x55e1e314434e <unknown>
+#10 0x55e1e33a33e4 <unknown>
+#11 0x55e1e33a73d7 <unknown>
+#12 0x55e1e33b1b20 <unknown>
+#13 0x55e1e33a8023 <unknown>
+#14 0x55e1e33761aa <unknown>
+#15 0x55e1e33cc6b8 <unknown>
+#16 0x55e1e33cc847 <unknown>
+#17 0x55e1e33dc243 <unknown>
+#18 0x7f8cd96b2ea7 start_thread
+
+[2025-02-28T09:19:35.955+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55eca3cae4e3 <unknown>
+#1 0x55eca39ddc76 <unknown>
+#2 0x55eca3a0b04a <unknown>
+#3 0x55eca3a064a1 <unknown>
+#4 0x55eca3a03029 <unknown>
+#5 0x55eca3a41ccc <unknown>
+#6 0x55eca3a4147f <unknown>
+#7 0x55eca3a38de3 <unknown>
+#8 0x55eca3a0e2dd <unknown>
+#9 0x55eca3a0f34e <unknown>
+#10 0x55eca3c6e3e4 <unknown>
+#11 0x55eca3c723d7 <unknown>
+#12 0x55eca3c7cb20 <unknown>
+#13 0x55eca3c73023 <unknown>
+#14 0x55eca3c411aa <unknown>
+#15 0x55eca3c976b8 <unknown>
+#16 0x55eca3c97847 <unknown>
+#17 0x55eca3ca7243 <unknown>
+#18 0x7f833a61bea7 start_thread
+
+[2025-02-28T09:19:36.237+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55a9e973b4e3 <unknown>
+#1 0x55a9e946ac76 <unknown>
+#2 0x55a9e949804a <unknown>
+#3 0x55a9e94934a1 <unknown>
+#4 0x55a9e9490029 <unknown>
+#5 0x55a9e94ceccc <unknown>
+#6 0x55a9e94ce47f <unknown>
+#7 0x55a9e94c5de3 <unknown>
+#8 0x55a9e949b2dd <unknown>
+#9 0x55a9e949c34e <unknown>
+#10 0x55a9e96fb3e4 <unknown>
+#11 0x55a9e96ff3d7 <unknown>
+#12 0x55a9e9709b20 <unknown>
+#13 0x55a9e9700023 <unknown>
+#14 0x55a9e96ce1aa <unknown>
+#15 0x55a9e97246b8 <unknown>
+#16 0x55a9e9724847 <unknown>
+#17 0x55a9e9734243 <unknown>
+#18 0x7f8132134ea7 start_thread
+
+[2025-02-28T09:19:36.522+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55a71c2cd4e3 <unknown>
+#1 0x55a71bffcc76 <unknown>
+#2 0x55a71c02a04a <unknown>
+#3 0x55a71c0254a1 <unknown>
+#4 0x55a71c022029 <unknown>
+#5 0x55a71c060ccc <unknown>
+#6 0x55a71c06047f <unknown>
+#7 0x55a71c057de3 <unknown>
+#8 0x55a71c02d2dd <unknown>
+#9 0x55a71c02e34e <unknown>
+#10 0x55a71c28d3e4 <unknown>
+#11 0x55a71c2913d7 <unknown>
+#12 0x55a71c29bb20 <unknown>
+#13 0x55a71c292023 <unknown>
+#14 0x55a71c2601aa <unknown>
+#15 0x55a71c2b66b8 <unknown>
+#16 0x55a71c2b6847 <unknown>
+#17 0x55a71c2c6243 <unknown>
+#18 0x7f6dbc8ceea7 start_thread
+
+[2025-02-28T09:19:36.821+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55ade17e14e3 <unknown>
+#1 0x55ade1510c76 <unknown>
+#2 0x55ade153e04a <unknown>
+#3 0x55ade15394a1 <unknown>
+#4 0x55ade1536029 <unknown>
+#5 0x55ade1574ccc <unknown>
+#6 0x55ade157447f <unknown>
+#7 0x55ade156bde3 <unknown>
+#8 0x55ade15412dd <unknown>
+#9 0x55ade154234e <unknown>
+#10 0x55ade17a13e4 <unknown>
+#11 0x55ade17a53d7 <unknown>
+#12 0x55ade17afb20 <unknown>
+#13 0x55ade17a6023 <unknown>
+#14 0x55ade17741aa <unknown>
+#15 0x55ade17ca6b8 <unknown>
+#16 0x55ade17ca847 <unknown>
+#17 0x55ade17da243 <unknown>
+#18 0x7fa3ba4ccea7 start_thread
+
+[2025-02-28T09:19:37.091+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x561bd7c9e4e3 <unknown>
+#1 0x561bd79cdc76 <unknown>
+#2 0x561bd79fb04a <unknown>
+#3 0x561bd79f64a1 <unknown>
+#4 0x561bd79f3029 <unknown>
+#5 0x561bd7a31ccc <unknown>
+#6 0x561bd7a3147f <unknown>
+#7 0x561bd7a28de3 <unknown>
+#8 0x561bd79fe2dd <unknown>
+#9 0x561bd79ff34e <unknown>
+#10 0x561bd7c5e3e4 <unknown>
+#11 0x561bd7c623d7 <unknown>
+#12 0x561bd7c6cb20 <unknown>
+#13 0x561bd7c63023 <unknown>
+#14 0x561bd7c311aa <unknown>
+#15 0x561bd7c876b8 <unknown>
+#16 0x561bd7c87847 <unknown>
+#17 0x561bd7c97243 <unknown>
+#18 0x7f040df67ea7 start_thread
+
+[2025-02-28T09:19:37.351+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x558fdc84b4e3 <unknown>
+#1 0x558fdc57ac76 <unknown>
+#2 0x558fdc5a804a <unknown>
+#3 0x558fdc5a34a1 <unknown>
+#4 0x558fdc5a0029 <unknown>
+#5 0x558fdc5deccc <unknown>
+#6 0x558fdc5de47f <unknown>
+#7 0x558fdc5d5de3 <unknown>
+#8 0x558fdc5ab2dd <unknown>
+#9 0x558fdc5ac34e <unknown>
+#10 0x558fdc80b3e4 <unknown>
+#11 0x558fdc80f3d7 <unknown>
+#12 0x558fdc819b20 <unknown>
+#13 0x558fdc810023 <unknown>
+#14 0x558fdc7de1aa <unknown>
+#15 0x558fdc8346b8 <unknown>
+#16 0x558fdc834847 <unknown>
+#17 0x558fdc844243 <unknown>
+#18 0x7fdf28e6fea7 start_thread
+
+[2025-02-28T09:19:37.588+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5620735ff4e3 <unknown>
+#1 0x56207332ec76 <unknown>
+#2 0x56207335c04a <unknown>
+#3 0x5620733574a1 <unknown>
+#4 0x562073354029 <unknown>
+#5 0x562073392ccc <unknown>
+#6 0x56207339247f <unknown>
+#7 0x562073389de3 <unknown>
+#8 0x56207335f2dd <unknown>
+#9 0x56207336034e <unknown>
+#10 0x5620735bf3e4 <unknown>
+#11 0x5620735c33d7 <unknown>
+#12 0x5620735cdb20 <unknown>
+#13 0x5620735c4023 <unknown>
+#14 0x5620735921aa <unknown>
+#15 0x5620735e86b8 <unknown>
+#16 0x5620735e8847 <unknown>
+#17 0x5620735f8243 <unknown>
+#18 0x7fd895b0bea7 start_thread
+
+[2025-02-28T09:19:37.823+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55d9528784e3 <unknown>
+#1 0x55d9525a7c76 <unknown>
+#2 0x55d9525d504a <unknown>
+#3 0x55d9525d04a1 <unknown>
+#4 0x55d9525cd029 <unknown>
+#5 0x55d95260bccc <unknown>
+#6 0x55d95260b47f <unknown>
+#7 0x55d952602de3 <unknown>
+#8 0x55d9525d82dd <unknown>
+#9 0x55d9525d934e <unknown>
+#10 0x55d9528383e4 <unknown>
+#11 0x55d95283c3d7 <unknown>
+#12 0x55d952846b20 <unknown>
+#13 0x55d95283d023 <unknown>
+#14 0x55d95280b1aa <unknown>
+#15 0x55d9528616b8 <unknown>
+#16 0x55d952861847 <unknown>
+#17 0x55d952871243 <unknown>
+#18 0x7f916b3f6ea7 start_thread
+
+[2025-02-28T09:19:38.077+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56512615d4e3 <unknown>
+#1 0x565125e8cc76 <unknown>
+#2 0x565125eba04a <unknown>
+#3 0x565125eb54a1 <unknown>
+#4 0x565125eb2029 <unknown>
+#5 0x565125ef0ccc <unknown>
+#6 0x565125ef047f <unknown>
+#7 0x565125ee7de3 <unknown>
+#8 0x565125ebd2dd <unknown>
+#9 0x565125ebe34e <unknown>
+#10 0x56512611d3e4 <unknown>
+#11 0x5651261213d7 <unknown>
+#12 0x56512612bb20 <unknown>
+#13 0x565126122023 <unknown>
+#14 0x5651260f01aa <unknown>
+#15 0x5651261466b8 <unknown>
+#16 0x565126146847 <unknown>
+#17 0x565126156243 <unknown>
+#18 0x7f8599de3ea7 start_thread
+
+[2025-02-28T09:19:38.343+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55c6357024e3 <unknown>
+#1 0x55c635431c76 <unknown>
+#2 0x55c63545f04a <unknown>
+#3 0x55c63545a4a1 <unknown>
+#4 0x55c635457029 <unknown>
+#5 0x55c635495ccc <unknown>
+#6 0x55c63549547f <unknown>
+#7 0x55c63548cde3 <unknown>
+#8 0x55c6354622dd <unknown>
+#9 0x55c63546334e <unknown>
+#10 0x55c6356c23e4 <unknown>
+#11 0x55c6356c63d7 <unknown>
+#12 0x55c6356d0b20 <unknown>
+#13 0x55c6356c7023 <unknown>
+#14 0x55c6356951aa <unknown>
+#15 0x55c6356eb6b8 <unknown>
+#16 0x55c6356eb847 <unknown>
+#17 0x55c6356fb243 <unknown>
+#18 0x7f873faf7ea7 start_thread
+
+[2025-02-28T09:19:38.577+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x562785d4d4e3 <unknown>
+#1 0x562785a7cc76 <unknown>
+#2 0x562785aaa04a <unknown>
+#3 0x562785aa54a1 <unknown>
+#4 0x562785aa2029 <unknown>
+#5 0x562785ae0ccc <unknown>
+#6 0x562785ae047f <unknown>
+#7 0x562785ad7de3 <unknown>
+#8 0x562785aad2dd <unknown>
+#9 0x562785aae34e <unknown>
+#10 0x562785d0d3e4 <unknown>
+#11 0x562785d113d7 <unknown>
+#12 0x562785d1bb20 <unknown>
+#13 0x562785d12023 <unknown>
+#14 0x562785ce01aa <unknown>
+#15 0x562785d366b8 <unknown>
+#16 0x562785d36847 <unknown>
+#17 0x562785d46243 <unknown>
+#18 0x7f84129f8ea7 start_thread
+
+[2025-02-28T09:19:38.806+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55fb0f1c44e3 <unknown>
+#1 0x55fb0eef3c76 <unknown>
+#2 0x55fb0ef2104a <unknown>
+#3 0x55fb0ef1c4a1 <unknown>
+#4 0x55fb0ef19029 <unknown>
+#5 0x55fb0ef57ccc <unknown>
+#6 0x55fb0ef5747f <unknown>
+#7 0x55fb0ef4ede3 <unknown>
+#8 0x55fb0ef242dd <unknown>
+#9 0x55fb0ef2534e <unknown>
+#10 0x55fb0f1843e4 <unknown>
+#11 0x55fb0f1883d7 <unknown>
+#12 0x55fb0f192b20 <unknown>
+#13 0x55fb0f189023 <unknown>
+#14 0x55fb0f1571aa <unknown>
+#15 0x55fb0f1ad6b8 <unknown>
+#16 0x55fb0f1ad847 <unknown>
+#17 0x55fb0f1bd243 <unknown>
+#18 0x7f41c209fea7 start_thread
+
+[2025-02-28T09:19:39.048+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5585de1504e3 <unknown>
+#1 0x5585dde7fc76 <unknown>
+#2 0x5585ddead04a <unknown>
+#3 0x5585ddea84a1 <unknown>
+#4 0x5585ddea5029 <unknown>
+#5 0x5585ddee3ccc <unknown>
+#6 0x5585ddee347f <unknown>
+#7 0x5585ddedade3 <unknown>
+#8 0x5585ddeb02dd <unknown>
+#9 0x5585ddeb134e <unknown>
+#10 0x5585de1103e4 <unknown>
+#11 0x5585de1143d7 <unknown>
+#12 0x5585de11eb20 <unknown>
+#13 0x5585de115023 <unknown>
+#14 0x5585de0e31aa <unknown>
+#15 0x5585de1396b8 <unknown>
+#16 0x5585de139847 <unknown>
+#17 0x5585de149243 <unknown>
+#18 0x7f86b821eea7 start_thread
+
+[2025-02-28T09:19:39.309+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5574a8ec34e3 <unknown>
+#1 0x5574a8bf2c76 <unknown>
+#2 0x5574a8c2004a <unknown>
+#3 0x5574a8c1b4a1 <unknown>
+#4 0x5574a8c18029 <unknown>
+#5 0x5574a8c56ccc <unknown>
+#6 0x5574a8c5647f <unknown>
+#7 0x5574a8c4dde3 <unknown>
+#8 0x5574a8c232dd <unknown>
+#9 0x5574a8c2434e <unknown>
+#10 0x5574a8e833e4 <unknown>
+#11 0x5574a8e873d7 <unknown>
+#12 0x5574a8e91b20 <unknown>
+#13 0x5574a8e88023 <unknown>
+#14 0x5574a8e561aa <unknown>
+#15 0x5574a8eac6b8 <unknown>
+#16 0x5574a8eac847 <unknown>
+#17 0x5574a8ebc243 <unknown>
+#18 0x7f04eaac7ea7 start_thread
+
+[2025-02-28T09:19:39.550+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55c19d12d4e3 <unknown>
+#1 0x55c19ce5cc76 <unknown>
+#2 0x55c19ce8a04a <unknown>
+#3 0x55c19ce854a1 <unknown>
+#4 0x55c19ce82029 <unknown>
+#5 0x55c19cec0ccc <unknown>
+#6 0x55c19cec047f <unknown>
+#7 0x55c19ceb7de3 <unknown>
+#8 0x55c19ce8d2dd <unknown>
+#9 0x55c19ce8e34e <unknown>
+#10 0x55c19d0ed3e4 <unknown>
+#11 0x55c19d0f13d7 <unknown>
+#12 0x55c19d0fbb20 <unknown>
+#13 0x55c19d0f2023 <unknown>
+#14 0x55c19d0c01aa <unknown>
+#15 0x55c19d1166b8 <unknown>
+#16 0x55c19d116847 <unknown>
+#17 0x55c19d126243 <unknown>
+#18 0x7f101b6deea7 start_thread
+
+[2025-02-28T09:19:39.791+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55a8553dd4e3 <unknown>
+#1 0x55a85510cc76 <unknown>
+#2 0x55a85513a04a <unknown>
+#3 0x55a8551354a1 <unknown>
+#4 0x55a855132029 <unknown>
+#5 0x55a855170ccc <unknown>
+#6 0x55a85517047f <unknown>
+#7 0x55a855167de3 <unknown>
+#8 0x55a85513d2dd <unknown>
+#9 0x55a85513e34e <unknown>
+#10 0x55a85539d3e4 <unknown>
+#11 0x55a8553a13d7 <unknown>
+#12 0x55a8553abb20 <unknown>
+#13 0x55a8553a2023 <unknown>
+#14 0x55a8553701aa <unknown>
+#15 0x55a8553c66b8 <unknown>
+#16 0x55a8553c6847 <unknown>
+#17 0x55a8553d6243 <unknown>
+#18 0x7fefa0a78ea7 start_thread
+
+[2025-02-28T09:19:40.049+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5589cec4b4e3 <unknown>
+#1 0x5589ce97ac76 <unknown>
+#2 0x5589ce9a804a <unknown>
+#3 0x5589ce9a34a1 <unknown>
+#4 0x5589ce9a0029 <unknown>
+#5 0x5589ce9deccc <unknown>
+#6 0x5589ce9de47f <unknown>
+#7 0x5589ce9d5de3 <unknown>
+#8 0x5589ce9ab2dd <unknown>
+#9 0x5589ce9ac34e <unknown>
+#10 0x5589cec0b3e4 <unknown>
+#11 0x5589cec0f3d7 <unknown>
+#12 0x5589cec19b20 <unknown>
+#13 0x5589cec10023 <unknown>
+#14 0x5589cebde1aa <unknown>
+#15 0x5589cec346b8 <unknown>
+#16 0x5589cec34847 <unknown>
+#17 0x5589cec44243 <unknown>
+#18 0x7fa0544a7ea7 start_thread
+
+[2025-02-28T09:19:40.343+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55c4319be4e3 <unknown>
+#1 0x55c4316edc76 <unknown>
+#2 0x55c43171b04a <unknown>
+#3 0x55c4317164a1 <unknown>
+#4 0x55c431713029 <unknown>
+#5 0x55c431751ccc <unknown>
+#6 0x55c43175147f <unknown>
+#7 0x55c431748de3 <unknown>
+#8 0x55c43171e2dd <unknown>
+#9 0x55c43171f34e <unknown>
+#10 0x55c43197e3e4 <unknown>
+#11 0x55c4319823d7 <unknown>
+#12 0x55c43198cb20 <unknown>
+#13 0x55c431983023 <unknown>
+#14 0x55c4319511aa <unknown>
+#15 0x55c4319a76b8 <unknown>
+#16 0x55c4319a7847 <unknown>
+#17 0x55c4319b7243 <unknown>
+#18 0x7f47f29a5ea7 start_thread
+
+[2025-02-28T09:19:40.607+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55afc0a304e3 <unknown>
+#1 0x55afc075fc76 <unknown>
+#2 0x55afc078d04a <unknown>
+#3 0x55afc07884a1 <unknown>
+#4 0x55afc0785029 <unknown>
+#5 0x55afc07c3ccc <unknown>
+#6 0x55afc07c347f <unknown>
+#7 0x55afc07bade3 <unknown>
+#8 0x55afc07902dd <unknown>
+#9 0x55afc079134e <unknown>
+#10 0x55afc09f03e4 <unknown>
+#11 0x55afc09f43d7 <unknown>
+#12 0x55afc09feb20 <unknown>
+#13 0x55afc09f5023 <unknown>
+#14 0x55afc09c31aa <unknown>
+#15 0x55afc0a196b8 <unknown>
+#16 0x55afc0a19847 <unknown>
+#17 0x55afc0a29243 <unknown>
+#18 0x7f4901f03ea7 start_thread
+
+[2025-02-28T09:19:40.857+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56201955c4e3 <unknown>
+#1 0x56201928bc76 <unknown>
+#2 0x5620192b904a <unknown>
+#3 0x5620192b44a1 <unknown>
+#4 0x5620192b1029 <unknown>
+#5 0x5620192efccc <unknown>
+#6 0x5620192ef47f <unknown>
+#7 0x5620192e6de3 <unknown>
+#8 0x5620192bc2dd <unknown>
+#9 0x5620192bd34e <unknown>
+#10 0x56201951c3e4 <unknown>
+#11 0x5620195203d7 <unknown>
+#12 0x56201952ab20 <unknown>
+#13 0x562019521023 <unknown>
+#14 0x5620194ef1aa <unknown>
+#15 0x5620195456b8 <unknown>
+#16 0x562019545847 <unknown>
+#17 0x562019555243 <unknown>
+#18 0x7f39522baea7 start_thread
+
+[2025-02-28T09:19:41.146+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55622da164e3 <unknown>
+#1 0x55622d745c76 <unknown>
+#2 0x55622d77304a <unknown>
+#3 0x55622d76e4a1 <unknown>
+#4 0x55622d76b029 <unknown>
+#5 0x55622d7a9ccc <unknown>
+#6 0x55622d7a947f <unknown>
+#7 0x55622d7a0de3 <unknown>
+#8 0x55622d7762dd <unknown>
+#9 0x55622d77734e <unknown>
+#10 0x55622d9d63e4 <unknown>
+#11 0x55622d9da3d7 <unknown>
+#12 0x55622d9e4b20 <unknown>
+#13 0x55622d9db023 <unknown>
+#14 0x55622d9a91aa <unknown>
+#15 0x55622d9ff6b8 <unknown>
+#16 0x55622d9ff847 <unknown>
+#17 0x55622da0f243 <unknown>
+#18 0x7f675f8f5ea7 start_thread
+
+[2025-02-28T09:19:41.396+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56364d1e94e3 <unknown>
+#1 0x56364cf18c76 <unknown>
+#2 0x56364cf4604a <unknown>
+#3 0x56364cf414a1 <unknown>
+#4 0x56364cf3e029 <unknown>
+#5 0x56364cf7cccc <unknown>
+#6 0x56364cf7c47f <unknown>
+#7 0x56364cf73de3 <unknown>
+#8 0x56364cf492dd <unknown>
+#9 0x56364cf4a34e <unknown>
+#10 0x56364d1a93e4 <unknown>
+#11 0x56364d1ad3d7 <unknown>
+#12 0x56364d1b7b20 <unknown>
+#13 0x56364d1ae023 <unknown>
+#14 0x56364d17c1aa <unknown>
+#15 0x56364d1d26b8 <unknown>
+#16 0x56364d1d2847 <unknown>
+#17 0x56364d1e2243 <unknown>
+#18 0x7f69440a8ea7 start_thread
+
+[2025-02-28T09:19:41.631+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5562155014e3 <unknown>
+#1 0x556215230c76 <unknown>
+#2 0x55621525e04a <unknown>
+#3 0x5562152594a1 <unknown>
+#4 0x556215256029 <unknown>
+#5 0x556215294ccc <unknown>
+#6 0x55621529447f <unknown>
+#7 0x55621528bde3 <unknown>
+#8 0x5562152612dd <unknown>
+#9 0x55621526234e <unknown>
+#10 0x5562154c13e4 <unknown>
+#11 0x5562154c53d7 <unknown>
+#12 0x5562154cfb20 <unknown>
+#13 0x5562154c6023 <unknown>
+#14 0x5562154941aa <unknown>
+#15 0x5562154ea6b8 <unknown>
+#16 0x5562154ea847 <unknown>
+#17 0x5562154fa243 <unknown>
+#18 0x7f7d6857bea7 start_thread
+
+[2025-02-28T09:19:41.882+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x564c048eb4e3 <unknown>
+#1 0x564c0461ac76 <unknown>
+#2 0x564c0464804a <unknown>
+#3 0x564c046434a1 <unknown>
+#4 0x564c04640029 <unknown>
+#5 0x564c0467eccc <unknown>
+#6 0x564c0467e47f <unknown>
+#7 0x564c04675de3 <unknown>
+#8 0x564c0464b2dd <unknown>
+#9 0x564c0464c34e <unknown>
+#10 0x564c048ab3e4 <unknown>
+#11 0x564c048af3d7 <unknown>
+#12 0x564c048b9b20 <unknown>
+#13 0x564c048b0023 <unknown>
+#14 0x564c0487e1aa <unknown>
+#15 0x564c048d46b8 <unknown>
+#16 0x564c048d4847 <unknown>
+#17 0x564c048e4243 <unknown>
+#18 0x7fba4e732ea7 start_thread
+
+[2025-02-28T09:19:42.151+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5572f90e24e3 <unknown>
+#1 0x5572f8e11c76 <unknown>
+#2 0x5572f8e3f04a <unknown>
+#3 0x5572f8e3a4a1 <unknown>
+#4 0x5572f8e37029 <unknown>
+#5 0x5572f8e75ccc <unknown>
+#6 0x5572f8e7547f <unknown>
+#7 0x5572f8e6cde3 <unknown>
+#8 0x5572f8e422dd <unknown>
+#9 0x5572f8e4334e <unknown>
+#10 0x5572f90a23e4 <unknown>
+#11 0x5572f90a63d7 <unknown>
+#12 0x5572f90b0b20 <unknown>
+#13 0x5572f90a7023 <unknown>
+#14 0x5572f90751aa <unknown>
+#15 0x5572f90cb6b8 <unknown>
+#16 0x5572f90cb847 <unknown>
+#17 0x5572f90db243 <unknown>
+#18 0x7f6d56e94ea7 start_thread
+
+[2025-02-28T09:19:42.394+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5562a65a64e3 <unknown>
+#1 0x5562a62d5c76 <unknown>
+#2 0x5562a630304a <unknown>
+#3 0x5562a62fe4a1 <unknown>
+#4 0x5562a62fb029 <unknown>
+#5 0x5562a6339ccc <unknown>
+#6 0x5562a633947f <unknown>
+#7 0x5562a6330de3 <unknown>
+#8 0x5562a63062dd <unknown>
+#9 0x5562a630734e <unknown>
+#10 0x5562a65663e4 <unknown>
+#11 0x5562a656a3d7 <unknown>
+#12 0x5562a6574b20 <unknown>
+#13 0x5562a656b023 <unknown>
+#14 0x5562a65391aa <unknown>
+#15 0x5562a658f6b8 <unknown>
+#16 0x5562a658f847 <unknown>
+#17 0x5562a659f243 <unknown>
+#18 0x7f4d29c0aea7 start_thread
+
+[2025-02-28T09:19:42.641+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x562ea88444e3 <unknown>
+#1 0x562ea8573c76 <unknown>
+#2 0x562ea85a104a <unknown>
+#3 0x562ea859c4a1 <unknown>
+#4 0x562ea8599029 <unknown>
+#5 0x562ea85d7ccc <unknown>
+#6 0x562ea85d747f <unknown>
+#7 0x562ea85cede3 <unknown>
+#8 0x562ea85a42dd <unknown>
+#9 0x562ea85a534e <unknown>
+#10 0x562ea88043e4 <unknown>
+#11 0x562ea88083d7 <unknown>
+#12 0x562ea8812b20 <unknown>
+#13 0x562ea8809023 <unknown>
+#14 0x562ea87d71aa <unknown>
+#15 0x562ea882d6b8 <unknown>
+#16 0x562ea882d847 <unknown>
+#17 0x562ea883d243 <unknown>
+#18 0x7f751411aea7 start_thread
+
+[2025-02-28T09:19:42.877+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x563881b714e3 <unknown>
+#1 0x5638818a0c76 <unknown>
+#2 0x5638818ce04a <unknown>
+#3 0x5638818c94a1 <unknown>
+#4 0x5638818c6029 <unknown>
+#5 0x563881904ccc <unknown>
+#6 0x56388190447f <unknown>
+#7 0x5638818fbde3 <unknown>
+#8 0x5638818d12dd <unknown>
+#9 0x5638818d234e <unknown>
+#10 0x563881b313e4 <unknown>
+#11 0x563881b353d7 <unknown>
+#12 0x563881b3fb20 <unknown>
+#13 0x563881b36023 <unknown>
+#14 0x563881b041aa <unknown>
+#15 0x563881b5a6b8 <unknown>
+#16 0x563881b5a847 <unknown>
+#17 0x563881b6a243 <unknown>
+#18 0x7fd25c624ea7 start_thread
+
+[2025-02-28T09:19:43.156+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5607027424e3 <unknown>
+#1 0x560702471c76 <unknown>
+#2 0x56070249f04a <unknown>
+#3 0x56070249a4a1 <unknown>
+#4 0x560702497029 <unknown>
+#5 0x5607024d5ccc <unknown>
+#6 0x5607024d547f <unknown>
+#7 0x5607024ccde3 <unknown>
+#8 0x5607024a22dd <unknown>
+#9 0x5607024a334e <unknown>
+#10 0x5607027023e4 <unknown>
+#11 0x5607027063d7 <unknown>
+#12 0x560702710b20 <unknown>
+#13 0x560702707023 <unknown>
+#14 0x5607026d51aa <unknown>
+#15 0x56070272b6b8 <unknown>
+#16 0x56070272b847 <unknown>
+#17 0x56070273b243 <unknown>
+#18 0x7fa29b0e9ea7 start_thread
+
+[2025-02-28T09:19:43.461+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56524b40c4e3 <unknown>
+#1 0x56524b13bc76 <unknown>
+#2 0x56524b16904a <unknown>
+#3 0x56524b1644a1 <unknown>
+#4 0x56524b161029 <unknown>
+#5 0x56524b19fccc <unknown>
+#6 0x56524b19f47f <unknown>
+#7 0x56524b196de3 <unknown>
+#8 0x56524b16c2dd <unknown>
+#9 0x56524b16d34e <unknown>
+#10 0x56524b3cc3e4 <unknown>
+#11 0x56524b3d03d7 <unknown>
+#12 0x56524b3dab20 <unknown>
+#13 0x56524b3d1023 <unknown>
+#14 0x56524b39f1aa <unknown>
+#15 0x56524b3f56b8 <unknown>
+#16 0x56524b3f5847 <unknown>
+#17 0x56524b405243 <unknown>
+#18 0x7f37600c3ea7 start_thread
+
+[2025-02-28T09:19:43.726+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x562f3aef34e3 <unknown>
+#1 0x562f3ac22c76 <unknown>
+#2 0x562f3ac5004a <unknown>
+#3 0x562f3ac4b4a1 <unknown>
+#4 0x562f3ac48029 <unknown>
+#5 0x562f3ac86ccc <unknown>
+#6 0x562f3ac8647f <unknown>
+#7 0x562f3ac7dde3 <unknown>
+#8 0x562f3ac532dd <unknown>
+#9 0x562f3ac5434e <unknown>
+#10 0x562f3aeb33e4 <unknown>
+#11 0x562f3aeb73d7 <unknown>
+#12 0x562f3aec1b20 <unknown>
+#13 0x562f3aeb8023 <unknown>
+#14 0x562f3ae861aa <unknown>
+#15 0x562f3aedc6b8 <unknown>
+#16 0x562f3aedc847 <unknown>
+#17 0x562f3aeec243 <unknown>
+#18 0x7f9e7f266ea7 start_thread
+
+[2025-02-28T09:19:43.956+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5599c15134e3 <unknown>
+#1 0x5599c1242c76 <unknown>
+#2 0x5599c127004a <unknown>
+#3 0x5599c126b4a1 <unknown>
+#4 0x5599c1268029 <unknown>
+#5 0x5599c12a6ccc <unknown>
+#6 0x5599c12a647f <unknown>
+#7 0x5599c129dde3 <unknown>
+#8 0x5599c12732dd <unknown>
+#9 0x5599c127434e <unknown>
+#10 0x5599c14d33e4 <unknown>
+#11 0x5599c14d73d7 <unknown>
+#12 0x5599c14e1b20 <unknown>
+#13 0x5599c14d8023 <unknown>
+#14 0x5599c14a61aa <unknown>
+#15 0x5599c14fc6b8 <unknown>
+#16 0x5599c14fc847 <unknown>
+#17 0x5599c150c243 <unknown>
+#18 0x7f50e987aea7 start_thread
+
+[2025-02-28T09:19:44.221+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55c4cee1f4e3 <unknown>
+#1 0x55c4ceb4ec76 <unknown>
+#2 0x55c4ceb7c04a <unknown>
+#3 0x55c4ceb774a1 <unknown>
+#4 0x55c4ceb74029 <unknown>
+#5 0x55c4cebb2ccc <unknown>
+#6 0x55c4cebb247f <unknown>
+#7 0x55c4ceba9de3 <unknown>
+#8 0x55c4ceb7f2dd <unknown>
+#9 0x55c4ceb8034e <unknown>
+#10 0x55c4ceddf3e4 <unknown>
+#11 0x55c4cede33d7 <unknown>
+#12 0x55c4cededb20 <unknown>
+#13 0x55c4cede4023 <unknown>
+#14 0x55c4cedb21aa <unknown>
+#15 0x55c4cee086b8 <unknown>
+#16 0x55c4cee08847 <unknown>
+#17 0x55c4cee18243 <unknown>
+#18 0x7f4162b5bea7 start_thread
+
+[2025-02-28T09:19:44.479+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x564e728c94e3 <unknown>
+#1 0x564e725f8c76 <unknown>
+#2 0x564e7262604a <unknown>
+#3 0x564e726214a1 <unknown>
+#4 0x564e7261e029 <unknown>
+#5 0x564e7265cccc <unknown>
+#6 0x564e7265c47f <unknown>
+#7 0x564e72653de3 <unknown>
+#8 0x564e726292dd <unknown>
+#9 0x564e7262a34e <unknown>
+#10 0x564e728893e4 <unknown>
+#11 0x564e7288d3d7 <unknown>
+#12 0x564e72897b20 <unknown>
+#13 0x564e7288e023 <unknown>
+#14 0x564e7285c1aa <unknown>
+#15 0x564e728b26b8 <unknown>
+#16 0x564e728b2847 <unknown>
+#17 0x564e728c2243 <unknown>
+#18 0x7fd3e68ceea7 start_thread
+
+[2025-02-28T09:19:44.860+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5566f84294e3 <unknown>
+#1 0x5566f8158c76 <unknown>
+#2 0x5566f818604a <unknown>
+#3 0x5566f81814a1 <unknown>
+#4 0x5566f817e029 <unknown>
+#5 0x5566f81bcccc <unknown>
+#6 0x5566f81bc47f <unknown>
+#7 0x5566f81b3de3 <unknown>
+#8 0x5566f81892dd <unknown>
+#9 0x5566f818a34e <unknown>
+#10 0x5566f83e93e4 <unknown>
+#11 0x5566f83ed3d7 <unknown>
+#12 0x5566f83f7b20 <unknown>
+#13 0x5566f83ee023 <unknown>
+#14 0x5566f83bc1aa <unknown>
+#15 0x5566f84126b8 <unknown>
+#16 0x5566f8412847 <unknown>
+#17 0x5566f8422243 <unknown>
+#18 0x7f913b3d1ea7 start_thread
+
+[2025-02-28T09:19:45.112+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55dd1ee584e3 <unknown>
+#1 0x55dd1eb87c76 <unknown>
+#2 0x55dd1ebb504a <unknown>
+#3 0x55dd1ebb04a1 <unknown>
+#4 0x55dd1ebad029 <unknown>
+#5 0x55dd1ebebccc <unknown>
+#6 0x55dd1ebeb47f <unknown>
+#7 0x55dd1ebe2de3 <unknown>
+#8 0x55dd1ebb82dd <unknown>
+#9 0x55dd1ebb934e <unknown>
+#10 0x55dd1ee183e4 <unknown>
+#11 0x55dd1ee1c3d7 <unknown>
+#12 0x55dd1ee26b20 <unknown>
+#13 0x55dd1ee1d023 <unknown>
+#14 0x55dd1edeb1aa <unknown>
+#15 0x55dd1ee416b8 <unknown>
+#16 0x55dd1ee41847 <unknown>
+#17 0x55dd1ee51243 <unknown>
+#18 0x7fa756e26ea7 start_thread
+
+[2025-02-28T09:19:45.364+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55948679f4e3 <unknown>
+#1 0x5594864cec76 <unknown>
+#2 0x5594864fc04a <unknown>
+#3 0x5594864f74a1 <unknown>
+#4 0x5594864f4029 <unknown>
+#5 0x559486532ccc <unknown>
+#6 0x55948653247f <unknown>
+#7 0x559486529de3 <unknown>
+#8 0x5594864ff2dd <unknown>
+#9 0x55948650034e <unknown>
+#10 0x55948675f3e4 <unknown>
+#11 0x5594867633d7 <unknown>
+#12 0x55948676db20 <unknown>
+#13 0x559486764023 <unknown>
+#14 0x5594867321aa <unknown>
+#15 0x5594867886b8 <unknown>
+#16 0x559486788847 <unknown>
+#17 0x559486798243 <unknown>
+#18 0x7eff548e9ea7 start_thread
+
+[2025-02-28T09:19:45.606+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5566459204e3 <unknown>
+#1 0x55664564fc76 <unknown>
+#2 0x55664567d04a <unknown>
+#3 0x5566456784a1 <unknown>
+#4 0x556645675029 <unknown>
+#5 0x5566456b3ccc <unknown>
+#6 0x5566456b347f <unknown>
+#7 0x5566456aade3 <unknown>
+#8 0x5566456802dd <unknown>
+#9 0x55664568134e <unknown>
+#10 0x5566458e03e4 <unknown>
+#11 0x5566458e43d7 <unknown>
+#12 0x5566458eeb20 <unknown>
+#13 0x5566458e5023 <unknown>
+#14 0x5566458b31aa <unknown>
+#15 0x5566459096b8 <unknown>
+#16 0x556645909847 <unknown>
+#17 0x556645919243 <unknown>
+#18 0x7f5fef39eea7 start_thread
+
+[2025-02-28T09:19:45.859+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5624eac664e3 <unknown>
+#1 0x5624ea995c76 <unknown>
+#2 0x5624ea9c304a <unknown>
+#3 0x5624ea9be4a1 <unknown>
+#4 0x5624ea9bb029 <unknown>
+#5 0x5624ea9f9ccc <unknown>
+#6 0x5624ea9f947f <unknown>
+#7 0x5624ea9f0de3 <unknown>
+#8 0x5624ea9c62dd <unknown>
+#9 0x5624ea9c734e <unknown>
+#10 0x5624eac263e4 <unknown>
+#11 0x5624eac2a3d7 <unknown>
+#12 0x5624eac34b20 <unknown>
+#13 0x5624eac2b023 <unknown>
+#14 0x5624eabf91aa <unknown>
+#15 0x5624eac4f6b8 <unknown>
+#16 0x5624eac4f847 <unknown>
+#17 0x5624eac5f243 <unknown>
+#18 0x7f4789ca1ea7 start_thread
+
+[2025-02-28T09:19:46.096+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x559fbf6d14e3 <unknown>
+#1 0x559fbf400c76 <unknown>
+#2 0x559fbf42e04a <unknown>
+#3 0x559fbf4294a1 <unknown>
+#4 0x559fbf426029 <unknown>
+#5 0x559fbf464ccc <unknown>
+#6 0x559fbf46447f <unknown>
+#7 0x559fbf45bde3 <unknown>
+#8 0x559fbf4312dd <unknown>
+#9 0x559fbf43234e <unknown>
+#10 0x559fbf6913e4 <unknown>
+#11 0x559fbf6953d7 <unknown>
+#12 0x559fbf69fb20 <unknown>
+#13 0x559fbf696023 <unknown>
+#14 0x559fbf6641aa <unknown>
+#15 0x559fbf6ba6b8 <unknown>
+#16 0x559fbf6ba847 <unknown>
+#17 0x559fbf6ca243 <unknown>
+#18 0x7f62f6bb6ea7 start_thread
+
+[2025-02-28T09:19:46.345+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55721c9534e3 <unknown>
+#1 0x55721c682c76 <unknown>
+#2 0x55721c6b004a <unknown>
+#3 0x55721c6ab4a1 <unknown>
+#4 0x55721c6a8029 <unknown>
+#5 0x55721c6e6ccc <unknown>
+#6 0x55721c6e647f <unknown>
+#7 0x55721c6ddde3 <unknown>
+#8 0x55721c6b32dd <unknown>
+#9 0x55721c6b434e <unknown>
+#10 0x55721c9133e4 <unknown>
+#11 0x55721c9173d7 <unknown>
+#12 0x55721c921b20 <unknown>
+#13 0x55721c918023 <unknown>
+#14 0x55721c8e61aa <unknown>
+#15 0x55721c93c6b8 <unknown>
+#16 0x55721c93c847 <unknown>
+#17 0x55721c94c243 <unknown>
+#18 0x7ff15060dea7 start_thread
+
+[2025-02-28T09:19:46.606+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5614c9afc4e3 <unknown>
+#1 0x5614c982bc76 <unknown>
+#2 0x5614c985904a <unknown>
+#3 0x5614c98544a1 <unknown>
+#4 0x5614c9851029 <unknown>
+#5 0x5614c988fccc <unknown>
+#6 0x5614c988f47f <unknown>
+#7 0x5614c9886de3 <unknown>
+#8 0x5614c985c2dd <unknown>
+#9 0x5614c985d34e <unknown>
+#10 0x5614c9abc3e4 <unknown>
+#11 0x5614c9ac03d7 <unknown>
+#12 0x5614c9acab20 <unknown>
+#13 0x5614c9ac1023 <unknown>
+#14 0x5614c9a8f1aa <unknown>
+#15 0x5614c9ae56b8 <unknown>
+#16 0x5614c9ae5847 <unknown>
+#17 0x5614c9af5243 <unknown>
+#18 0x7fa7eb520ea7 start_thread
+
+[2025-02-28T09:19:46.916+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55801d8594e3 <unknown>
+#1 0x55801d588c76 <unknown>
+#2 0x55801d5b604a <unknown>
+#3 0x55801d5b14a1 <unknown>
+#4 0x55801d5ae029 <unknown>
+#5 0x55801d5ecccc <unknown>
+#6 0x55801d5ec47f <unknown>
+#7 0x55801d5e3de3 <unknown>
+#8 0x55801d5b92dd <unknown>
+#9 0x55801d5ba34e <unknown>
+#10 0x55801d8193e4 <unknown>
+#11 0x55801d81d3d7 <unknown>
+#12 0x55801d827b20 <unknown>
+#13 0x55801d81e023 <unknown>
+#14 0x55801d7ec1aa <unknown>
+#15 0x55801d8426b8 <unknown>
+#16 0x55801d842847 <unknown>
+#17 0x55801d852243 <unknown>
+#18 0x7fb604357ea7 start_thread
+
+[2025-02-28T09:19:47.151+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x558d29e0b4e3 <unknown>
+#1 0x558d29b3ac76 <unknown>
+#2 0x558d29b6804a <unknown>
+#3 0x558d29b634a1 <unknown>
+#4 0x558d29b60029 <unknown>
+#5 0x558d29b9eccc <unknown>
+#6 0x558d29b9e47f <unknown>
+#7 0x558d29b95de3 <unknown>
+#8 0x558d29b6b2dd <unknown>
+#9 0x558d29b6c34e <unknown>
+#10 0x558d29dcb3e4 <unknown>
+#11 0x558d29dcf3d7 <unknown>
+#12 0x558d29dd9b20 <unknown>
+#13 0x558d29dd0023 <unknown>
+#14 0x558d29d9e1aa <unknown>
+#15 0x558d29df46b8 <unknown>
+#16 0x558d29df4847 <unknown>
+#17 0x558d29e04243 <unknown>
+#18 0x7fe605fa6ea7 start_thread
+
+[2025-02-28T09:19:47.396+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5640f03ff4e3 <unknown>
+#1 0x5640f012ec76 <unknown>
+#2 0x5640f015c04a <unknown>
+#3 0x5640f01574a1 <unknown>
+#4 0x5640f0154029 <unknown>
+#5 0x5640f0192ccc <unknown>
+#6 0x5640f019247f <unknown>
+#7 0x5640f0189de3 <unknown>
+#8 0x5640f015f2dd <unknown>
+#9 0x5640f016034e <unknown>
+#10 0x5640f03bf3e4 <unknown>
+#11 0x5640f03c33d7 <unknown>
+#12 0x5640f03cdb20 <unknown>
+#13 0x5640f03c4023 <unknown>
+#14 0x5640f03921aa <unknown>
+#15 0x5640f03e86b8 <unknown>
+#16 0x5640f03e8847 <unknown>
+#17 0x5640f03f8243 <unknown>
+#18 0x7fed7fd79ea7 start_thread
+
+[2025-02-28T09:19:47.668+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x558d94d064e3 <unknown>
+#1 0x558d94a35c76 <unknown>
+#2 0x558d94a6304a <unknown>
+#3 0x558d94a5e4a1 <unknown>
+#4 0x558d94a5b029 <unknown>
+#5 0x558d94a99ccc <unknown>
+#6 0x558d94a9947f <unknown>
+#7 0x558d94a90de3 <unknown>
+#8 0x558d94a662dd <unknown>
+#9 0x558d94a6734e <unknown>
+#10 0x558d94cc63e4 <unknown>
+#11 0x558d94cca3d7 <unknown>
+#12 0x558d94cd4b20 <unknown>
+#13 0x558d94ccb023 <unknown>
+#14 0x558d94c991aa <unknown>
+#15 0x558d94cef6b8 <unknown>
+#16 0x558d94cef847 <unknown>
+#17 0x558d94cff243 <unknown>
+#18 0x7f7b18d4fea7 start_thread
+
+[2025-02-28T09:19:47.918+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x560ad31ef4e3 <unknown>
+#1 0x560ad2f1ec76 <unknown>
+#2 0x560ad2f4c04a <unknown>
+#3 0x560ad2f474a1 <unknown>
+#4 0x560ad2f44029 <unknown>
+#5 0x560ad2f82ccc <unknown>
+#6 0x560ad2f8247f <unknown>
+#7 0x560ad2f79de3 <unknown>
+#8 0x560ad2f4f2dd <unknown>
+#9 0x560ad2f5034e <unknown>
+#10 0x560ad31af3e4 <unknown>
+#11 0x560ad31b33d7 <unknown>
+#12 0x560ad31bdb20 <unknown>
+#13 0x560ad31b4023 <unknown>
+#14 0x560ad31821aa <unknown>
+#15 0x560ad31d86b8 <unknown>
+#16 0x560ad31d8847 <unknown>
+#17 0x560ad31e8243 <unknown>
+#18 0x7fa1cf0e2ea7 start_thread
+
+[2025-02-28T09:19:48.162+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55d743b5f4e3 <unknown>
+#1 0x55d74388ec76 <unknown>
+#2 0x55d7438bc04a <unknown>
+#3 0x55d7438b74a1 <unknown>
+#4 0x55d7438b4029 <unknown>
+#5 0x55d7438f2ccc <unknown>
+#6 0x55d7438f247f <unknown>
+#7 0x55d7438e9de3 <unknown>
+#8 0x55d7438bf2dd <unknown>
+#9 0x55d7438c034e <unknown>
+#10 0x55d743b1f3e4 <unknown>
+#11 0x55d743b233d7 <unknown>
+#12 0x55d743b2db20 <unknown>
+#13 0x55d743b24023 <unknown>
+#14 0x55d743af21aa <unknown>
+#15 0x55d743b486b8 <unknown>
+#16 0x55d743b48847 <unknown>
+#17 0x55d743b58243 <unknown>
+#18 0x7f790a5ebea7 start_thread
+
+[2025-02-28T09:19:48.451+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55cf34b8e4e3 <unknown>
+#1 0x55cf348bdc76 <unknown>
+#2 0x55cf348eb04a <unknown>
+#3 0x55cf348e64a1 <unknown>
+#4 0x55cf348e3029 <unknown>
+#5 0x55cf34921ccc <unknown>
+#6 0x55cf3492147f <unknown>
+#7 0x55cf34918de3 <unknown>
+#8 0x55cf348ee2dd <unknown>
+#9 0x55cf348ef34e <unknown>
+#10 0x55cf34b4e3e4 <unknown>
+#11 0x55cf34b523d7 <unknown>
+#12 0x55cf34b5cb20 <unknown>
+#13 0x55cf34b53023 <unknown>
+#14 0x55cf34b211aa <unknown>
+#15 0x55cf34b776b8 <unknown>
+#16 0x55cf34b77847 <unknown>
+#17 0x55cf34b87243 <unknown>
+#18 0x7fdf3df98ea7 start_thread
+
+[2025-02-28T09:19:48.715+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5614fe8694e3 <unknown>
+#1 0x5614fe598c76 <unknown>
+#2 0x5614fe5c604a <unknown>
+#3 0x5614fe5c14a1 <unknown>
+#4 0x5614fe5be029 <unknown>
+#5 0x5614fe5fcccc <unknown>
+#6 0x5614fe5fc47f <unknown>
+#7 0x5614fe5f3de3 <unknown>
+#8 0x5614fe5c92dd <unknown>
+#9 0x5614fe5ca34e <unknown>
+#10 0x5614fe8293e4 <unknown>
+#11 0x5614fe82d3d7 <unknown>
+#12 0x5614fe837b20 <unknown>
+#13 0x5614fe82e023 <unknown>
+#14 0x5614fe7fc1aa <unknown>
+#15 0x5614fe8526b8 <unknown>
+#16 0x5614fe852847 <unknown>
+#17 0x5614fe862243 <unknown>
+#18 0x7ff3ebe29ea7 start_thread
+
+[2025-02-28T09:19:48.948+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5614179064e3 <unknown>
+#1 0x561417635c76 <unknown>
+#2 0x56141766304a <unknown>
+#3 0x56141765e4a1 <unknown>
+#4 0x56141765b029 <unknown>
+#5 0x561417699ccc <unknown>
+#6 0x56141769947f <unknown>
+#7 0x561417690de3 <unknown>
+#8 0x5614176662dd <unknown>
+#9 0x56141766734e <unknown>
+#10 0x5614178c63e4 <unknown>
+#11 0x5614178ca3d7 <unknown>
+#12 0x5614178d4b20 <unknown>
+#13 0x5614178cb023 <unknown>
+#14 0x5614178991aa <unknown>
+#15 0x5614178ef6b8 <unknown>
+#16 0x5614178ef847 <unknown>
+#17 0x5614178ff243 <unknown>
+#18 0x7fd6ab4b8ea7 start_thread
+
+[2025-02-28T09:19:49.196+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56254d8f24e3 <unknown>
+#1 0x56254d621c76 <unknown>
+#2 0x56254d64f04a <unknown>
+#3 0x56254d64a4a1 <unknown>
+#4 0x56254d647029 <unknown>
+#5 0x56254d685ccc <unknown>
+#6 0x56254d68547f <unknown>
+#7 0x56254d67cde3 <unknown>
+#8 0x56254d6522dd <unknown>
+#9 0x56254d65334e <unknown>
+#10 0x56254d8b23e4 <unknown>
+#11 0x56254d8b63d7 <unknown>
+#12 0x56254d8c0b20 <unknown>
+#13 0x56254d8b7023 <unknown>
+#14 0x56254d8851aa <unknown>
+#15 0x56254d8db6b8 <unknown>
+#16 0x56254d8db847 <unknown>
+#17 0x56254d8eb243 <unknown>
+#18 0x7f1062e8fea7 start_thread
+
+[2025-02-28T09:19:49.458+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55c3ac3874e3 <unknown>
+#1 0x55c3ac0b6c76 <unknown>
+#2 0x55c3ac0e404a <unknown>
+#3 0x55c3ac0df4a1 <unknown>
+#4 0x55c3ac0dc029 <unknown>
+#5 0x55c3ac11accc <unknown>
+#6 0x55c3ac11a47f <unknown>
+#7 0x55c3ac111de3 <unknown>
+#8 0x55c3ac0e72dd <unknown>
+#9 0x55c3ac0e834e <unknown>
+#10 0x55c3ac3473e4 <unknown>
+#11 0x55c3ac34b3d7 <unknown>
+#12 0x55c3ac355b20 <unknown>
+#13 0x55c3ac34c023 <unknown>
+#14 0x55c3ac31a1aa <unknown>
+#15 0x55c3ac3706b8 <unknown>
+#16 0x55c3ac370847 <unknown>
+#17 0x55c3ac380243 <unknown>
+#18 0x7f762fe36ea7 start_thread
+
+[2025-02-28T09:19:49.732+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x557509c984e3 <unknown>
+#1 0x5575099c7c76 <unknown>
+#2 0x5575099f504a <unknown>
+#3 0x5575099f04a1 <unknown>
+#4 0x5575099ed029 <unknown>
+#5 0x557509a2bccc <unknown>
+#6 0x557509a2b47f <unknown>
+#7 0x557509a22de3 <unknown>
+#8 0x5575099f82dd <unknown>
+#9 0x5575099f934e <unknown>
+#10 0x557509c583e4 <unknown>
+#11 0x557509c5c3d7 <unknown>
+#12 0x557509c66b20 <unknown>
+#13 0x557509c5d023 <unknown>
+#14 0x557509c2b1aa <unknown>
+#15 0x557509c816b8 <unknown>
+#16 0x557509c81847 <unknown>
+#17 0x557509c91243 <unknown>
+#18 0x7f20d8ba6ea7 start_thread
+
+[2025-02-28T09:19:49.999+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55c719c074e3 <unknown>
+#1 0x55c719936c76 <unknown>
+#2 0x55c71996404a <unknown>
+#3 0x55c71995f4a1 <unknown>
+#4 0x55c71995c029 <unknown>
+#5 0x55c71999accc <unknown>
+#6 0x55c71999a47f <unknown>
+#7 0x55c719991de3 <unknown>
+#8 0x55c7199672dd <unknown>
+#9 0x55c71996834e <unknown>
+#10 0x55c719bc73e4 <unknown>
+#11 0x55c719bcb3d7 <unknown>
+#12 0x55c719bd5b20 <unknown>
+#13 0x55c719bcc023 <unknown>
+#14 0x55c719b9a1aa <unknown>
+#15 0x55c719bf06b8 <unknown>
+#16 0x55c719bf0847 <unknown>
+#17 0x55c719c00243 <unknown>
+#18 0x7f83e5bf7ea7 start_thread
+
+[2025-02-28T09:19:50.269+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x562a04b8c4e3 <unknown>
+#1 0x562a048bbc76 <unknown>
+#2 0x562a048e904a <unknown>
+#3 0x562a048e44a1 <unknown>
+#4 0x562a048e1029 <unknown>
+#5 0x562a0491fccc <unknown>
+#6 0x562a0491f47f <unknown>
+#7 0x562a04916de3 <unknown>
+#8 0x562a048ec2dd <unknown>
+#9 0x562a048ed34e <unknown>
+#10 0x562a04b4c3e4 <unknown>
+#11 0x562a04b503d7 <unknown>
+#12 0x562a04b5ab20 <unknown>
+#13 0x562a04b51023 <unknown>
+#14 0x562a04b1f1aa <unknown>
+#15 0x562a04b756b8 <unknown>
+#16 0x562a04b75847 <unknown>
+#17 0x562a04b85243 <unknown>
+#18 0x7f813c7e9ea7 start_thread
+
+[2025-02-28T09:19:50.526+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55d906b754e3 <unknown>
+#1 0x55d9068a4c76 <unknown>
+#2 0x55d9068d204a <unknown>
+#3 0x55d9068cd4a1 <unknown>
+#4 0x55d9068ca029 <unknown>
+#5 0x55d906908ccc <unknown>
+#6 0x55d90690847f <unknown>
+#7 0x55d9068ffde3 <unknown>
+#8 0x55d9068d52dd <unknown>
+#9 0x55d9068d634e <unknown>
+#10 0x55d906b353e4 <unknown>
+#11 0x55d906b393d7 <unknown>
+#12 0x55d906b43b20 <unknown>
+#13 0x55d906b3a023 <unknown>
+#14 0x55d906b081aa <unknown>
+#15 0x55d906b5e6b8 <unknown>
+#16 0x55d906b5e847 <unknown>
+#17 0x55d906b6e243 <unknown>
+#18 0x7fb9cbea8ea7 start_thread
+
+[2025-02-28T09:19:50.777+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x563ce44aa4e3 <unknown>
+#1 0x563ce41d9c76 <unknown>
+#2 0x563ce420704a <unknown>
+#3 0x563ce42024a1 <unknown>
+#4 0x563ce41ff029 <unknown>
+#5 0x563ce423dccc <unknown>
+#6 0x563ce423d47f <unknown>
+#7 0x563ce4234de3 <unknown>
+#8 0x563ce420a2dd <unknown>
+#9 0x563ce420b34e <unknown>
+#10 0x563ce446a3e4 <unknown>
+#11 0x563ce446e3d7 <unknown>
+#12 0x563ce4478b20 <unknown>
+#13 0x563ce446f023 <unknown>
+#14 0x563ce443d1aa <unknown>
+#15 0x563ce44936b8 <unknown>
+#16 0x563ce4493847 <unknown>
+#17 0x563ce44a3243 <unknown>
+#18 0x7fd0863abea7 start_thread
+
+[2025-02-28T09:19:51.047+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55aa4f89b4e3 <unknown>
+#1 0x55aa4f5cac76 <unknown>
+#2 0x55aa4f5f804a <unknown>
+#3 0x55aa4f5f34a1 <unknown>
+#4 0x55aa4f5f0029 <unknown>
+#5 0x55aa4f62eccc <unknown>
+#6 0x55aa4f62e47f <unknown>
+#7 0x55aa4f625de3 <unknown>
+#8 0x55aa4f5fb2dd <unknown>
+#9 0x55aa4f5fc34e <unknown>
+#10 0x55aa4f85b3e4 <unknown>
+#11 0x55aa4f85f3d7 <unknown>
+#12 0x55aa4f869b20 <unknown>
+#13 0x55aa4f860023 <unknown>
+#14 0x55aa4f82e1aa <unknown>
+#15 0x55aa4f8846b8 <unknown>
+#16 0x55aa4f884847 <unknown>
+#17 0x55aa4f894243 <unknown>
+#18 0x7f9063fb2ea7 start_thread
+
+[2025-02-28T09:19:51.294+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55b9c08e44e3 <unknown>
+#1 0x55b9c0613c76 <unknown>
+#2 0x55b9c064104a <unknown>
+#3 0x55b9c063c4a1 <unknown>
+#4 0x55b9c0639029 <unknown>
+#5 0x55b9c0677ccc <unknown>
+#6 0x55b9c067747f <unknown>
+#7 0x55b9c066ede3 <unknown>
+#8 0x55b9c06442dd <unknown>
+#9 0x55b9c064534e <unknown>
+#10 0x55b9c08a43e4 <unknown>
+#11 0x55b9c08a83d7 <unknown>
+#12 0x55b9c08b2b20 <unknown>
+#13 0x55b9c08a9023 <unknown>
+#14 0x55b9c08771aa <unknown>
+#15 0x55b9c08cd6b8 <unknown>
+#16 0x55b9c08cd847 <unknown>
+#17 0x55b9c08dd243 <unknown>
+#18 0x7f76cd9afea7 start_thread
+
+[2025-02-28T09:19:51.531+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55f6373764e3 <unknown>
+#1 0x55f6370a5c76 <unknown>
+#2 0x55f6370d304a <unknown>
+#3 0x55f6370ce4a1 <unknown>
+#4 0x55f6370cb029 <unknown>
+#5 0x55f637109ccc <unknown>
+#6 0x55f63710947f <unknown>
+#7 0x55f637100de3 <unknown>
+#8 0x55f6370d62dd <unknown>
+#9 0x55f6370d734e <unknown>
+#10 0x55f6373363e4 <unknown>
+#11 0x55f63733a3d7 <unknown>
+#12 0x55f637344b20 <unknown>
+#13 0x55f63733b023 <unknown>
+#14 0x55f6373091aa <unknown>
+#15 0x55f63735f6b8 <unknown>
+#16 0x55f63735f847 <unknown>
+#17 0x55f63736f243 <unknown>
+#18 0x7fb8ae1afea7 start_thread
+
+[2025-02-28T09:19:51.789+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55a90fcc74e3 <unknown>
+#1 0x55a90f9f6c76 <unknown>
+#2 0x55a90fa2404a <unknown>
+#3 0x55a90fa1f4a1 <unknown>
+#4 0x55a90fa1c029 <unknown>
+#5 0x55a90fa5accc <unknown>
+#6 0x55a90fa5a47f <unknown>
+#7 0x55a90fa51de3 <unknown>
+#8 0x55a90fa272dd <unknown>
+#9 0x55a90fa2834e <unknown>
+#10 0x55a90fc873e4 <unknown>
+#11 0x55a90fc8b3d7 <unknown>
+#12 0x55a90fc95b20 <unknown>
+#13 0x55a90fc8c023 <unknown>
+#14 0x55a90fc5a1aa <unknown>
+#15 0x55a90fcb06b8 <unknown>
+#16 0x55a90fcb0847 <unknown>
+#17 0x55a90fcc0243 <unknown>
+#18 0x7fdcbad2bea7 start_thread
+
+[2025-02-28T09:19:52.073+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55bc77c924e3 <unknown>
+#1 0x55bc779c1c76 <unknown>
+#2 0x55bc779ef04a <unknown>
+#3 0x55bc779ea4a1 <unknown>
+#4 0x55bc779e7029 <unknown>
+#5 0x55bc77a25ccc <unknown>
+#6 0x55bc77a2547f <unknown>
+#7 0x55bc77a1cde3 <unknown>
+#8 0x55bc779f22dd <unknown>
+#9 0x55bc779f334e <unknown>
+#10 0x55bc77c523e4 <unknown>
+#11 0x55bc77c563d7 <unknown>
+#12 0x55bc77c60b20 <unknown>
+#13 0x55bc77c57023 <unknown>
+#14 0x55bc77c251aa <unknown>
+#15 0x55bc77c7b6b8 <unknown>
+#16 0x55bc77c7b847 <unknown>
+#17 0x55bc77c8b243 <unknown>
+#18 0x7ff2bf31fea7 start_thread
+
+[2025-02-28T09:19:52.313+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5573c25544e3 <unknown>
+#1 0x5573c2283c76 <unknown>
+#2 0x5573c22b104a <unknown>
+#3 0x5573c22ac4a1 <unknown>
+#4 0x5573c22a9029 <unknown>
+#5 0x5573c22e7ccc <unknown>
+#6 0x5573c22e747f <unknown>
+#7 0x5573c22dede3 <unknown>
+#8 0x5573c22b42dd <unknown>
+#9 0x5573c22b534e <unknown>
+#10 0x5573c25143e4 <unknown>
+#11 0x5573c25183d7 <unknown>
+#12 0x5573c2522b20 <unknown>
+#13 0x5573c2519023 <unknown>
+#14 0x5573c24e71aa <unknown>
+#15 0x5573c253d6b8 <unknown>
+#16 0x5573c253d847 <unknown>
+#17 0x5573c254d243 <unknown>
+#18 0x7f28d10deea7 start_thread
+
+[2025-02-28T09:19:52.583+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55a20bb864e3 <unknown>
+#1 0x55a20b8b5c76 <unknown>
+#2 0x55a20b8e304a <unknown>
+#3 0x55a20b8de4a1 <unknown>
+#4 0x55a20b8db029 <unknown>
+#5 0x55a20b919ccc <unknown>
+#6 0x55a20b91947f <unknown>
+#7 0x55a20b910de3 <unknown>
+#8 0x55a20b8e62dd <unknown>
+#9 0x55a20b8e734e <unknown>
+#10 0x55a20bb463e4 <unknown>
+#11 0x55a20bb4a3d7 <unknown>
+#12 0x55a20bb54b20 <unknown>
+#13 0x55a20bb4b023 <unknown>
+#14 0x55a20bb191aa <unknown>
+#15 0x55a20bb6f6b8 <unknown>
+#16 0x55a20bb6f847 <unknown>
+#17 0x55a20bb7f243 <unknown>
+#18 0x7ff068763ea7 start_thread
+
+[2025-02-28T09:19:52.830+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x556ec97084e3 <unknown>
+#1 0x556ec9437c76 <unknown>
+#2 0x556ec946504a <unknown>
+#3 0x556ec94604a1 <unknown>
+#4 0x556ec945d029 <unknown>
+#5 0x556ec949bccc <unknown>
+#6 0x556ec949b47f <unknown>
+#7 0x556ec9492de3 <unknown>
+#8 0x556ec94682dd <unknown>
+#9 0x556ec946934e <unknown>
+#10 0x556ec96c83e4 <unknown>
+#11 0x556ec96cc3d7 <unknown>
+#12 0x556ec96d6b20 <unknown>
+#13 0x556ec96cd023 <unknown>
+#14 0x556ec969b1aa <unknown>
+#15 0x556ec96f16b8 <unknown>
+#16 0x556ec96f1847 <unknown>
+#17 0x556ec9701243 <unknown>
+#18 0x7f4f70e85ea7 start_thread
+
+[2025-02-28T09:19:53.080+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x563aef1244e3 <unknown>
+#1 0x563aeee53c76 <unknown>
+#2 0x563aeee8104a <unknown>
+#3 0x563aeee7c4a1 <unknown>
+#4 0x563aeee79029 <unknown>
+#5 0x563aeeeb7ccc <unknown>
+#6 0x563aeeeb747f <unknown>
+#7 0x563aeeeaede3 <unknown>
+#8 0x563aeee842dd <unknown>
+#9 0x563aeee8534e <unknown>
+#10 0x563aef0e43e4 <unknown>
+#11 0x563aef0e83d7 <unknown>
+#12 0x563aef0f2b20 <unknown>
+#13 0x563aef0e9023 <unknown>
+#14 0x563aef0b71aa <unknown>
+#15 0x563aef10d6b8 <unknown>
+#16 0x563aef10d847 <unknown>
+#17 0x563aef11d243 <unknown>
+#18 0x7ff8aa97dea7 start_thread
+
+[2025-02-28T09:19:53.332+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5623766904e3 <unknown>
+#1 0x5623763bfc76 <unknown>
+#2 0x5623763ed04a <unknown>
+#3 0x5623763e84a1 <unknown>
+#4 0x5623763e5029 <unknown>
+#5 0x562376423ccc <unknown>
+#6 0x56237642347f <unknown>
+#7 0x56237641ade3 <unknown>
+#8 0x5623763f02dd <unknown>
+#9 0x5623763f134e <unknown>
+#10 0x5623766503e4 <unknown>
+#11 0x5623766543d7 <unknown>
+#12 0x56237665eb20 <unknown>
+#13 0x562376655023 <unknown>
+#14 0x5623766231aa <unknown>
+#15 0x5623766796b8 <unknown>
+#16 0x562376679847 <unknown>
+#17 0x562376689243 <unknown>
+#18 0x7f82e71eaea7 start_thread
+
+[2025-02-28T09:19:53.587+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5561596ee4e3 <unknown>
+#1 0x55615941dc76 <unknown>
+#2 0x55615944b04a <unknown>
+#3 0x5561594464a1 <unknown>
+#4 0x556159443029 <unknown>
+#5 0x556159481ccc <unknown>
+#6 0x55615948147f <unknown>
+#7 0x556159478de3 <unknown>
+#8 0x55615944e2dd <unknown>
+#9 0x55615944f34e <unknown>
+#10 0x5561596ae3e4 <unknown>
+#11 0x5561596b23d7 <unknown>
+#12 0x5561596bcb20 <unknown>
+#13 0x5561596b3023 <unknown>
+#14 0x5561596811aa <unknown>
+#15 0x5561596d76b8 <unknown>
+#16 0x5561596d7847 <unknown>
+#17 0x5561596e7243 <unknown>
+#18 0x7feee9a45ea7 start_thread
+
+[2025-02-28T09:19:53.859+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55b6e30794e3 <unknown>
+#1 0x55b6e2da8c76 <unknown>
+#2 0x55b6e2dd604a <unknown>
+#3 0x55b6e2dd14a1 <unknown>
+#4 0x55b6e2dce029 <unknown>
+#5 0x55b6e2e0cccc <unknown>
+#6 0x55b6e2e0c47f <unknown>
+#7 0x55b6e2e03de3 <unknown>
+#8 0x55b6e2dd92dd <unknown>
+#9 0x55b6e2dda34e <unknown>
+#10 0x55b6e30393e4 <unknown>
+#11 0x55b6e303d3d7 <unknown>
+#12 0x55b6e3047b20 <unknown>
+#13 0x55b6e303e023 <unknown>
+#14 0x55b6e300c1aa <unknown>
+#15 0x55b6e30626b8 <unknown>
+#16 0x55b6e3062847 <unknown>
+#17 0x55b6e3072243 <unknown>
+#18 0x7fd6c6fd1ea7 start_thread
+
+[2025-02-28T09:19:54.124+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5590e0e564e3 <unknown>
+#1 0x5590e0b85c76 <unknown>
+#2 0x5590e0bb304a <unknown>
+#3 0x5590e0bae4a1 <unknown>
+#4 0x5590e0bab029 <unknown>
+#5 0x5590e0be9ccc <unknown>
+#6 0x5590e0be947f <unknown>
+#7 0x5590e0be0de3 <unknown>
+#8 0x5590e0bb62dd <unknown>
+#9 0x5590e0bb734e <unknown>
+#10 0x5590e0e163e4 <unknown>
+#11 0x5590e0e1a3d7 <unknown>
+#12 0x5590e0e24b20 <unknown>
+#13 0x5590e0e1b023 <unknown>
+#14 0x5590e0de91aa <unknown>
+#15 0x5590e0e3f6b8 <unknown>
+#16 0x5590e0e3f847 <unknown>
+#17 0x5590e0e4f243 <unknown>
+#18 0x7fa8a1152ea7 start_thread
+
+[2025-02-28T09:19:54.395+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x558ae98db4e3 <unknown>
+#1 0x558ae960ac76 <unknown>
+#2 0x558ae963804a <unknown>
+#3 0x558ae96334a1 <unknown>
+#4 0x558ae9630029 <unknown>
+#5 0x558ae966eccc <unknown>
+#6 0x558ae966e47f <unknown>
+#7 0x558ae9665de3 <unknown>
+#8 0x558ae963b2dd <unknown>
+#9 0x558ae963c34e <unknown>
+#10 0x558ae989b3e4 <unknown>
+#11 0x558ae989f3d7 <unknown>
+#12 0x558ae98a9b20 <unknown>
+#13 0x558ae98a0023 <unknown>
+#14 0x558ae986e1aa <unknown>
+#15 0x558ae98c46b8 <unknown>
+#16 0x558ae98c4847 <unknown>
+#17 0x558ae98d4243 <unknown>
+#18 0x7fcce9e80ea7 start_thread
+
+[2025-02-28T09:19:54.684+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55dae97724e3 <unknown>
+#1 0x55dae94a1c76 <unknown>
+#2 0x55dae94cf04a <unknown>
+#3 0x55dae94ca4a1 <unknown>
+#4 0x55dae94c7029 <unknown>
+#5 0x55dae9505ccc <unknown>
+#6 0x55dae950547f <unknown>
+#7 0x55dae94fcde3 <unknown>
+#8 0x55dae94d22dd <unknown>
+#9 0x55dae94d334e <unknown>
+#10 0x55dae97323e4 <unknown>
+#11 0x55dae97363d7 <unknown>
+#12 0x55dae9740b20 <unknown>
+#13 0x55dae9737023 <unknown>
+#14 0x55dae97051aa <unknown>
+#15 0x55dae975b6b8 <unknown>
+#16 0x55dae975b847 <unknown>
+#17 0x55dae976b243 <unknown>
+#18 0x7f6c48cd6ea7 start_thread
+
+[2025-02-28T09:19:54.996+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55a6198db4e3 <unknown>
+#1 0x55a61960ac76 <unknown>
+#2 0x55a61963804a <unknown>
+#3 0x55a6196334a1 <unknown>
+#4 0x55a619630029 <unknown>
+#5 0x55a61966eccc <unknown>
+#6 0x55a61966e47f <unknown>
+#7 0x55a619665de3 <unknown>
+#8 0x55a61963b2dd <unknown>
+#9 0x55a61963c34e <unknown>
+#10 0x55a61989b3e4 <unknown>
+#11 0x55a61989f3d7 <unknown>
+#12 0x55a6198a9b20 <unknown>
+#13 0x55a6198a0023 <unknown>
+#14 0x55a61986e1aa <unknown>
+#15 0x55a6198c46b8 <unknown>
+#16 0x55a6198c4847 <unknown>
+#17 0x55a6198d4243 <unknown>
+#18 0x7f1c82cc1ea7 start_thread
+
+[2025-02-28T09:19:55.255+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5596c33634e3 <unknown>
+#1 0x5596c3092c76 <unknown>
+#2 0x5596c30c004a <unknown>
+#3 0x5596c30bb4a1 <unknown>
+#4 0x5596c30b8029 <unknown>
+#5 0x5596c30f6ccc <unknown>
+#6 0x5596c30f647f <unknown>
+#7 0x5596c30edde3 <unknown>
+#8 0x5596c30c32dd <unknown>
+#9 0x5596c30c434e <unknown>
+#10 0x5596c33233e4 <unknown>
+#11 0x5596c33273d7 <unknown>
+#12 0x5596c3331b20 <unknown>
+#13 0x5596c3328023 <unknown>
+#14 0x5596c32f61aa <unknown>
+#15 0x5596c334c6b8 <unknown>
+#16 0x5596c334c847 <unknown>
+#17 0x5596c335c243 <unknown>
+#18 0x7f590c825ea7 start_thread
+
+[2025-02-28T09:19:55.491+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55e44c77e4e3 <unknown>
+#1 0x55e44c4adc76 <unknown>
+#2 0x55e44c4db04a <unknown>
+#3 0x55e44c4d64a1 <unknown>
+#4 0x55e44c4d3029 <unknown>
+#5 0x55e44c511ccc <unknown>
+#6 0x55e44c51147f <unknown>
+#7 0x55e44c508de3 <unknown>
+#8 0x55e44c4de2dd <unknown>
+#9 0x55e44c4df34e <unknown>
+#10 0x55e44c73e3e4 <unknown>
+#11 0x55e44c7423d7 <unknown>
+#12 0x55e44c74cb20 <unknown>
+#13 0x55e44c743023 <unknown>
+#14 0x55e44c7111aa <unknown>
+#15 0x55e44c7676b8 <unknown>
+#16 0x55e44c767847 <unknown>
+#17 0x55e44c777243 <unknown>
+#18 0x7f7e9ddd0ea7 start_thread
+
+[2025-02-28T09:19:55.765+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5585d12834e3 <unknown>
+#1 0x5585d0fb2c76 <unknown>
+#2 0x5585d0fe004a <unknown>
+#3 0x5585d0fdb4a1 <unknown>
+#4 0x5585d0fd8029 <unknown>
+#5 0x5585d1016ccc <unknown>
+#6 0x5585d101647f <unknown>
+#7 0x5585d100dde3 <unknown>
+#8 0x5585d0fe32dd <unknown>
+#9 0x5585d0fe434e <unknown>
+#10 0x5585d12433e4 <unknown>
+#11 0x5585d12473d7 <unknown>
+#12 0x5585d1251b20 <unknown>
+#13 0x5585d1248023 <unknown>
+#14 0x5585d12161aa <unknown>
+#15 0x5585d126c6b8 <unknown>
+#16 0x5585d126c847 <unknown>
+#17 0x5585d127c243 <unknown>
+#18 0x7f31cfc8aea7 start_thread
+
+[2025-02-28T09:19:56.056+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5652732354e3 <unknown>
+#1 0x565272f64c76 <unknown>
+#2 0x565272f9204a <unknown>
+#3 0x565272f8d4a1 <unknown>
+#4 0x565272f8a029 <unknown>
+#5 0x565272fc8ccc <unknown>
+#6 0x565272fc847f <unknown>
+#7 0x565272fbfde3 <unknown>
+#8 0x565272f952dd <unknown>
+#9 0x565272f9634e <unknown>
+#10 0x5652731f53e4 <unknown>
+#11 0x5652731f93d7 <unknown>
+#12 0x565273203b20 <unknown>
+#13 0x5652731fa023 <unknown>
+#14 0x5652731c81aa <unknown>
+#15 0x56527321e6b8 <unknown>
+#16 0x56527321e847 <unknown>
+#17 0x56527322e243 <unknown>
+#18 0x7fecbd853ea7 start_thread
+
+[2025-02-28T09:19:56.304+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5569a15634e3 <unknown>
+#1 0x5569a1292c76 <unknown>
+#2 0x5569a12c004a <unknown>
+#3 0x5569a12bb4a1 <unknown>
+#4 0x5569a12b8029 <unknown>
+#5 0x5569a12f6ccc <unknown>
+#6 0x5569a12f647f <unknown>
+#7 0x5569a12edde3 <unknown>
+#8 0x5569a12c32dd <unknown>
+#9 0x5569a12c434e <unknown>
+#10 0x5569a15233e4 <unknown>
+#11 0x5569a15273d7 <unknown>
+#12 0x5569a1531b20 <unknown>
+#13 0x5569a1528023 <unknown>
+#14 0x5569a14f61aa <unknown>
+#15 0x5569a154c6b8 <unknown>
+#16 0x5569a154c847 <unknown>
+#17 0x5569a155c243 <unknown>
+#18 0x7fd22491dea7 start_thread
+
+[2025-02-28T09:19:56.560+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55ecf4d0a4e3 <unknown>
+#1 0x55ecf4a39c76 <unknown>
+#2 0x55ecf4a6704a <unknown>
+#3 0x55ecf4a624a1 <unknown>
+#4 0x55ecf4a5f029 <unknown>
+#5 0x55ecf4a9dccc <unknown>
+#6 0x55ecf4a9d47f <unknown>
+#7 0x55ecf4a94de3 <unknown>
+#8 0x55ecf4a6a2dd <unknown>
+#9 0x55ecf4a6b34e <unknown>
+#10 0x55ecf4cca3e4 <unknown>
+#11 0x55ecf4cce3d7 <unknown>
+#12 0x55ecf4cd8b20 <unknown>
+#13 0x55ecf4ccf023 <unknown>
+#14 0x55ecf4c9d1aa <unknown>
+#15 0x55ecf4cf36b8 <unknown>
+#16 0x55ecf4cf3847 <unknown>
+#17 0x55ecf4d03243 <unknown>
+#18 0x7f0cf4764ea7 start_thread
+
+[2025-02-28T09:19:56.809+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x561763d704e3 <unknown>
+#1 0x561763a9fc76 <unknown>
+#2 0x561763acd04a <unknown>
+#3 0x561763ac84a1 <unknown>
+#4 0x561763ac5029 <unknown>
+#5 0x561763b03ccc <unknown>
+#6 0x561763b0347f <unknown>
+#7 0x561763afade3 <unknown>
+#8 0x561763ad02dd <unknown>
+#9 0x561763ad134e <unknown>
+#10 0x561763d303e4 <unknown>
+#11 0x561763d343d7 <unknown>
+#12 0x561763d3eb20 <unknown>
+#13 0x561763d35023 <unknown>
+#14 0x561763d031aa <unknown>
+#15 0x561763d596b8 <unknown>
+#16 0x561763d59847 <unknown>
+#17 0x561763d69243 <unknown>
+#18 0x7f4fbe1b7ea7 start_thread
+
+[2025-02-28T09:19:57.052+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5611583a14e3 <unknown>
+#1 0x5611580d0c76 <unknown>
+#2 0x5611580fe04a <unknown>
+#3 0x5611580f94a1 <unknown>
+#4 0x5611580f6029 <unknown>
+#5 0x561158134ccc <unknown>
+#6 0x56115813447f <unknown>
+#7 0x56115812bde3 <unknown>
+#8 0x5611581012dd <unknown>
+#9 0x56115810234e <unknown>
+#10 0x5611583613e4 <unknown>
+#11 0x5611583653d7 <unknown>
+#12 0x56115836fb20 <unknown>
+#13 0x561158366023 <unknown>
+#14 0x5611583341aa <unknown>
+#15 0x56115838a6b8 <unknown>
+#16 0x56115838a847 <unknown>
+#17 0x56115839a243 <unknown>
+#18 0x7f91dddfcea7 start_thread
+
+[2025-02-28T09:19:57.305+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55cbb93d24e3 <unknown>
+#1 0x55cbb9101c76 <unknown>
+#2 0x55cbb912f04a <unknown>
+#3 0x55cbb912a4a1 <unknown>
+#4 0x55cbb9127029 <unknown>
+#5 0x55cbb9165ccc <unknown>
+#6 0x55cbb916547f <unknown>
+#7 0x55cbb915cde3 <unknown>
+#8 0x55cbb91322dd <unknown>
+#9 0x55cbb913334e <unknown>
+#10 0x55cbb93923e4 <unknown>
+#11 0x55cbb93963d7 <unknown>
+#12 0x55cbb93a0b20 <unknown>
+#13 0x55cbb9397023 <unknown>
+#14 0x55cbb93651aa <unknown>
+#15 0x55cbb93bb6b8 <unknown>
+#16 0x55cbb93bb847 <unknown>
+#17 0x55cbb93cb243 <unknown>
+#18 0x7f163ee65ea7 start_thread
+
+[2025-02-28T09:19:57.582+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x561bde5d74e3 <unknown>
+#1 0x561bde306c76 <unknown>
+#2 0x561bde33404a <unknown>
+#3 0x561bde32f4a1 <unknown>
+#4 0x561bde32c029 <unknown>
+#5 0x561bde36accc <unknown>
+#6 0x561bde36a47f <unknown>
+#7 0x561bde361de3 <unknown>
+#8 0x561bde3372dd <unknown>
+#9 0x561bde33834e <unknown>
+#10 0x561bde5973e4 <unknown>
+#11 0x561bde59b3d7 <unknown>
+#12 0x561bde5a5b20 <unknown>
+#13 0x561bde59c023 <unknown>
+#14 0x561bde56a1aa <unknown>
+#15 0x561bde5c06b8 <unknown>
+#16 0x561bde5c0847 <unknown>
+#17 0x561bde5d0243 <unknown>
+#18 0x7fbb9ca68ea7 start_thread
+
+[2025-02-28T09:19:57.843+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x562b64b944e3 <unknown>
+#1 0x562b648c3c76 <unknown>
+#2 0x562b648f104a <unknown>
+#3 0x562b648ec4a1 <unknown>
+#4 0x562b648e9029 <unknown>
+#5 0x562b64927ccc <unknown>
+#6 0x562b6492747f <unknown>
+#7 0x562b6491ede3 <unknown>
+#8 0x562b648f42dd <unknown>
+#9 0x562b648f534e <unknown>
+#10 0x562b64b543e4 <unknown>
+#11 0x562b64b583d7 <unknown>
+#12 0x562b64b62b20 <unknown>
+#13 0x562b64b59023 <unknown>
+#14 0x562b64b271aa <unknown>
+#15 0x562b64b7d6b8 <unknown>
+#16 0x562b64b7d847 <unknown>
+#17 0x562b64b8d243 <unknown>
+#18 0x7f2e53c61ea7 start_thread
+
+[2025-02-28T09:19:58.114+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55cacac464e3 <unknown>
+#1 0x55caca975c76 <unknown>
+#2 0x55caca9a304a <unknown>
+#3 0x55caca99e4a1 <unknown>
+#4 0x55caca99b029 <unknown>
+#5 0x55caca9d9ccc <unknown>
+#6 0x55caca9d947f <unknown>
+#7 0x55caca9d0de3 <unknown>
+#8 0x55caca9a62dd <unknown>
+#9 0x55caca9a734e <unknown>
+#10 0x55cacac063e4 <unknown>
+#11 0x55cacac0a3d7 <unknown>
+#12 0x55cacac14b20 <unknown>
+#13 0x55cacac0b023 <unknown>
+#14 0x55cacabd91aa <unknown>
+#15 0x55cacac2f6b8 <unknown>
+#16 0x55cacac2f847 <unknown>
+#17 0x55cacac3f243 <unknown>
+#18 0x7ff55b402ea7 start_thread
+
+[2025-02-28T09:19:58.390+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5575d85844e3 <unknown>
+#1 0x5575d82b3c76 <unknown>
+#2 0x5575d82e104a <unknown>
+#3 0x5575d82dc4a1 <unknown>
+#4 0x5575d82d9029 <unknown>
+#5 0x5575d8317ccc <unknown>
+#6 0x5575d831747f <unknown>
+#7 0x5575d830ede3 <unknown>
+#8 0x5575d82e42dd <unknown>
+#9 0x5575d82e534e <unknown>
+#10 0x5575d85443e4 <unknown>
+#11 0x5575d85483d7 <unknown>
+#12 0x5575d8552b20 <unknown>
+#13 0x5575d8549023 <unknown>
+#14 0x5575d85171aa <unknown>
+#15 0x5575d856d6b8 <unknown>
+#16 0x5575d856d847 <unknown>
+#17 0x5575d857d243 <unknown>
+#18 0x7f6f56a95ea7 start_thread
+
+[2025-02-28T09:19:58.644+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56062c05f4e3 <unknown>
+#1 0x56062bd8ec76 <unknown>
+#2 0x56062bdbc04a <unknown>
+#3 0x56062bdb74a1 <unknown>
+#4 0x56062bdb4029 <unknown>
+#5 0x56062bdf2ccc <unknown>
+#6 0x56062bdf247f <unknown>
+#7 0x56062bde9de3 <unknown>
+#8 0x56062bdbf2dd <unknown>
+#9 0x56062bdc034e <unknown>
+#10 0x56062c01f3e4 <unknown>
+#11 0x56062c0233d7 <unknown>
+#12 0x56062c02db20 <unknown>
+#13 0x56062c024023 <unknown>
+#14 0x56062bff21aa <unknown>
+#15 0x56062c0486b8 <unknown>
+#16 0x56062c048847 <unknown>
+#17 0x56062c058243 <unknown>
+#18 0x7fc0fcae4ea7 start_thread
+
+[2025-02-28T09:19:58.904+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x564aacfab4e3 <unknown>
+#1 0x564aaccdac76 <unknown>
+#2 0x564aacd0804a <unknown>
+#3 0x564aacd034a1 <unknown>
+#4 0x564aacd00029 <unknown>
+#5 0x564aacd3eccc <unknown>
+#6 0x564aacd3e47f <unknown>
+#7 0x564aacd35de3 <unknown>
+#8 0x564aacd0b2dd <unknown>
+#9 0x564aacd0c34e <unknown>
+#10 0x564aacf6b3e4 <unknown>
+#11 0x564aacf6f3d7 <unknown>
+#12 0x564aacf79b20 <unknown>
+#13 0x564aacf70023 <unknown>
+#14 0x564aacf3e1aa <unknown>
+#15 0x564aacf946b8 <unknown>
+#16 0x564aacf94847 <unknown>
+#17 0x564aacfa4243 <unknown>
+#18 0x7fd251b45ea7 start_thread
+
+[2025-02-28T09:19:59.139+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55ec45af64e3 <unknown>
+#1 0x55ec45825c76 <unknown>
+#2 0x55ec4585304a <unknown>
+#3 0x55ec4584e4a1 <unknown>
+#4 0x55ec4584b029 <unknown>
+#5 0x55ec45889ccc <unknown>
+#6 0x55ec4588947f <unknown>
+#7 0x55ec45880de3 <unknown>
+#8 0x55ec458562dd <unknown>
+#9 0x55ec4585734e <unknown>
+#10 0x55ec45ab63e4 <unknown>
+#11 0x55ec45aba3d7 <unknown>
+#12 0x55ec45ac4b20 <unknown>
+#13 0x55ec45abb023 <unknown>
+#14 0x55ec45a891aa <unknown>
+#15 0x55ec45adf6b8 <unknown>
+#16 0x55ec45adf847 <unknown>
+#17 0x55ec45aef243 <unknown>
+#18 0x7f59e32a3ea7 start_thread
+
+[2025-02-28T09:19:59.367+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55eacc7f84e3 <unknown>
+#1 0x55eacc527c76 <unknown>
+#2 0x55eacc55504a <unknown>
+#3 0x55eacc5504a1 <unknown>
+#4 0x55eacc54d029 <unknown>
+#5 0x55eacc58bccc <unknown>
+#6 0x55eacc58b47f <unknown>
+#7 0x55eacc582de3 <unknown>
+#8 0x55eacc5582dd <unknown>
+#9 0x55eacc55934e <unknown>
+#10 0x55eacc7b83e4 <unknown>
+#11 0x55eacc7bc3d7 <unknown>
+#12 0x55eacc7c6b20 <unknown>
+#13 0x55eacc7bd023 <unknown>
+#14 0x55eacc78b1aa <unknown>
+#15 0x55eacc7e16b8 <unknown>
+#16 0x55eacc7e1847 <unknown>
+#17 0x55eacc7f1243 <unknown>
+#18 0x7f4bd7c3fea7 start_thread
+
+[2025-02-28T09:19:59.655+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55dee1c8c4e3 <unknown>
+#1 0x55dee19bbc76 <unknown>
+#2 0x55dee19e904a <unknown>
+#3 0x55dee19e44a1 <unknown>
+#4 0x55dee19e1029 <unknown>
+#5 0x55dee1a1fccc <unknown>
+#6 0x55dee1a1f47f <unknown>
+#7 0x55dee1a16de3 <unknown>
+#8 0x55dee19ec2dd <unknown>
+#9 0x55dee19ed34e <unknown>
+#10 0x55dee1c4c3e4 <unknown>
+#11 0x55dee1c503d7 <unknown>
+#12 0x55dee1c5ab20 <unknown>
+#13 0x55dee1c51023 <unknown>
+#14 0x55dee1c1f1aa <unknown>
+#15 0x55dee1c756b8 <unknown>
+#16 0x55dee1c75847 <unknown>
+#17 0x55dee1c85243 <unknown>
+#18 0x7f620670eea7 start_thread
+
+[2025-02-28T09:19:59.934+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55c68af9d4e3 <unknown>
+#1 0x55c68acccc76 <unknown>
+#2 0x55c68acfa04a <unknown>
+#3 0x55c68acf54a1 <unknown>
+#4 0x55c68acf2029 <unknown>
+#5 0x55c68ad30ccc <unknown>
+#6 0x55c68ad3047f <unknown>
+#7 0x55c68ad27de3 <unknown>
+#8 0x55c68acfd2dd <unknown>
+#9 0x55c68acfe34e <unknown>
+#10 0x55c68af5d3e4 <unknown>
+#11 0x55c68af613d7 <unknown>
+#12 0x55c68af6bb20 <unknown>
+#13 0x55c68af62023 <unknown>
+#14 0x55c68af301aa <unknown>
+#15 0x55c68af866b8 <unknown>
+#16 0x55c68af86847 <unknown>
+#17 0x55c68af96243 <unknown>
+#18 0x7f2ffda66ea7 start_thread
+
+[2025-02-28T09:20:00.187+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5561938a74e3 <unknown>
+#1 0x5561935d6c76 <unknown>
+#2 0x55619360404a <unknown>
+#3 0x5561935ff4a1 <unknown>
+#4 0x5561935fc029 <unknown>
+#5 0x55619363accc <unknown>
+#6 0x55619363a47f <unknown>
+#7 0x556193631de3 <unknown>
+#8 0x5561936072dd <unknown>
+#9 0x55619360834e <unknown>
+#10 0x5561938673e4 <unknown>
+#11 0x55619386b3d7 <unknown>
+#12 0x556193875b20 <unknown>
+#13 0x55619386c023 <unknown>
+#14 0x55619383a1aa <unknown>
+#15 0x5561938906b8 <unknown>
+#16 0x556193890847 <unknown>
+#17 0x5561938a0243 <unknown>
+#18 0x7f8086e76ea7 start_thread
+
+[2025-02-28T09:20:00.443+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5612c46844e3 <unknown>
+#1 0x5612c43b3c76 <unknown>
+#2 0x5612c43e104a <unknown>
+#3 0x5612c43dc4a1 <unknown>
+#4 0x5612c43d9029 <unknown>
+#5 0x5612c4417ccc <unknown>
+#6 0x5612c441747f <unknown>
+#7 0x5612c440ede3 <unknown>
+#8 0x5612c43e42dd <unknown>
+#9 0x5612c43e534e <unknown>
+#10 0x5612c46443e4 <unknown>
+#11 0x5612c46483d7 <unknown>
+#12 0x5612c4652b20 <unknown>
+#13 0x5612c4649023 <unknown>
+#14 0x5612c46171aa <unknown>
+#15 0x5612c466d6b8 <unknown>
+#16 0x5612c466d847 <unknown>
+#17 0x5612c467d243 <unknown>
+#18 0x7fc333466ea7 start_thread
+
+[2025-02-28T09:20:00.688+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55c0f8f5d4e3 <unknown>
+#1 0x55c0f8c8cc76 <unknown>
+#2 0x55c0f8cba04a <unknown>
+#3 0x55c0f8cb54a1 <unknown>
+#4 0x55c0f8cb2029 <unknown>
+#5 0x55c0f8cf0ccc <unknown>
+#6 0x55c0f8cf047f <unknown>
+#7 0x55c0f8ce7de3 <unknown>
+#8 0x55c0f8cbd2dd <unknown>
+#9 0x55c0f8cbe34e <unknown>
+#10 0x55c0f8f1d3e4 <unknown>
+#11 0x55c0f8f213d7 <unknown>
+#12 0x55c0f8f2bb20 <unknown>
+#13 0x55c0f8f22023 <unknown>
+#14 0x55c0f8ef01aa <unknown>
+#15 0x55c0f8f466b8 <unknown>
+#16 0x55c0f8f46847 <unknown>
+#17 0x55c0f8f56243 <unknown>
+#18 0x7f8c5dbeeea7 start_thread
+
+[2025-02-28T09:20:00.933+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x562439e604e3 <unknown>
+#1 0x562439b8fc76 <unknown>
+#2 0x562439bbd04a <unknown>
+#3 0x562439bb84a1 <unknown>
+#4 0x562439bb5029 <unknown>
+#5 0x562439bf3ccc <unknown>
+#6 0x562439bf347f <unknown>
+#7 0x562439beade3 <unknown>
+#8 0x562439bc02dd <unknown>
+#9 0x562439bc134e <unknown>
+#10 0x562439e203e4 <unknown>
+#11 0x562439e243d7 <unknown>
+#12 0x562439e2eb20 <unknown>
+#13 0x562439e25023 <unknown>
+#14 0x562439df31aa <unknown>
+#15 0x562439e496b8 <unknown>
+#16 0x562439e49847 <unknown>
+#17 0x562439e59243 <unknown>
+#18 0x7ff43088eea7 start_thread
+
+[2025-02-28T09:20:01.178+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55fad0bb04e3 <unknown>
+#1 0x55fad08dfc76 <unknown>
+#2 0x55fad090d04a <unknown>
+#3 0x55fad09084a1 <unknown>
+#4 0x55fad0905029 <unknown>
+#5 0x55fad0943ccc <unknown>
+#6 0x55fad094347f <unknown>
+#7 0x55fad093ade3 <unknown>
+#8 0x55fad09102dd <unknown>
+#9 0x55fad091134e <unknown>
+#10 0x55fad0b703e4 <unknown>
+#11 0x55fad0b743d7 <unknown>
+#12 0x55fad0b7eb20 <unknown>
+#13 0x55fad0b75023 <unknown>
+#14 0x55fad0b431aa <unknown>
+#15 0x55fad0b996b8 <unknown>
+#16 0x55fad0b99847 <unknown>
+#17 0x55fad0ba9243 <unknown>
+#18 0x7ff52f331ea7 start_thread
+
+[2025-02-28T09:20:01.418+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x562f8edaa4e3 <unknown>
+#1 0x562f8ead9c76 <unknown>
+#2 0x562f8eb0704a <unknown>
+#3 0x562f8eb024a1 <unknown>
+#4 0x562f8eaff029 <unknown>
+#5 0x562f8eb3dccc <unknown>
+#6 0x562f8eb3d47f <unknown>
+#7 0x562f8eb34de3 <unknown>
+#8 0x562f8eb0a2dd <unknown>
+#9 0x562f8eb0b34e <unknown>
+#10 0x562f8ed6a3e4 <unknown>
+#11 0x562f8ed6e3d7 <unknown>
+#12 0x562f8ed78b20 <unknown>
+#13 0x562f8ed6f023 <unknown>
+#14 0x562f8ed3d1aa <unknown>
+#15 0x562f8ed936b8 <unknown>
+#16 0x562f8ed93847 <unknown>
+#17 0x562f8eda3243 <unknown>
+#18 0x7fa30597dea7 start_thread
+
+[2025-02-28T09:20:01.652+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55799b66d4e3 <unknown>
+#1 0x55799b39cc76 <unknown>
+#2 0x55799b3ca04a <unknown>
+#3 0x55799b3c54a1 <unknown>
+#4 0x55799b3c2029 <unknown>
+#5 0x55799b400ccc <unknown>
+#6 0x55799b40047f <unknown>
+#7 0x55799b3f7de3 <unknown>
+#8 0x55799b3cd2dd <unknown>
+#9 0x55799b3ce34e <unknown>
+#10 0x55799b62d3e4 <unknown>
+#11 0x55799b6313d7 <unknown>
+#12 0x55799b63bb20 <unknown>
+#13 0x55799b632023 <unknown>
+#14 0x55799b6001aa <unknown>
+#15 0x55799b6566b8 <unknown>
+#16 0x55799b656847 <unknown>
+#17 0x55799b666243 <unknown>
+#18 0x7f842b08bea7 start_thread
+
+[2025-02-28T09:20:01.897+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55c8b33204e3 <unknown>
+#1 0x55c8b304fc76 <unknown>
+#2 0x55c8b307d04a <unknown>
+#3 0x55c8b30784a1 <unknown>
+#4 0x55c8b3075029 <unknown>
+#5 0x55c8b30b3ccc <unknown>
+#6 0x55c8b30b347f <unknown>
+#7 0x55c8b30aade3 <unknown>
+#8 0x55c8b30802dd <unknown>
+#9 0x55c8b308134e <unknown>
+#10 0x55c8b32e03e4 <unknown>
+#11 0x55c8b32e43d7 <unknown>
+#12 0x55c8b32eeb20 <unknown>
+#13 0x55c8b32e5023 <unknown>
+#14 0x55c8b32b31aa <unknown>
+#15 0x55c8b33096b8 <unknown>
+#16 0x55c8b3309847 <unknown>
+#17 0x55c8b3319243 <unknown>
+#18 0x7f9ee8a1cea7 start_thread
+
+[2025-02-28T09:20:02.167+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56507320b4e3 <unknown>
+#1 0x565072f3ac76 <unknown>
+#2 0x565072f6804a <unknown>
+#3 0x565072f634a1 <unknown>
+#4 0x565072f60029 <unknown>
+#5 0x565072f9eccc <unknown>
+#6 0x565072f9e47f <unknown>
+#7 0x565072f95de3 <unknown>
+#8 0x565072f6b2dd <unknown>
+#9 0x565072f6c34e <unknown>
+#10 0x5650731cb3e4 <unknown>
+#11 0x5650731cf3d7 <unknown>
+#12 0x5650731d9b20 <unknown>
+#13 0x5650731d0023 <unknown>
+#14 0x56507319e1aa <unknown>
+#15 0x5650731f46b8 <unknown>
+#16 0x5650731f4847 <unknown>
+#17 0x565073204243 <unknown>
+#18 0x7fc23758bea7 start_thread
+
+[2025-02-28T09:20:02.415+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x560dd94e84e3 <unknown>
+#1 0x560dd9217c76 <unknown>
+#2 0x560dd924504a <unknown>
+#3 0x560dd92404a1 <unknown>
+#4 0x560dd923d029 <unknown>
+#5 0x560dd927bccc <unknown>
+#6 0x560dd927b47f <unknown>
+#7 0x560dd9272de3 <unknown>
+#8 0x560dd92482dd <unknown>
+#9 0x560dd924934e <unknown>
+#10 0x560dd94a83e4 <unknown>
+#11 0x560dd94ac3d7 <unknown>
+#12 0x560dd94b6b20 <unknown>
+#13 0x560dd94ad023 <unknown>
+#14 0x560dd947b1aa <unknown>
+#15 0x560dd94d16b8 <unknown>
+#16 0x560dd94d1847 <unknown>
+#17 0x560dd94e1243 <unknown>
+#18 0x7f01985dfea7 start_thread
+
+[2025-02-28T09:20:02.678+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55aec3ff94e3 <unknown>
+#1 0x55aec3d28c76 <unknown>
+#2 0x55aec3d5604a <unknown>
+#3 0x55aec3d514a1 <unknown>
+#4 0x55aec3d4e029 <unknown>
+#5 0x55aec3d8cccc <unknown>
+#6 0x55aec3d8c47f <unknown>
+#7 0x55aec3d83de3 <unknown>
+#8 0x55aec3d592dd <unknown>
+#9 0x55aec3d5a34e <unknown>
+#10 0x55aec3fb93e4 <unknown>
+#11 0x55aec3fbd3d7 <unknown>
+#12 0x55aec3fc7b20 <unknown>
+#13 0x55aec3fbe023 <unknown>
+#14 0x55aec3f8c1aa <unknown>
+#15 0x55aec3fe26b8 <unknown>
+#16 0x55aec3fe2847 <unknown>
+#17 0x55aec3ff2243 <unknown>
+#18 0x7f2053dacea7 start_thread
+
+[2025-02-28T09:20:02.951+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55a3513be4e3 <unknown>
+#1 0x55a3510edc76 <unknown>
+#2 0x55a35111b04a <unknown>
+#3 0x55a3511164a1 <unknown>
+#4 0x55a351113029 <unknown>
+#5 0x55a351151ccc <unknown>
+#6 0x55a35115147f <unknown>
+#7 0x55a351148de3 <unknown>
+#8 0x55a35111e2dd <unknown>
+#9 0x55a35111f34e <unknown>
+#10 0x55a35137e3e4 <unknown>
+#11 0x55a3513823d7 <unknown>
+#12 0x55a35138cb20 <unknown>
+#13 0x55a351383023 <unknown>
+#14 0x55a3513511aa <unknown>
+#15 0x55a3513a76b8 <unknown>
+#16 0x55a3513a7847 <unknown>
+#17 0x55a3513b7243 <unknown>
+#18 0x7ffa41c02ea7 start_thread
+
+[2025-02-28T09:20:03.222+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5598ddab24e3 <unknown>
+#1 0x5598dd7e1c76 <unknown>
+#2 0x5598dd80f04a <unknown>
+#3 0x5598dd80a4a1 <unknown>
+#4 0x5598dd807029 <unknown>
+#5 0x5598dd845ccc <unknown>
+#6 0x5598dd84547f <unknown>
+#7 0x5598dd83cde3 <unknown>
+#8 0x5598dd8122dd <unknown>
+#9 0x5598dd81334e <unknown>
+#10 0x5598dda723e4 <unknown>
+#11 0x5598dda763d7 <unknown>
+#12 0x5598dda80b20 <unknown>
+#13 0x5598dda77023 <unknown>
+#14 0x5598dda451aa <unknown>
+#15 0x5598dda9b6b8 <unknown>
+#16 0x5598dda9b847 <unknown>
+#17 0x5598ddaab243 <unknown>
+#18 0x7f653cf65ea7 start_thread
+
+[2025-02-28T09:20:03.484+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5576e30a14e3 <unknown>
+#1 0x5576e2dd0c76 <unknown>
+#2 0x5576e2dfe04a <unknown>
+#3 0x5576e2df94a1 <unknown>
+#4 0x5576e2df6029 <unknown>
+#5 0x5576e2e34ccc <unknown>
+#6 0x5576e2e3447f <unknown>
+#7 0x5576e2e2bde3 <unknown>
+#8 0x5576e2e012dd <unknown>
+#9 0x5576e2e0234e <unknown>
+#10 0x5576e30613e4 <unknown>
+#11 0x5576e30653d7 <unknown>
+#12 0x5576e306fb20 <unknown>
+#13 0x5576e3066023 <unknown>
+#14 0x5576e30341aa <unknown>
+#15 0x5576e308a6b8 <unknown>
+#16 0x5576e308a847 <unknown>
+#17 0x5576e309a243 <unknown>
+#18 0x7f81faafeea7 start_thread
+
+[2025-02-28T09:20:03.727+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x560a200234e3 <unknown>
+#1 0x560a1fd52c76 <unknown>
+#2 0x560a1fd8004a <unknown>
+#3 0x560a1fd7b4a1 <unknown>
+#4 0x560a1fd78029 <unknown>
+#5 0x560a1fdb6ccc <unknown>
+#6 0x560a1fdb647f <unknown>
+#7 0x560a1fdadde3 <unknown>
+#8 0x560a1fd832dd <unknown>
+#9 0x560a1fd8434e <unknown>
+#10 0x560a1ffe33e4 <unknown>
+#11 0x560a1ffe73d7 <unknown>
+#12 0x560a1fff1b20 <unknown>
+#13 0x560a1ffe8023 <unknown>
+#14 0x560a1ffb61aa <unknown>
+#15 0x560a2000c6b8 <unknown>
+#16 0x560a2000c847 <unknown>
+#17 0x560a2001c243 <unknown>
+#18 0x7fd2fe73aea7 start_thread
+
+[2025-02-28T09:20:03.972+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55ad4c0eb4e3 <unknown>
+#1 0x55ad4be1ac76 <unknown>
+#2 0x55ad4be4804a <unknown>
+#3 0x55ad4be434a1 <unknown>
+#4 0x55ad4be40029 <unknown>
+#5 0x55ad4be7eccc <unknown>
+#6 0x55ad4be7e47f <unknown>
+#7 0x55ad4be75de3 <unknown>
+#8 0x55ad4be4b2dd <unknown>
+#9 0x55ad4be4c34e <unknown>
+#10 0x55ad4c0ab3e4 <unknown>
+#11 0x55ad4c0af3d7 <unknown>
+#12 0x55ad4c0b9b20 <unknown>
+#13 0x55ad4c0b0023 <unknown>
+#14 0x55ad4c07e1aa <unknown>
+#15 0x55ad4c0d46b8 <unknown>
+#16 0x55ad4c0d4847 <unknown>
+#17 0x55ad4c0e4243 <unknown>
+#18 0x7f052e71fea7 start_thread
+
+[2025-02-28T09:20:04.225+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56007eaee4e3 <unknown>
+#1 0x56007e81dc76 <unknown>
+#2 0x56007e84b04a <unknown>
+#3 0x56007e8464a1 <unknown>
+#4 0x56007e843029 <unknown>
+#5 0x56007e881ccc <unknown>
+#6 0x56007e88147f <unknown>
+#7 0x56007e878de3 <unknown>
+#8 0x56007e84e2dd <unknown>
+#9 0x56007e84f34e <unknown>
+#10 0x56007eaae3e4 <unknown>
+#11 0x56007eab23d7 <unknown>
+#12 0x56007eabcb20 <unknown>
+#13 0x56007eab3023 <unknown>
+#14 0x56007ea811aa <unknown>
+#15 0x56007ead76b8 <unknown>
+#16 0x56007ead7847 <unknown>
+#17 0x56007eae7243 <unknown>
+#18 0x7fde71050ea7 start_thread
+
+[2025-02-28T09:20:04.469+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55c54a6734e3 <unknown>
+#1 0x55c54a3a2c76 <unknown>
+#2 0x55c54a3d004a <unknown>
+#3 0x55c54a3cb4a1 <unknown>
+#4 0x55c54a3c8029 <unknown>
+#5 0x55c54a406ccc <unknown>
+#6 0x55c54a40647f <unknown>
+#7 0x55c54a3fdde3 <unknown>
+#8 0x55c54a3d32dd <unknown>
+#9 0x55c54a3d434e <unknown>
+#10 0x55c54a6333e4 <unknown>
+#11 0x55c54a6373d7 <unknown>
+#12 0x55c54a641b20 <unknown>
+#13 0x55c54a638023 <unknown>
+#14 0x55c54a6061aa <unknown>
+#15 0x55c54a65c6b8 <unknown>
+#16 0x55c54a65c847 <unknown>
+#17 0x55c54a66c243 <unknown>
+#18 0x7f865431cea7 start_thread
+
+[2025-02-28T09:20:04.736+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55ffa8e064e3 <unknown>
+#1 0x55ffa8b35c76 <unknown>
+#2 0x55ffa8b6304a <unknown>
+#3 0x55ffa8b5e4a1 <unknown>
+#4 0x55ffa8b5b029 <unknown>
+#5 0x55ffa8b99ccc <unknown>
+#6 0x55ffa8b9947f <unknown>
+#7 0x55ffa8b90de3 <unknown>
+#8 0x55ffa8b662dd <unknown>
+#9 0x55ffa8b6734e <unknown>
+#10 0x55ffa8dc63e4 <unknown>
+#11 0x55ffa8dca3d7 <unknown>
+#12 0x55ffa8dd4b20 <unknown>
+#13 0x55ffa8dcb023 <unknown>
+#14 0x55ffa8d991aa <unknown>
+#15 0x55ffa8def6b8 <unknown>
+#16 0x55ffa8def847 <unknown>
+#17 0x55ffa8dff243 <unknown>
+#18 0x7f40bceb0ea7 start_thread
+
+[2025-02-28T09:20:04.988+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5609ef0834e3 <unknown>
+#1 0x5609eedb2c76 <unknown>
+#2 0x5609eede004a <unknown>
+#3 0x5609eeddb4a1 <unknown>
+#4 0x5609eedd8029 <unknown>
+#5 0x5609eee16ccc <unknown>
+#6 0x5609eee1647f <unknown>
+#7 0x5609eee0dde3 <unknown>
+#8 0x5609eede32dd <unknown>
+#9 0x5609eede434e <unknown>
+#10 0x5609ef0433e4 <unknown>
+#11 0x5609ef0473d7 <unknown>
+#12 0x5609ef051b20 <unknown>
+#13 0x5609ef048023 <unknown>
+#14 0x5609ef0161aa <unknown>
+#15 0x5609ef06c6b8 <unknown>
+#16 0x5609ef06c847 <unknown>
+#17 0x5609ef07c243 <unknown>
+#18 0x7f1f2f1ffea7 start_thread
+
+[2025-02-28T09:20:05.223+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5564de6454e3 <unknown>
+#1 0x5564de374c76 <unknown>
+#2 0x5564de3a204a <unknown>
+#3 0x5564de39d4a1 <unknown>
+#4 0x5564de39a029 <unknown>
+#5 0x5564de3d8ccc <unknown>
+#6 0x5564de3d847f <unknown>
+#7 0x5564de3cfde3 <unknown>
+#8 0x5564de3a52dd <unknown>
+#9 0x5564de3a634e <unknown>
+#10 0x5564de6053e4 <unknown>
+#11 0x5564de6093d7 <unknown>
+#12 0x5564de613b20 <unknown>
+#13 0x5564de60a023 <unknown>
+#14 0x5564de5d81aa <unknown>
+#15 0x5564de62e6b8 <unknown>
+#16 0x5564de62e847 <unknown>
+#17 0x5564de63e243 <unknown>
+#18 0x7f8ec1e67ea7 start_thread
+
+[2025-02-28T09:20:05.452+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5628d7c304e3 <unknown>
+#1 0x5628d795fc76 <unknown>
+#2 0x5628d798d04a <unknown>
+#3 0x5628d79884a1 <unknown>
+#4 0x5628d7985029 <unknown>
+#5 0x5628d79c3ccc <unknown>
+#6 0x5628d79c347f <unknown>
+#7 0x5628d79bade3 <unknown>
+#8 0x5628d79902dd <unknown>
+#9 0x5628d799134e <unknown>
+#10 0x5628d7bf03e4 <unknown>
+#11 0x5628d7bf43d7 <unknown>
+#12 0x5628d7bfeb20 <unknown>
+#13 0x5628d7bf5023 <unknown>
+#14 0x5628d7bc31aa <unknown>
+#15 0x5628d7c196b8 <unknown>
+#16 0x5628d7c19847 <unknown>
+#17 0x5628d7c29243 <unknown>
+#18 0x7fa29185aea7 start_thread
+
+[2025-02-28T09:20:05.718+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55db1d77f4e3 <unknown>
+#1 0x55db1d4aec76 <unknown>
+#2 0x55db1d4dc04a <unknown>
+#3 0x55db1d4d74a1 <unknown>
+#4 0x55db1d4d4029 <unknown>
+#5 0x55db1d512ccc <unknown>
+#6 0x55db1d51247f <unknown>
+#7 0x55db1d509de3 <unknown>
+#8 0x55db1d4df2dd <unknown>
+#9 0x55db1d4e034e <unknown>
+#10 0x55db1d73f3e4 <unknown>
+#11 0x55db1d7433d7 <unknown>
+#12 0x55db1d74db20 <unknown>
+#13 0x55db1d744023 <unknown>
+#14 0x55db1d7121aa <unknown>
+#15 0x55db1d7686b8 <unknown>
+#16 0x55db1d768847 <unknown>
+#17 0x55db1d778243 <unknown>
+#18 0x7f29858e4ea7 start_thread
+
+[2025-02-28T09:20:05.996+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x564e031654e3 <unknown>
+#1 0x564e02e94c76 <unknown>
+#2 0x564e02ec204a <unknown>
+#3 0x564e02ebd4a1 <unknown>
+#4 0x564e02eba029 <unknown>
+#5 0x564e02ef8ccc <unknown>
+#6 0x564e02ef847f <unknown>
+#7 0x564e02eefde3 <unknown>
+#8 0x564e02ec52dd <unknown>
+#9 0x564e02ec634e <unknown>
+#10 0x564e031253e4 <unknown>
+#11 0x564e031293d7 <unknown>
+#12 0x564e03133b20 <unknown>
+#13 0x564e0312a023 <unknown>
+#14 0x564e030f81aa <unknown>
+#15 0x564e0314e6b8 <unknown>
+#16 0x564e0314e847 <unknown>
+#17 0x564e0315e243 <unknown>
+#18 0x7f5e86652ea7 start_thread
+
+[2025-02-28T09:20:06.305+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55ca112644e3 <unknown>
+#1 0x55ca10f93c76 <unknown>
+#2 0x55ca10fc104a <unknown>
+#3 0x55ca10fbc4a1 <unknown>
+#4 0x55ca10fb9029 <unknown>
+#5 0x55ca10ff7ccc <unknown>
+#6 0x55ca10ff747f <unknown>
+#7 0x55ca10feede3 <unknown>
+#8 0x55ca10fc42dd <unknown>
+#9 0x55ca10fc534e <unknown>
+#10 0x55ca112243e4 <unknown>
+#11 0x55ca112283d7 <unknown>
+#12 0x55ca11232b20 <unknown>
+#13 0x55ca11229023 <unknown>
+#14 0x55ca111f71aa <unknown>
+#15 0x55ca1124d6b8 <unknown>
+#16 0x55ca1124d847 <unknown>
+#17 0x55ca1125d243 <unknown>
+#18 0x7fab66c5fea7 start_thread
+
+[2025-02-28T09:20:06.554+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55d446a984e3 <unknown>
+#1 0x55d4467c7c76 <unknown>
+#2 0x55d4467f504a <unknown>
+#3 0x55d4467f04a1 <unknown>
+#4 0x55d4467ed029 <unknown>
+#5 0x55d44682bccc <unknown>
+#6 0x55d44682b47f <unknown>
+#7 0x55d446822de3 <unknown>
+#8 0x55d4467f82dd <unknown>
+#9 0x55d4467f934e <unknown>
+#10 0x55d446a583e4 <unknown>
+#11 0x55d446a5c3d7 <unknown>
+#12 0x55d446a66b20 <unknown>
+#13 0x55d446a5d023 <unknown>
+#14 0x55d446a2b1aa <unknown>
+#15 0x55d446a816b8 <unknown>
+#16 0x55d446a81847 <unknown>
+#17 0x55d446a91243 <unknown>
+#18 0x7f91614beea7 start_thread
+
+[2025-02-28T09:20:06.807+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56348618f4e3 <unknown>
+#1 0x563485ebec76 <unknown>
+#2 0x563485eec04a <unknown>
+#3 0x563485ee74a1 <unknown>
+#4 0x563485ee4029 <unknown>
+#5 0x563485f22ccc <unknown>
+#6 0x563485f2247f <unknown>
+#7 0x563485f19de3 <unknown>
+#8 0x563485eef2dd <unknown>
+#9 0x563485ef034e <unknown>
+#10 0x56348614f3e4 <unknown>
+#11 0x5634861533d7 <unknown>
+#12 0x56348615db20 <unknown>
+#13 0x563486154023 <unknown>
+#14 0x5634861221aa <unknown>
+#15 0x5634861786b8 <unknown>
+#16 0x563486178847 <unknown>
+#17 0x563486188243 <unknown>
+#18 0x7fcbd7a3dea7 start_thread
+
+[2025-02-28T09:20:07.061+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56116880d4e3 <unknown>
+#1 0x56116853cc76 <unknown>
+#2 0x56116856a04a <unknown>
+#3 0x5611685654a1 <unknown>
+#4 0x561168562029 <unknown>
+#5 0x5611685a0ccc <unknown>
+#6 0x5611685a047f <unknown>
+#7 0x561168597de3 <unknown>
+#8 0x56116856d2dd <unknown>
+#9 0x56116856e34e <unknown>
+#10 0x5611687cd3e4 <unknown>
+#11 0x5611687d13d7 <unknown>
+#12 0x5611687dbb20 <unknown>
+#13 0x5611687d2023 <unknown>
+#14 0x5611687a01aa <unknown>
+#15 0x5611687f66b8 <unknown>
+#16 0x5611687f6847 <unknown>
+#17 0x561168806243 <unknown>
+#18 0x7fc834fe6ea7 start_thread
+
+[2025-02-28T09:20:07.308+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55de686314e3 <unknown>
+#1 0x55de68360c76 <unknown>
+#2 0x55de6838e04a <unknown>
+#3 0x55de683894a1 <unknown>
+#4 0x55de68386029 <unknown>
+#5 0x55de683c4ccc <unknown>
+#6 0x55de683c447f <unknown>
+#7 0x55de683bbde3 <unknown>
+#8 0x55de683912dd <unknown>
+#9 0x55de6839234e <unknown>
+#10 0x55de685f13e4 <unknown>
+#11 0x55de685f53d7 <unknown>
+#12 0x55de685ffb20 <unknown>
+#13 0x55de685f6023 <unknown>
+#14 0x55de685c41aa <unknown>
+#15 0x55de6861a6b8 <unknown>
+#16 0x55de6861a847 <unknown>
+#17 0x55de6862a243 <unknown>
+#18 0x7fdf1176bea7 start_thread
+
+[2025-02-28T09:20:07.542+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x556c2852a4e3 <unknown>
+#1 0x556c28259c76 <unknown>
+#2 0x556c2828704a <unknown>
+#3 0x556c282824a1 <unknown>
+#4 0x556c2827f029 <unknown>
+#5 0x556c282bdccc <unknown>
+#6 0x556c282bd47f <unknown>
+#7 0x556c282b4de3 <unknown>
+#8 0x556c2828a2dd <unknown>
+#9 0x556c2828b34e <unknown>
+#10 0x556c284ea3e4 <unknown>
+#11 0x556c284ee3d7 <unknown>
+#12 0x556c284f8b20 <unknown>
+#13 0x556c284ef023 <unknown>
+#14 0x556c284bd1aa <unknown>
+#15 0x556c285136b8 <unknown>
+#16 0x556c28513847 <unknown>
+#17 0x556c28523243 <unknown>
+#18 0x7f69ea9f8ea7 start_thread
+
+[2025-02-28T09:20:07.788+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55edb18fb4e3 <unknown>
+#1 0x55edb162ac76 <unknown>
+#2 0x55edb165804a <unknown>
+#3 0x55edb16534a1 <unknown>
+#4 0x55edb1650029 <unknown>
+#5 0x55edb168eccc <unknown>
+#6 0x55edb168e47f <unknown>
+#7 0x55edb1685de3 <unknown>
+#8 0x55edb165b2dd <unknown>
+#9 0x55edb165c34e <unknown>
+#10 0x55edb18bb3e4 <unknown>
+#11 0x55edb18bf3d7 <unknown>
+#12 0x55edb18c9b20 <unknown>
+#13 0x55edb18c0023 <unknown>
+#14 0x55edb188e1aa <unknown>
+#15 0x55edb18e46b8 <unknown>
+#16 0x55edb18e4847 <unknown>
+#17 0x55edb18f4243 <unknown>
+#18 0x7fd957469ea7 start_thread
+
+[2025-02-28T09:20:08.048+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55ded02104e3 <unknown>
+#1 0x55decff3fc76 <unknown>
+#2 0x55decff6d04a <unknown>
+#3 0x55decff684a1 <unknown>
+#4 0x55decff65029 <unknown>
+#5 0x55decffa3ccc <unknown>
+#6 0x55decffa347f <unknown>
+#7 0x55decff9ade3 <unknown>
+#8 0x55decff702dd <unknown>
+#9 0x55decff7134e <unknown>
+#10 0x55ded01d03e4 <unknown>
+#11 0x55ded01d43d7 <unknown>
+#12 0x55ded01deb20 <unknown>
+#13 0x55ded01d5023 <unknown>
+#14 0x55ded01a31aa <unknown>
+#15 0x55ded01f96b8 <unknown>
+#16 0x55ded01f9847 <unknown>
+#17 0x55ded0209243 <unknown>
+#18 0x7f93e10feea7 start_thread
+
+[2025-02-28T09:20:08.310+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55e013afe4e3 <unknown>
+#1 0x55e01382dc76 <unknown>
+#2 0x55e01385b04a <unknown>
+#3 0x55e0138564a1 <unknown>
+#4 0x55e013853029 <unknown>
+#5 0x55e013891ccc <unknown>
+#6 0x55e01389147f <unknown>
+#7 0x55e013888de3 <unknown>
+#8 0x55e01385e2dd <unknown>
+#9 0x55e01385f34e <unknown>
+#10 0x55e013abe3e4 <unknown>
+#11 0x55e013ac23d7 <unknown>
+#12 0x55e013accb20 <unknown>
+#13 0x55e013ac3023 <unknown>
+#14 0x55e013a911aa <unknown>
+#15 0x55e013ae76b8 <unknown>
+#16 0x55e013ae7847 <unknown>
+#17 0x55e013af7243 <unknown>
+#18 0x7ff413412ea7 start_thread
+
+[2025-02-28T09:20:08.558+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x560f4597a4e3 <unknown>
+#1 0x560f456a9c76 <unknown>
+#2 0x560f456d704a <unknown>
+#3 0x560f456d24a1 <unknown>
+#4 0x560f456cf029 <unknown>
+#5 0x560f4570dccc <unknown>
+#6 0x560f4570d47f <unknown>
+#7 0x560f45704de3 <unknown>
+#8 0x560f456da2dd <unknown>
+#9 0x560f456db34e <unknown>
+#10 0x560f4593a3e4 <unknown>
+#11 0x560f4593e3d7 <unknown>
+#12 0x560f45948b20 <unknown>
+#13 0x560f4593f023 <unknown>
+#14 0x560f4590d1aa <unknown>
+#15 0x560f459636b8 <unknown>
+#16 0x560f45963847 <unknown>
+#17 0x560f45973243 <unknown>
+#18 0x7f6e65b37ea7 start_thread
+
+[2025-02-28T09:20:08.807+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55e887e3b4e3 <unknown>
+#1 0x55e887b6ac76 <unknown>
+#2 0x55e887b9804a <unknown>
+#3 0x55e887b934a1 <unknown>
+#4 0x55e887b90029 <unknown>
+#5 0x55e887bceccc <unknown>
+#6 0x55e887bce47f <unknown>
+#7 0x55e887bc5de3 <unknown>
+#8 0x55e887b9b2dd <unknown>
+#9 0x55e887b9c34e <unknown>
+#10 0x55e887dfb3e4 <unknown>
+#11 0x55e887dff3d7 <unknown>
+#12 0x55e887e09b20 <unknown>
+#13 0x55e887e00023 <unknown>
+#14 0x55e887dce1aa <unknown>
+#15 0x55e887e246b8 <unknown>
+#16 0x55e887e24847 <unknown>
+#17 0x55e887e34243 <unknown>
+#18 0x7f58e65cbea7 start_thread
+
+[2025-02-28T09:20:09.073+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55b1ab4de4e3 <unknown>
+#1 0x55b1ab20dc76 <unknown>
+#2 0x55b1ab23b04a <unknown>
+#3 0x55b1ab2364a1 <unknown>
+#4 0x55b1ab233029 <unknown>
+#5 0x55b1ab271ccc <unknown>
+#6 0x55b1ab27147f <unknown>
+#7 0x55b1ab268de3 <unknown>
+#8 0x55b1ab23e2dd <unknown>
+#9 0x55b1ab23f34e <unknown>
+#10 0x55b1ab49e3e4 <unknown>
+#11 0x55b1ab4a23d7 <unknown>
+#12 0x55b1ab4acb20 <unknown>
+#13 0x55b1ab4a3023 <unknown>
+#14 0x55b1ab4711aa <unknown>
+#15 0x55b1ab4c76b8 <unknown>
+#16 0x55b1ab4c7847 <unknown>
+#17 0x55b1ab4d7243 <unknown>
+#18 0x7f2ee2c44ea7 start_thread
+
+[2025-02-28T09:20:09.334+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x558fa65714e3 <unknown>
+#1 0x558fa62a0c76 <unknown>
+#2 0x558fa62ce04a <unknown>
+#3 0x558fa62c94a1 <unknown>
+#4 0x558fa62c6029 <unknown>
+#5 0x558fa6304ccc <unknown>
+#6 0x558fa630447f <unknown>
+#7 0x558fa62fbde3 <unknown>
+#8 0x558fa62d12dd <unknown>
+#9 0x558fa62d234e <unknown>
+#10 0x558fa65313e4 <unknown>
+#11 0x558fa65353d7 <unknown>
+#12 0x558fa653fb20 <unknown>
+#13 0x558fa6536023 <unknown>
+#14 0x558fa65041aa <unknown>
+#15 0x558fa655a6b8 <unknown>
+#16 0x558fa655a847 <unknown>
+#17 0x558fa656a243 <unknown>
+#18 0x7ff931ad4ea7 start_thread
+
+[2025-02-28T09:20:09.584+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x564f58b014e3 <unknown>
+#1 0x564f58830c76 <unknown>
+#2 0x564f5885e04a <unknown>
+#3 0x564f588594a1 <unknown>
+#4 0x564f58856029 <unknown>
+#5 0x564f58894ccc <unknown>
+#6 0x564f5889447f <unknown>
+#7 0x564f5888bde3 <unknown>
+#8 0x564f588612dd <unknown>
+#9 0x564f5886234e <unknown>
+#10 0x564f58ac13e4 <unknown>
+#11 0x564f58ac53d7 <unknown>
+#12 0x564f58acfb20 <unknown>
+#13 0x564f58ac6023 <unknown>
+#14 0x564f58a941aa <unknown>
+#15 0x564f58aea6b8 <unknown>
+#16 0x564f58aea847 <unknown>
+#17 0x564f58afa243 <unknown>
+#18 0x7f4b48f18ea7 start_thread
+
+[2025-02-28T09:20:09.847+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5652bc5ac4e3 <unknown>
+#1 0x5652bc2dbc76 <unknown>
+#2 0x5652bc30904a <unknown>
+#3 0x5652bc3044a1 <unknown>
+#4 0x5652bc301029 <unknown>
+#5 0x5652bc33fccc <unknown>
+#6 0x5652bc33f47f <unknown>
+#7 0x5652bc336de3 <unknown>
+#8 0x5652bc30c2dd <unknown>
+#9 0x5652bc30d34e <unknown>
+#10 0x5652bc56c3e4 <unknown>
+#11 0x5652bc5703d7 <unknown>
+#12 0x5652bc57ab20 <unknown>
+#13 0x5652bc571023 <unknown>
+#14 0x5652bc53f1aa <unknown>
+#15 0x5652bc5956b8 <unknown>
+#16 0x5652bc595847 <unknown>
+#17 0x5652bc5a5243 <unknown>
+#18 0x7f343d1cdea7 start_thread
+
+[2025-02-28T09:20:10.114+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55e2dc44a4e3 <unknown>
+#1 0x55e2dc179c76 <unknown>
+#2 0x55e2dc1a704a <unknown>
+#3 0x55e2dc1a24a1 <unknown>
+#4 0x55e2dc19f029 <unknown>
+#5 0x55e2dc1ddccc <unknown>
+#6 0x55e2dc1dd47f <unknown>
+#7 0x55e2dc1d4de3 <unknown>
+#8 0x55e2dc1aa2dd <unknown>
+#9 0x55e2dc1ab34e <unknown>
+#10 0x55e2dc40a3e4 <unknown>
+#11 0x55e2dc40e3d7 <unknown>
+#12 0x55e2dc418b20 <unknown>
+#13 0x55e2dc40f023 <unknown>
+#14 0x55e2dc3dd1aa <unknown>
+#15 0x55e2dc4336b8 <unknown>
+#16 0x55e2dc433847 <unknown>
+#17 0x55e2dc443243 <unknown>
+#18 0x7f5c648f0ea7 start_thread
+
+[2025-02-28T09:20:10.394+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55e3435b94e3 <unknown>
+#1 0x55e3432e8c76 <unknown>
+#2 0x55e34331604a <unknown>
+#3 0x55e3433114a1 <unknown>
+#4 0x55e34330e029 <unknown>
+#5 0x55e34334cccc <unknown>
+#6 0x55e34334c47f <unknown>
+#7 0x55e343343de3 <unknown>
+#8 0x55e3433192dd <unknown>
+#9 0x55e34331a34e <unknown>
+#10 0x55e3435793e4 <unknown>
+#11 0x55e34357d3d7 <unknown>
+#12 0x55e343587b20 <unknown>
+#13 0x55e34357e023 <unknown>
+#14 0x55e34354c1aa <unknown>
+#15 0x55e3435a26b8 <unknown>
+#16 0x55e3435a2847 <unknown>
+#17 0x55e3435b2243 <unknown>
+#18 0x7fe280edaea7 start_thread
+
+[2025-02-28T09:20:10.664+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55b144ec04e3 <unknown>
+#1 0x55b144befc76 <unknown>
+#2 0x55b144c1d04a <unknown>
+#3 0x55b144c184a1 <unknown>
+#4 0x55b144c15029 <unknown>
+#5 0x55b144c53ccc <unknown>
+#6 0x55b144c5347f <unknown>
+#7 0x55b144c4ade3 <unknown>
+#8 0x55b144c202dd <unknown>
+#9 0x55b144c2134e <unknown>
+#10 0x55b144e803e4 <unknown>
+#11 0x55b144e843d7 <unknown>
+#12 0x55b144e8eb20 <unknown>
+#13 0x55b144e85023 <unknown>
+#14 0x55b144e531aa <unknown>
+#15 0x55b144ea96b8 <unknown>
+#16 0x55b144ea9847 <unknown>
+#17 0x55b144eb9243 <unknown>
+#18 0x7fdf94c44ea7 start_thread
+
+[2025-02-28T09:20:10.950+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56018a4a94e3 <unknown>
+#1 0x56018a1d8c76 <unknown>
+#2 0x56018a20604a <unknown>
+#3 0x56018a2014a1 <unknown>
+#4 0x56018a1fe029 <unknown>
+#5 0x56018a23cccc <unknown>
+#6 0x56018a23c47f <unknown>
+#7 0x56018a233de3 <unknown>
+#8 0x56018a2092dd <unknown>
+#9 0x56018a20a34e <unknown>
+#10 0x56018a4693e4 <unknown>
+#11 0x56018a46d3d7 <unknown>
+#12 0x56018a477b20 <unknown>
+#13 0x56018a46e023 <unknown>
+#14 0x56018a43c1aa <unknown>
+#15 0x56018a4926b8 <unknown>
+#16 0x56018a492847 <unknown>
+#17 0x56018a4a2243 <unknown>
+#18 0x7f37c952aea7 start_thread
+
+[2025-02-28T09:20:11.250+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x561a2787d4e3 <unknown>
+#1 0x561a275acc76 <unknown>
+#2 0x561a275da04a <unknown>
+#3 0x561a275d54a1 <unknown>
+#4 0x561a275d2029 <unknown>
+#5 0x561a27610ccc <unknown>
+#6 0x561a2761047f <unknown>
+#7 0x561a27607de3 <unknown>
+#8 0x561a275dd2dd <unknown>
+#9 0x561a275de34e <unknown>
+#10 0x561a2783d3e4 <unknown>
+#11 0x561a278413d7 <unknown>
+#12 0x561a2784bb20 <unknown>
+#13 0x561a27842023 <unknown>
+#14 0x561a278101aa <unknown>
+#15 0x561a278666b8 <unknown>
+#16 0x561a27866847 <unknown>
+#17 0x561a27876243 <unknown>
+#18 0x7f9aee0e7ea7 start_thread
+
+[2025-02-28T09:20:11.551+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55b3adb094e3 <unknown>
+#1 0x55b3ad838c76 <unknown>
+#2 0x55b3ad86604a <unknown>
+#3 0x55b3ad8614a1 <unknown>
+#4 0x55b3ad85e029 <unknown>
+#5 0x55b3ad89cccc <unknown>
+#6 0x55b3ad89c47f <unknown>
+#7 0x55b3ad893de3 <unknown>
+#8 0x55b3ad8692dd <unknown>
+#9 0x55b3ad86a34e <unknown>
+#10 0x55b3adac93e4 <unknown>
+#11 0x55b3adacd3d7 <unknown>
+#12 0x55b3adad7b20 <unknown>
+#13 0x55b3adace023 <unknown>
+#14 0x55b3ada9c1aa <unknown>
+#15 0x55b3adaf26b8 <unknown>
+#16 0x55b3adaf2847 <unknown>
+#17 0x55b3adb02243 <unknown>
+#18 0x7f844ee8aea7 start_thread
+
+[2025-02-28T09:20:11.836+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55691ba054e3 <unknown>
+#1 0x55691b734c76 <unknown>
+#2 0x55691b76204a <unknown>
+#3 0x55691b75d4a1 <unknown>
+#4 0x55691b75a029 <unknown>
+#5 0x55691b798ccc <unknown>
+#6 0x55691b79847f <unknown>
+#7 0x55691b78fde3 <unknown>
+#8 0x55691b7652dd <unknown>
+#9 0x55691b76634e <unknown>
+#10 0x55691b9c53e4 <unknown>
+#11 0x55691b9c93d7 <unknown>
+#12 0x55691b9d3b20 <unknown>
+#13 0x55691b9ca023 <unknown>
+#14 0x55691b9981aa <unknown>
+#15 0x55691b9ee6b8 <unknown>
+#16 0x55691b9ee847 <unknown>
+#17 0x55691b9fe243 <unknown>
+#18 0x7f53bbda0ea7 start_thread
+
+[2025-02-28T09:20:12.126+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55d1203c34e3 <unknown>
+#1 0x55d1200f2c76 <unknown>
+#2 0x55d12012004a <unknown>
+#3 0x55d12011b4a1 <unknown>
+#4 0x55d120118029 <unknown>
+#5 0x55d120156ccc <unknown>
+#6 0x55d12015647f <unknown>
+#7 0x55d12014dde3 <unknown>
+#8 0x55d1201232dd <unknown>
+#9 0x55d12012434e <unknown>
+#10 0x55d1203833e4 <unknown>
+#11 0x55d1203873d7 <unknown>
+#12 0x55d120391b20 <unknown>
+#13 0x55d120388023 <unknown>
+#14 0x55d1203561aa <unknown>
+#15 0x55d1203ac6b8 <unknown>
+#16 0x55d1203ac847 <unknown>
+#17 0x55d1203bc243 <unknown>
+#18 0x7fd9c0878ea7 start_thread
+
+[2025-02-28T09:20:12.373+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55bb687814e3 <unknown>
+#1 0x55bb684b0c76 <unknown>
+#2 0x55bb684de04a <unknown>
+#3 0x55bb684d94a1 <unknown>
+#4 0x55bb684d6029 <unknown>
+#5 0x55bb68514ccc <unknown>
+#6 0x55bb6851447f <unknown>
+#7 0x55bb6850bde3 <unknown>
+#8 0x55bb684e12dd <unknown>
+#9 0x55bb684e234e <unknown>
+#10 0x55bb687413e4 <unknown>
+#11 0x55bb687453d7 <unknown>
+#12 0x55bb6874fb20 <unknown>
+#13 0x55bb68746023 <unknown>
+#14 0x55bb687141aa <unknown>
+#15 0x55bb6876a6b8 <unknown>
+#16 0x55bb6876a847 <unknown>
+#17 0x55bb6877a243 <unknown>
+#18 0x7fcadd98dea7 start_thread
+
+[2025-02-28T09:20:12.619+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55b6f64ba4e3 <unknown>
+#1 0x55b6f61e9c76 <unknown>
+#2 0x55b6f621704a <unknown>
+#3 0x55b6f62124a1 <unknown>
+#4 0x55b6f620f029 <unknown>
+#5 0x55b6f624dccc <unknown>
+#6 0x55b6f624d47f <unknown>
+#7 0x55b6f6244de3 <unknown>
+#8 0x55b6f621a2dd <unknown>
+#9 0x55b6f621b34e <unknown>
+#10 0x55b6f647a3e4 <unknown>
+#11 0x55b6f647e3d7 <unknown>
+#12 0x55b6f6488b20 <unknown>
+#13 0x55b6f647f023 <unknown>
+#14 0x55b6f644d1aa <unknown>
+#15 0x55b6f64a36b8 <unknown>
+#16 0x55b6f64a3847 <unknown>
+#17 0x55b6f64b3243 <unknown>
+#18 0x7f3ac11afea7 start_thread
+
+[2025-02-28T09:20:12.870+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55d0f3c744e3 <unknown>
+#1 0x55d0f39a3c76 <unknown>
+#2 0x55d0f39d104a <unknown>
+#3 0x55d0f39cc4a1 <unknown>
+#4 0x55d0f39c9029 <unknown>
+#5 0x55d0f3a07ccc <unknown>
+#6 0x55d0f3a0747f <unknown>
+#7 0x55d0f39fede3 <unknown>
+#8 0x55d0f39d42dd <unknown>
+#9 0x55d0f39d534e <unknown>
+#10 0x55d0f3c343e4 <unknown>
+#11 0x55d0f3c383d7 <unknown>
+#12 0x55d0f3c42b20 <unknown>
+#13 0x55d0f3c39023 <unknown>
+#14 0x55d0f3c071aa <unknown>
+#15 0x55d0f3c5d6b8 <unknown>
+#16 0x55d0f3c5d847 <unknown>
+#17 0x55d0f3c6d243 <unknown>
+#18 0x7f3bee4a1ea7 start_thread
+
+[2025-02-28T09:20:13.134+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5606f95a54e3 <unknown>
+#1 0x5606f92d4c76 <unknown>
+#2 0x5606f930204a <unknown>
+#3 0x5606f92fd4a1 <unknown>
+#4 0x5606f92fa029 <unknown>
+#5 0x5606f9338ccc <unknown>
+#6 0x5606f933847f <unknown>
+#7 0x5606f932fde3 <unknown>
+#8 0x5606f93052dd <unknown>
+#9 0x5606f930634e <unknown>
+#10 0x5606f95653e4 <unknown>
+#11 0x5606f95693d7 <unknown>
+#12 0x5606f9573b20 <unknown>
+#13 0x5606f956a023 <unknown>
+#14 0x5606f95381aa <unknown>
+#15 0x5606f958e6b8 <unknown>
+#16 0x5606f958e847 <unknown>
+#17 0x5606f959e243 <unknown>
+#18 0x7f7a5f8c8ea7 start_thread
+
+[2025-02-28T09:20:13.395+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55e27d0cf4e3 <unknown>
+#1 0x55e27cdfec76 <unknown>
+#2 0x55e27ce2c04a <unknown>
+#3 0x55e27ce274a1 <unknown>
+#4 0x55e27ce24029 <unknown>
+#5 0x55e27ce62ccc <unknown>
+#6 0x55e27ce6247f <unknown>
+#7 0x55e27ce59de3 <unknown>
+#8 0x55e27ce2f2dd <unknown>
+#9 0x55e27ce3034e <unknown>
+#10 0x55e27d08f3e4 <unknown>
+#11 0x55e27d0933d7 <unknown>
+#12 0x55e27d09db20 <unknown>
+#13 0x55e27d094023 <unknown>
+#14 0x55e27d0621aa <unknown>
+#15 0x55e27d0b86b8 <unknown>
+#16 0x55e27d0b8847 <unknown>
+#17 0x55e27d0c8243 <unknown>
+#18 0x7fea95c8eea7 start_thread
+
+[2025-02-28T09:20:13.659+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5618bef2a4e3 <unknown>
+#1 0x5618bec59c76 <unknown>
+#2 0x5618bec8704a <unknown>
+#3 0x5618bec824a1 <unknown>
+#4 0x5618bec7f029 <unknown>
+#5 0x5618becbdccc <unknown>
+#6 0x5618becbd47f <unknown>
+#7 0x5618becb4de3 <unknown>
+#8 0x5618bec8a2dd <unknown>
+#9 0x5618bec8b34e <unknown>
+#10 0x5618beeea3e4 <unknown>
+#11 0x5618beeee3d7 <unknown>
+#12 0x5618beef8b20 <unknown>
+#13 0x5618beeef023 <unknown>
+#14 0x5618beebd1aa <unknown>
+#15 0x5618bef136b8 <unknown>
+#16 0x5618bef13847 <unknown>
+#17 0x5618bef23243 <unknown>
+#18 0x7fd0f534fea7 start_thread
+
+[2025-02-28T09:20:13.947+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55cc1ed9c4e3 <unknown>
+#1 0x55cc1eacbc76 <unknown>
+#2 0x55cc1eaf904a <unknown>
+#3 0x55cc1eaf44a1 <unknown>
+#4 0x55cc1eaf1029 <unknown>
+#5 0x55cc1eb2fccc <unknown>
+#6 0x55cc1eb2f47f <unknown>
+#7 0x55cc1eb26de3 <unknown>
+#8 0x55cc1eafc2dd <unknown>
+#9 0x55cc1eafd34e <unknown>
+#10 0x55cc1ed5c3e4 <unknown>
+#11 0x55cc1ed603d7 <unknown>
+#12 0x55cc1ed6ab20 <unknown>
+#13 0x55cc1ed61023 <unknown>
+#14 0x55cc1ed2f1aa <unknown>
+#15 0x55cc1ed856b8 <unknown>
+#16 0x55cc1ed85847 <unknown>
+#17 0x55cc1ed95243 <unknown>
+#18 0x7fe7a9bc8ea7 start_thread
+
+[2025-02-28T09:20:14.219+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5577e1fbb4e3 <unknown>
+#1 0x5577e1ceac76 <unknown>
+#2 0x5577e1d1804a <unknown>
+#3 0x5577e1d134a1 <unknown>
+#4 0x5577e1d10029 <unknown>
+#5 0x5577e1d4eccc <unknown>
+#6 0x5577e1d4e47f <unknown>
+#7 0x5577e1d45de3 <unknown>
+#8 0x5577e1d1b2dd <unknown>
+#9 0x5577e1d1c34e <unknown>
+#10 0x5577e1f7b3e4 <unknown>
+#11 0x5577e1f7f3d7 <unknown>
+#12 0x5577e1f89b20 <unknown>
+#13 0x5577e1f80023 <unknown>
+#14 0x5577e1f4e1aa <unknown>
+#15 0x5577e1fa46b8 <unknown>
+#16 0x5577e1fa4847 <unknown>
+#17 0x5577e1fb4243 <unknown>
+#18 0x7f3fd2782ea7 start_thread
+
+[2025-02-28T09:20:14.475+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x564fd89f74e3 <unknown>
+#1 0x564fd8726c76 <unknown>
+#2 0x564fd875404a <unknown>
+#3 0x564fd874f4a1 <unknown>
+#4 0x564fd874c029 <unknown>
+#5 0x564fd878accc <unknown>
+#6 0x564fd878a47f <unknown>
+#7 0x564fd8781de3 <unknown>
+#8 0x564fd87572dd <unknown>
+#9 0x564fd875834e <unknown>
+#10 0x564fd89b73e4 <unknown>
+#11 0x564fd89bb3d7 <unknown>
+#12 0x564fd89c5b20 <unknown>
+#13 0x564fd89bc023 <unknown>
+#14 0x564fd898a1aa <unknown>
+#15 0x564fd89e06b8 <unknown>
+#16 0x564fd89e0847 <unknown>
+#17 0x564fd89f0243 <unknown>
+#18 0x7f4d3498dea7 start_thread
+
+[2025-02-28T09:20:14.756+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56371b1c64e3 <unknown>
+#1 0x56371aef5c76 <unknown>
+#2 0x56371af2304a <unknown>
+#3 0x56371af1e4a1 <unknown>
+#4 0x56371af1b029 <unknown>
+#5 0x56371af59ccc <unknown>
+#6 0x56371af5947f <unknown>
+#7 0x56371af50de3 <unknown>
+#8 0x56371af262dd <unknown>
+#9 0x56371af2734e <unknown>
+#10 0x56371b1863e4 <unknown>
+#11 0x56371b18a3d7 <unknown>
+#12 0x56371b194b20 <unknown>
+#13 0x56371b18b023 <unknown>
+#14 0x56371b1591aa <unknown>
+#15 0x56371b1af6b8 <unknown>
+#16 0x56371b1af847 <unknown>
+#17 0x56371b1bf243 <unknown>
+#18 0x7ff6ebe96ea7 start_thread
+
+[2025-02-28T09:20:15.050+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56475e9074e3 <unknown>
+#1 0x56475e636c76 <unknown>
+#2 0x56475e66404a <unknown>
+#3 0x56475e65f4a1 <unknown>
+#4 0x56475e65c029 <unknown>
+#5 0x56475e69accc <unknown>
+#6 0x56475e69a47f <unknown>
+#7 0x56475e691de3 <unknown>
+#8 0x56475e6672dd <unknown>
+#9 0x56475e66834e <unknown>
+#10 0x56475e8c73e4 <unknown>
+#11 0x56475e8cb3d7 <unknown>
+#12 0x56475e8d5b20 <unknown>
+#13 0x56475e8cc023 <unknown>
+#14 0x56475e89a1aa <unknown>
+#15 0x56475e8f06b8 <unknown>
+#16 0x56475e8f0847 <unknown>
+#17 0x56475e900243 <unknown>
+#18 0x7f47e08aeea7 start_thread
+
+[2025-02-28T09:20:15.338+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55eeb90be4e3 <unknown>
+#1 0x55eeb8dedc76 <unknown>
+#2 0x55eeb8e1b04a <unknown>
+#3 0x55eeb8e164a1 <unknown>
+#4 0x55eeb8e13029 <unknown>
+#5 0x55eeb8e51ccc <unknown>
+#6 0x55eeb8e5147f <unknown>
+#7 0x55eeb8e48de3 <unknown>
+#8 0x55eeb8e1e2dd <unknown>
+#9 0x55eeb8e1f34e <unknown>
+#10 0x55eeb907e3e4 <unknown>
+#11 0x55eeb90823d7 <unknown>
+#12 0x55eeb908cb20 <unknown>
+#13 0x55eeb9083023 <unknown>
+#14 0x55eeb90511aa <unknown>
+#15 0x55eeb90a76b8 <unknown>
+#16 0x55eeb90a7847 <unknown>
+#17 0x55eeb90b7243 <unknown>
+#18 0x7f632b346ea7 start_thread
+
+[2025-02-28T09:20:15.611+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56433da584e3 <unknown>
+#1 0x56433d787c76 <unknown>
+#2 0x56433d7b504a <unknown>
+#3 0x56433d7b04a1 <unknown>
+#4 0x56433d7ad029 <unknown>
+#5 0x56433d7ebccc <unknown>
+#6 0x56433d7eb47f <unknown>
+#7 0x56433d7e2de3 <unknown>
+#8 0x56433d7b82dd <unknown>
+#9 0x56433d7b934e <unknown>
+#10 0x56433da183e4 <unknown>
+#11 0x56433da1c3d7 <unknown>
+#12 0x56433da26b20 <unknown>
+#13 0x56433da1d023 <unknown>
+#14 0x56433d9eb1aa <unknown>
+#15 0x56433da416b8 <unknown>
+#16 0x56433da41847 <unknown>
+#17 0x56433da51243 <unknown>
+#18 0x7fc7d9210ea7 start_thread
+
+[2025-02-28T09:20:15.889+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56389ccb24e3 <unknown>
+#1 0x56389c9e1c76 <unknown>
+#2 0x56389ca0f04a <unknown>
+#3 0x56389ca0a4a1 <unknown>
+#4 0x56389ca07029 <unknown>
+#5 0x56389ca45ccc <unknown>
+#6 0x56389ca4547f <unknown>
+#7 0x56389ca3cde3 <unknown>
+#8 0x56389ca122dd <unknown>
+#9 0x56389ca1334e <unknown>
+#10 0x56389cc723e4 <unknown>
+#11 0x56389cc763d7 <unknown>
+#12 0x56389cc80b20 <unknown>
+#13 0x56389cc77023 <unknown>
+#14 0x56389cc451aa <unknown>
+#15 0x56389cc9b6b8 <unknown>
+#16 0x56389cc9b847 <unknown>
+#17 0x56389ccab243 <unknown>
+#18 0x7fb7f4c2eea7 start_thread
+
+[2025-02-28T09:20:16.151+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5594b51c34e3 <unknown>
+#1 0x5594b4ef2c76 <unknown>
+#2 0x5594b4f2004a <unknown>
+#3 0x5594b4f1b4a1 <unknown>
+#4 0x5594b4f18029 <unknown>
+#5 0x5594b4f56ccc <unknown>
+#6 0x5594b4f5647f <unknown>
+#7 0x5594b4f4dde3 <unknown>
+#8 0x5594b4f232dd <unknown>
+#9 0x5594b4f2434e <unknown>
+#10 0x5594b51833e4 <unknown>
+#11 0x5594b51873d7 <unknown>
+#12 0x5594b5191b20 <unknown>
+#13 0x5594b5188023 <unknown>
+#14 0x5594b51561aa <unknown>
+#15 0x5594b51ac6b8 <unknown>
+#16 0x5594b51ac847 <unknown>
+#17 0x5594b51bc243 <unknown>
+#18 0x7fce6f512ea7 start_thread
+
+[2025-02-28T09:20:16.438+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56225e8a44e3 <unknown>
+#1 0x56225e5d3c76 <unknown>
+#2 0x56225e60104a <unknown>
+#3 0x56225e5fc4a1 <unknown>
+#4 0x56225e5f9029 <unknown>
+#5 0x56225e637ccc <unknown>
+#6 0x56225e63747f <unknown>
+#7 0x56225e62ede3 <unknown>
+#8 0x56225e6042dd <unknown>
+#9 0x56225e60534e <unknown>
+#10 0x56225e8643e4 <unknown>
+#11 0x56225e8683d7 <unknown>
+#12 0x56225e872b20 <unknown>
+#13 0x56225e869023 <unknown>
+#14 0x56225e8371aa <unknown>
+#15 0x56225e88d6b8 <unknown>
+#16 0x56225e88d847 <unknown>
+#17 0x56225e89d243 <unknown>
+#18 0x7f65d8de7ea7 start_thread
+
+[2025-02-28T09:20:16.701+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55cf3b3124e3 <unknown>
+#1 0x55cf3b041c76 <unknown>
+#2 0x55cf3b06f04a <unknown>
+#3 0x55cf3b06a4a1 <unknown>
+#4 0x55cf3b067029 <unknown>
+#5 0x55cf3b0a5ccc <unknown>
+#6 0x55cf3b0a547f <unknown>
+#7 0x55cf3b09cde3 <unknown>
+#8 0x55cf3b0722dd <unknown>
+#9 0x55cf3b07334e <unknown>
+#10 0x55cf3b2d23e4 <unknown>
+#11 0x55cf3b2d63d7 <unknown>
+#12 0x55cf3b2e0b20 <unknown>
+#13 0x55cf3b2d7023 <unknown>
+#14 0x55cf3b2a51aa <unknown>
+#15 0x55cf3b2fb6b8 <unknown>
+#16 0x55cf3b2fb847 <unknown>
+#17 0x55cf3b30b243 <unknown>
+#18 0x7f24e9e7eea7 start_thread
+
+[2025-02-28T09:20:16.953+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55746771d4e3 <unknown>
+#1 0x55746744cc76 <unknown>
+#2 0x55746747a04a <unknown>
+#3 0x5574674754a1 <unknown>
+#4 0x557467472029 <unknown>
+#5 0x5574674b0ccc <unknown>
+#6 0x5574674b047f <unknown>
+#7 0x5574674a7de3 <unknown>
+#8 0x55746747d2dd <unknown>
+#9 0x55746747e34e <unknown>
+#10 0x5574676dd3e4 <unknown>
+#11 0x5574676e13d7 <unknown>
+#12 0x5574676ebb20 <unknown>
+#13 0x5574676e2023 <unknown>
+#14 0x5574676b01aa <unknown>
+#15 0x5574677066b8 <unknown>
+#16 0x557467706847 <unknown>
+#17 0x557467716243 <unknown>
+#18 0x7f9aa3c43ea7 start_thread
+
+[2025-02-28T09:20:17.226+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55f38f4c54e3 <unknown>
+#1 0x55f38f1f4c76 <unknown>
+#2 0x55f38f22204a <unknown>
+#3 0x55f38f21d4a1 <unknown>
+#4 0x55f38f21a029 <unknown>
+#5 0x55f38f258ccc <unknown>
+#6 0x55f38f25847f <unknown>
+#7 0x55f38f24fde3 <unknown>
+#8 0x55f38f2252dd <unknown>
+#9 0x55f38f22634e <unknown>
+#10 0x55f38f4853e4 <unknown>
+#11 0x55f38f4893d7 <unknown>
+#12 0x55f38f493b20 <unknown>
+#13 0x55f38f48a023 <unknown>
+#14 0x55f38f4581aa <unknown>
+#15 0x55f38f4ae6b8 <unknown>
+#16 0x55f38f4ae847 <unknown>
+#17 0x55f38f4be243 <unknown>
+#18 0x7f762ef56ea7 start_thread
+
+[2025-02-28T09:20:17.500+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5618d5db34e3 <unknown>
+#1 0x5618d5ae2c76 <unknown>
+#2 0x5618d5b1004a <unknown>
+#3 0x5618d5b0b4a1 <unknown>
+#4 0x5618d5b08029 <unknown>
+#5 0x5618d5b46ccc <unknown>
+#6 0x5618d5b4647f <unknown>
+#7 0x5618d5b3dde3 <unknown>
+#8 0x5618d5b132dd <unknown>
+#9 0x5618d5b1434e <unknown>
+#10 0x5618d5d733e4 <unknown>
+#11 0x5618d5d773d7 <unknown>
+#12 0x5618d5d81b20 <unknown>
+#13 0x5618d5d78023 <unknown>
+#14 0x5618d5d461aa <unknown>
+#15 0x5618d5d9c6b8 <unknown>
+#16 0x5618d5d9c847 <unknown>
+#17 0x5618d5dac243 <unknown>
+#18 0x7f99568a0ea7 start_thread
+
+[2025-02-28T09:20:17.754+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55844cf8c4e3 <unknown>
+#1 0x55844ccbbc76 <unknown>
+#2 0x55844cce904a <unknown>
+#3 0x55844cce44a1 <unknown>
+#4 0x55844cce1029 <unknown>
+#5 0x55844cd1fccc <unknown>
+#6 0x55844cd1f47f <unknown>
+#7 0x55844cd16de3 <unknown>
+#8 0x55844ccec2dd <unknown>
+#9 0x55844cced34e <unknown>
+#10 0x55844cf4c3e4 <unknown>
+#11 0x55844cf503d7 <unknown>
+#12 0x55844cf5ab20 <unknown>
+#13 0x55844cf51023 <unknown>
+#14 0x55844cf1f1aa <unknown>
+#15 0x55844cf756b8 <unknown>
+#16 0x55844cf75847 <unknown>
+#17 0x55844cf85243 <unknown>
+#18 0x7f5e82f4dea7 start_thread
+
+[2025-02-28T09:20:18.027+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55fbbb2a44e3 <unknown>
+#1 0x55fbbafd3c76 <unknown>
+#2 0x55fbbb00104a <unknown>
+#3 0x55fbbaffc4a1 <unknown>
+#4 0x55fbbaff9029 <unknown>
+#5 0x55fbbb037ccc <unknown>
+#6 0x55fbbb03747f <unknown>
+#7 0x55fbbb02ede3 <unknown>
+#8 0x55fbbb0042dd <unknown>
+#9 0x55fbbb00534e <unknown>
+#10 0x55fbbb2643e4 <unknown>
+#11 0x55fbbb2683d7 <unknown>
+#12 0x55fbbb272b20 <unknown>
+#13 0x55fbbb269023 <unknown>
+#14 0x55fbbb2371aa <unknown>
+#15 0x55fbbb28d6b8 <unknown>
+#16 0x55fbbb28d847 <unknown>
+#17 0x55fbbb29d243 <unknown>
+#18 0x7f37fe435ea7 start_thread
+
+[2025-02-28T09:20:18.298+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55c2e724e4e3 <unknown>
+#1 0x55c2e6f7dc76 <unknown>
+#2 0x55c2e6fab04a <unknown>
+#3 0x55c2e6fa64a1 <unknown>
+#4 0x55c2e6fa3029 <unknown>
+#5 0x55c2e6fe1ccc <unknown>
+#6 0x55c2e6fe147f <unknown>
+#7 0x55c2e6fd8de3 <unknown>
+#8 0x55c2e6fae2dd <unknown>
+#9 0x55c2e6faf34e <unknown>
+#10 0x55c2e720e3e4 <unknown>
+#11 0x55c2e72123d7 <unknown>
+#12 0x55c2e721cb20 <unknown>
+#13 0x55c2e7213023 <unknown>
+#14 0x55c2e71e11aa <unknown>
+#15 0x55c2e72376b8 <unknown>
+#16 0x55c2e7237847 <unknown>
+#17 0x55c2e7247243 <unknown>
+#18 0x7f77643b6ea7 start_thread
+
+[2025-02-28T09:20:18.596+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5639a44f94e3 <unknown>
+#1 0x5639a4228c76 <unknown>
+#2 0x5639a425604a <unknown>
+#3 0x5639a42514a1 <unknown>
+#4 0x5639a424e029 <unknown>
+#5 0x5639a428cccc <unknown>
+#6 0x5639a428c47f <unknown>
+#7 0x5639a4283de3 <unknown>
+#8 0x5639a42592dd <unknown>
+#9 0x5639a425a34e <unknown>
+#10 0x5639a44b93e4 <unknown>
+#11 0x5639a44bd3d7 <unknown>
+#12 0x5639a44c7b20 <unknown>
+#13 0x5639a44be023 <unknown>
+#14 0x5639a448c1aa <unknown>
+#15 0x5639a44e26b8 <unknown>
+#16 0x5639a44e2847 <unknown>
+#17 0x5639a44f2243 <unknown>
+#18 0x7f719f15bea7 start_thread
+
+[2025-02-28T09:20:18.848+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5611e29164e3 <unknown>
+#1 0x5611e2645c76 <unknown>
+#2 0x5611e267304a <unknown>
+#3 0x5611e266e4a1 <unknown>
+#4 0x5611e266b029 <unknown>
+#5 0x5611e26a9ccc <unknown>
+#6 0x5611e26a947f <unknown>
+#7 0x5611e26a0de3 <unknown>
+#8 0x5611e26762dd <unknown>
+#9 0x5611e267734e <unknown>
+#10 0x5611e28d63e4 <unknown>
+#11 0x5611e28da3d7 <unknown>
+#12 0x5611e28e4b20 <unknown>
+#13 0x5611e28db023 <unknown>
+#14 0x5611e28a91aa <unknown>
+#15 0x5611e28ff6b8 <unknown>
+#16 0x5611e28ff847 <unknown>
+#17 0x5611e290f243 <unknown>
+#18 0x7f136cf66ea7 start_thread
+
+[2025-02-28T09:20:19.124+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55b48fdfc4e3 <unknown>
+#1 0x55b48fb2bc76 <unknown>
+#2 0x55b48fb5904a <unknown>
+#3 0x55b48fb544a1 <unknown>
+#4 0x55b48fb51029 <unknown>
+#5 0x55b48fb8fccc <unknown>
+#6 0x55b48fb8f47f <unknown>
+#7 0x55b48fb86de3 <unknown>
+#8 0x55b48fb5c2dd <unknown>
+#9 0x55b48fb5d34e <unknown>
+#10 0x55b48fdbc3e4 <unknown>
+#11 0x55b48fdc03d7 <unknown>
+#12 0x55b48fdcab20 <unknown>
+#13 0x55b48fdc1023 <unknown>
+#14 0x55b48fd8f1aa <unknown>
+#15 0x55b48fde56b8 <unknown>
+#16 0x55b48fde5847 <unknown>
+#17 0x55b48fdf5243 <unknown>
+#18 0x7f4211c91ea7 start_thread
+
+[2025-02-28T09:20:19.402+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55d52ae124e3 <unknown>
+#1 0x55d52ab41c76 <unknown>
+#2 0x55d52ab6f04a <unknown>
+#3 0x55d52ab6a4a1 <unknown>
+#4 0x55d52ab67029 <unknown>
+#5 0x55d52aba5ccc <unknown>
+#6 0x55d52aba547f <unknown>
+#7 0x55d52ab9cde3 <unknown>
+#8 0x55d52ab722dd <unknown>
+#9 0x55d52ab7334e <unknown>
+#10 0x55d52add23e4 <unknown>
+#11 0x55d52add63d7 <unknown>
+#12 0x55d52ade0b20 <unknown>
+#13 0x55d52add7023 <unknown>
+#14 0x55d52ada51aa <unknown>
+#15 0x55d52adfb6b8 <unknown>
+#16 0x55d52adfb847 <unknown>
+#17 0x55d52ae0b243 <unknown>
+#18 0x7f9d3e360ea7 start_thread
+
+[2025-02-28T09:20:19.719+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x557893d354e3 <unknown>
+#1 0x557893a64c76 <unknown>
+#2 0x557893a9204a <unknown>
+#3 0x557893a8d4a1 <unknown>
+#4 0x557893a8a029 <unknown>
+#5 0x557893ac8ccc <unknown>
+#6 0x557893ac847f <unknown>
+#7 0x557893abfde3 <unknown>
+#8 0x557893a952dd <unknown>
+#9 0x557893a9634e <unknown>
+#10 0x557893cf53e4 <unknown>
+#11 0x557893cf93d7 <unknown>
+#12 0x557893d03b20 <unknown>
+#13 0x557893cfa023 <unknown>
+#14 0x557893cc81aa <unknown>
+#15 0x557893d1e6b8 <unknown>
+#16 0x557893d1e847 <unknown>
+#17 0x557893d2e243 <unknown>
+#18 0x7f551b139ea7 start_thread
+
+[2025-02-28T09:20:20.037+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56348b3724e3 <unknown>
+#1 0x56348b0a1c76 <unknown>
+#2 0x56348b0cf04a <unknown>
+#3 0x56348b0ca4a1 <unknown>
+#4 0x56348b0c7029 <unknown>
+#5 0x56348b105ccc <unknown>
+#6 0x56348b10547f <unknown>
+#7 0x56348b0fcde3 <unknown>
+#8 0x56348b0d22dd <unknown>
+#9 0x56348b0d334e <unknown>
+#10 0x56348b3323e4 <unknown>
+#11 0x56348b3363d7 <unknown>
+#12 0x56348b340b20 <unknown>
+#13 0x56348b337023 <unknown>
+#14 0x56348b3051aa <unknown>
+#15 0x56348b35b6b8 <unknown>
+#16 0x56348b35b847 <unknown>
+#17 0x56348b36b243 <unknown>
+#18 0x7fe37bffdea7 start_thread
+
+[2025-02-28T09:20:20.304+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5559242494e3 <unknown>
+#1 0x555923f78c76 <unknown>
+#2 0x555923fa604a <unknown>
+#3 0x555923fa14a1 <unknown>
+#4 0x555923f9e029 <unknown>
+#5 0x555923fdcccc <unknown>
+#6 0x555923fdc47f <unknown>
+#7 0x555923fd3de3 <unknown>
+#8 0x555923fa92dd <unknown>
+#9 0x555923faa34e <unknown>
+#10 0x5559242093e4 <unknown>
+#11 0x55592420d3d7 <unknown>
+#12 0x555924217b20 <unknown>
+#13 0x55592420e023 <unknown>
+#14 0x5559241dc1aa <unknown>
+#15 0x5559242326b8 <unknown>
+#16 0x555924232847 <unknown>
+#17 0x555924242243 <unknown>
+#18 0x7f5bf28ecea7 start_thread
+
+[2025-02-28T09:20:20.579+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56058e7da4e3 <unknown>
+#1 0x56058e509c76 <unknown>
+#2 0x56058e53704a <unknown>
+#3 0x56058e5324a1 <unknown>
+#4 0x56058e52f029 <unknown>
+#5 0x56058e56dccc <unknown>
+#6 0x56058e56d47f <unknown>
+#7 0x56058e564de3 <unknown>
+#8 0x56058e53a2dd <unknown>
+#9 0x56058e53b34e <unknown>
+#10 0x56058e79a3e4 <unknown>
+#11 0x56058e79e3d7 <unknown>
+#12 0x56058e7a8b20 <unknown>
+#13 0x56058e79f023 <unknown>
+#14 0x56058e76d1aa <unknown>
+#15 0x56058e7c36b8 <unknown>
+#16 0x56058e7c3847 <unknown>
+#17 0x56058e7d3243 <unknown>
+#18 0x7f48b1a52ea7 start_thread
+
+[2025-02-28T09:20:20.853+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56514b90f4e3 <unknown>
+#1 0x56514b63ec76 <unknown>
+#2 0x56514b66c04a <unknown>
+#3 0x56514b6674a1 <unknown>
+#4 0x56514b664029 <unknown>
+#5 0x56514b6a2ccc <unknown>
+#6 0x56514b6a247f <unknown>
+#7 0x56514b699de3 <unknown>
+#8 0x56514b66f2dd <unknown>
+#9 0x56514b67034e <unknown>
+#10 0x56514b8cf3e4 <unknown>
+#11 0x56514b8d33d7 <unknown>
+#12 0x56514b8ddb20 <unknown>
+#13 0x56514b8d4023 <unknown>
+#14 0x56514b8a21aa <unknown>
+#15 0x56514b8f86b8 <unknown>
+#16 0x56514b8f8847 <unknown>
+#17 0x56514b908243 <unknown>
+#18 0x7f419935dea7 start_thread
+
+[2025-02-28T09:20:21.127+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x561b578d84e3 <unknown>
+#1 0x561b57607c76 <unknown>
+#2 0x561b5763504a <unknown>
+#3 0x561b576304a1 <unknown>
+#4 0x561b5762d029 <unknown>
+#5 0x561b5766bccc <unknown>
+#6 0x561b5766b47f <unknown>
+#7 0x561b57662de3 <unknown>
+#8 0x561b576382dd <unknown>
+#9 0x561b5763934e <unknown>
+#10 0x561b578983e4 <unknown>
+#11 0x561b5789c3d7 <unknown>
+#12 0x561b578a6b20 <unknown>
+#13 0x561b5789d023 <unknown>
+#14 0x561b5786b1aa <unknown>
+#15 0x561b578c16b8 <unknown>
+#16 0x561b578c1847 <unknown>
+#17 0x561b578d1243 <unknown>
+#18 0x7fb581f3eea7 start_thread
+
+[2025-02-28T09:20:21.389+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x563d183054e3 <unknown>
+#1 0x563d18034c76 <unknown>
+#2 0x563d1806204a <unknown>
+#3 0x563d1805d4a1 <unknown>
+#4 0x563d1805a029 <unknown>
+#5 0x563d18098ccc <unknown>
+#6 0x563d1809847f <unknown>
+#7 0x563d1808fde3 <unknown>
+#8 0x563d180652dd <unknown>
+#9 0x563d1806634e <unknown>
+#10 0x563d182c53e4 <unknown>
+#11 0x563d182c93d7 <unknown>
+#12 0x563d182d3b20 <unknown>
+#13 0x563d182ca023 <unknown>
+#14 0x563d182981aa <unknown>
+#15 0x563d182ee6b8 <unknown>
+#16 0x563d182ee847 <unknown>
+#17 0x563d182fe243 <unknown>
+#18 0x7f73ddaa7ea7 start_thread
+
+[2025-02-28T09:20:21.644+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55786b6574e3 <unknown>
+#1 0x55786b386c76 <unknown>
+#2 0x55786b3b404a <unknown>
+#3 0x55786b3af4a1 <unknown>
+#4 0x55786b3ac029 <unknown>
+#5 0x55786b3eaccc <unknown>
+#6 0x55786b3ea47f <unknown>
+#7 0x55786b3e1de3 <unknown>
+#8 0x55786b3b72dd <unknown>
+#9 0x55786b3b834e <unknown>
+#10 0x55786b6173e4 <unknown>
+#11 0x55786b61b3d7 <unknown>
+#12 0x55786b625b20 <unknown>
+#13 0x55786b61c023 <unknown>
+#14 0x55786b5ea1aa <unknown>
+#15 0x55786b6406b8 <unknown>
+#16 0x55786b640847 <unknown>
+#17 0x55786b650243 <unknown>
+#18 0x7f72011d5ea7 start_thread
+
+[2025-02-28T09:20:21.973+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55cda8b8a4e3 <unknown>
+#1 0x55cda88b9c76 <unknown>
+#2 0x55cda88e704a <unknown>
+#3 0x55cda88e24a1 <unknown>
+#4 0x55cda88df029 <unknown>
+#5 0x55cda891dccc <unknown>
+#6 0x55cda891d47f <unknown>
+#7 0x55cda8914de3 <unknown>
+#8 0x55cda88ea2dd <unknown>
+#9 0x55cda88eb34e <unknown>
+#10 0x55cda8b4a3e4 <unknown>
+#11 0x55cda8b4e3d7 <unknown>
+#12 0x55cda8b58b20 <unknown>
+#13 0x55cda8b4f023 <unknown>
+#14 0x55cda8b1d1aa <unknown>
+#15 0x55cda8b736b8 <unknown>
+#16 0x55cda8b73847 <unknown>
+#17 0x55cda8b83243 <unknown>
+#18 0x7ffba771cea7 start_thread
+
+[2025-02-28T09:20:22.360+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55b2d16cd4e3 <unknown>
+#1 0x55b2d13fcc76 <unknown>
+#2 0x55b2d142a04a <unknown>
+#3 0x55b2d14254a1 <unknown>
+#4 0x55b2d1422029 <unknown>
+#5 0x55b2d1460ccc <unknown>
+#6 0x55b2d146047f <unknown>
+#7 0x55b2d1457de3 <unknown>
+#8 0x55b2d142d2dd <unknown>
+#9 0x55b2d142e34e <unknown>
+#10 0x55b2d168d3e4 <unknown>
+#11 0x55b2d16913d7 <unknown>
+#12 0x55b2d169bb20 <unknown>
+#13 0x55b2d1692023 <unknown>
+#14 0x55b2d16601aa <unknown>
+#15 0x55b2d16b66b8 <unknown>
+#16 0x55b2d16b6847 <unknown>
+#17 0x55b2d16c6243 <unknown>
+#18 0x7f195f15bea7 start_thread
+
+[2025-02-28T09:20:22.750+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55f1627904e3 <unknown>
+#1 0x55f1624bfc76 <unknown>
+#2 0x55f1624ed04a <unknown>
+#3 0x55f1624e84a1 <unknown>
+#4 0x55f1624e5029 <unknown>
+#5 0x55f162523ccc <unknown>
+#6 0x55f16252347f <unknown>
+#7 0x55f16251ade3 <unknown>
+#8 0x55f1624f02dd <unknown>
+#9 0x55f1624f134e <unknown>
+#10 0x55f1627503e4 <unknown>
+#11 0x55f1627543d7 <unknown>
+#12 0x55f16275eb20 <unknown>
+#13 0x55f162755023 <unknown>
+#14 0x55f1627231aa <unknown>
+#15 0x55f1627796b8 <unknown>
+#16 0x55f162779847 <unknown>
+#17 0x55f162789243 <unknown>
+#18 0x7ff0abfcfea7 start_thread
+
+[2025-02-28T09:20:23.023+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55da8aedd4e3 <unknown>
+#1 0x55da8ac0cc76 <unknown>
+#2 0x55da8ac3a04a <unknown>
+#3 0x55da8ac354a1 <unknown>
+#4 0x55da8ac32029 <unknown>
+#5 0x55da8ac70ccc <unknown>
+#6 0x55da8ac7047f <unknown>
+#7 0x55da8ac67de3 <unknown>
+#8 0x55da8ac3d2dd <unknown>
+#9 0x55da8ac3e34e <unknown>
+#10 0x55da8ae9d3e4 <unknown>
+#11 0x55da8aea13d7 <unknown>
+#12 0x55da8aeabb20 <unknown>
+#13 0x55da8aea2023 <unknown>
+#14 0x55da8ae701aa <unknown>
+#15 0x55da8aec66b8 <unknown>
+#16 0x55da8aec6847 <unknown>
+#17 0x55da8aed6243 <unknown>
+#18 0x7fc7e2997ea7 start_thread
+
+[2025-02-28T09:20:23.301+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55f29b40e4e3 <unknown>
+#1 0x55f29b13dc76 <unknown>
+#2 0x55f29b16b04a <unknown>
+#3 0x55f29b1664a1 <unknown>
+#4 0x55f29b163029 <unknown>
+#5 0x55f29b1a1ccc <unknown>
+#6 0x55f29b1a147f <unknown>
+#7 0x55f29b198de3 <unknown>
+#8 0x55f29b16e2dd <unknown>
+#9 0x55f29b16f34e <unknown>
+#10 0x55f29b3ce3e4 <unknown>
+#11 0x55f29b3d23d7 <unknown>
+#12 0x55f29b3dcb20 <unknown>
+#13 0x55f29b3d3023 <unknown>
+#14 0x55f29b3a11aa <unknown>
+#15 0x55f29b3f76b8 <unknown>
+#16 0x55f29b3f7847 <unknown>
+#17 0x55f29b407243 <unknown>
+#18 0x7fa789c12ea7 start_thread
+
+[2025-02-28T09:20:23.607+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x564c70dd64e3 <unknown>
+#1 0x564c70b05c76 <unknown>
+#2 0x564c70b3304a <unknown>
+#3 0x564c70b2e4a1 <unknown>
+#4 0x564c70b2b029 <unknown>
+#5 0x564c70b69ccc <unknown>
+#6 0x564c70b6947f <unknown>
+#7 0x564c70b60de3 <unknown>
+#8 0x564c70b362dd <unknown>
+#9 0x564c70b3734e <unknown>
+#10 0x564c70d963e4 <unknown>
+#11 0x564c70d9a3d7 <unknown>
+#12 0x564c70da4b20 <unknown>
+#13 0x564c70d9b023 <unknown>
+#14 0x564c70d691aa <unknown>
+#15 0x564c70dbf6b8 <unknown>
+#16 0x564c70dbf847 <unknown>
+#17 0x564c70dcf243 <unknown>
+#18 0x7f0fd8e98ea7 start_thread
+
+[2025-02-28T09:20:23.875+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x556eefe9c4e3 <unknown>
+#1 0x556eefbcbc76 <unknown>
+#2 0x556eefbf904a <unknown>
+#3 0x556eefbf44a1 <unknown>
+#4 0x556eefbf1029 <unknown>
+#5 0x556eefc2fccc <unknown>
+#6 0x556eefc2f47f <unknown>
+#7 0x556eefc26de3 <unknown>
+#8 0x556eefbfc2dd <unknown>
+#9 0x556eefbfd34e <unknown>
+#10 0x556eefe5c3e4 <unknown>
+#11 0x556eefe603d7 <unknown>
+#12 0x556eefe6ab20 <unknown>
+#13 0x556eefe61023 <unknown>
+#14 0x556eefe2f1aa <unknown>
+#15 0x556eefe856b8 <unknown>
+#16 0x556eefe85847 <unknown>
+#17 0x556eefe95243 <unknown>
+#18 0x7fd905d58ea7 start_thread
+
+[2025-02-28T09:20:24.147+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55f9c8cd84e3 <unknown>
+#1 0x55f9c8a07c76 <unknown>
+#2 0x55f9c8a3504a <unknown>
+#3 0x55f9c8a304a1 <unknown>
+#4 0x55f9c8a2d029 <unknown>
+#5 0x55f9c8a6bccc <unknown>
+#6 0x55f9c8a6b47f <unknown>
+#7 0x55f9c8a62de3 <unknown>
+#8 0x55f9c8a382dd <unknown>
+#9 0x55f9c8a3934e <unknown>
+#10 0x55f9c8c983e4 <unknown>
+#11 0x55f9c8c9c3d7 <unknown>
+#12 0x55f9c8ca6b20 <unknown>
+#13 0x55f9c8c9d023 <unknown>
+#14 0x55f9c8c6b1aa <unknown>
+#15 0x55f9c8cc16b8 <unknown>
+#16 0x55f9c8cc1847 <unknown>
+#17 0x55f9c8cd1243 <unknown>
+#18 0x7f5fc9a98ea7 start_thread
+
+[2025-02-28T09:20:24.423+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55afae8374e3 <unknown>
+#1 0x55afae566c76 <unknown>
+#2 0x55afae59404a <unknown>
+#3 0x55afae58f4a1 <unknown>
+#4 0x55afae58c029 <unknown>
+#5 0x55afae5caccc <unknown>
+#6 0x55afae5ca47f <unknown>
+#7 0x55afae5c1de3 <unknown>
+#8 0x55afae5972dd <unknown>
+#9 0x55afae59834e <unknown>
+#10 0x55afae7f73e4 <unknown>
+#11 0x55afae7fb3d7 <unknown>
+#12 0x55afae805b20 <unknown>
+#13 0x55afae7fc023 <unknown>
+#14 0x55afae7ca1aa <unknown>
+#15 0x55afae8206b8 <unknown>
+#16 0x55afae820847 <unknown>
+#17 0x55afae830243 <unknown>
+#18 0x7f5a50ff0ea7 start_thread
+
+[2025-02-28T09:20:24.702+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55ec67d2a4e3 <unknown>
+#1 0x55ec67a59c76 <unknown>
+#2 0x55ec67a8704a <unknown>
+#3 0x55ec67a824a1 <unknown>
+#4 0x55ec67a7f029 <unknown>
+#5 0x55ec67abdccc <unknown>
+#6 0x55ec67abd47f <unknown>
+#7 0x55ec67ab4de3 <unknown>
+#8 0x55ec67a8a2dd <unknown>
+#9 0x55ec67a8b34e <unknown>
+#10 0x55ec67cea3e4 <unknown>
+#11 0x55ec67cee3d7 <unknown>
+#12 0x55ec67cf8b20 <unknown>
+#13 0x55ec67cef023 <unknown>
+#14 0x55ec67cbd1aa <unknown>
+#15 0x55ec67d136b8 <unknown>
+#16 0x55ec67d13847 <unknown>
+#17 0x55ec67d23243 <unknown>
+#18 0x7f0587b5eea7 start_thread
+
+[2025-02-28T09:20:24.971+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5577f18fe4e3 <unknown>
+#1 0x5577f162dc76 <unknown>
+#2 0x5577f165b04a <unknown>
+#3 0x5577f16564a1 <unknown>
+#4 0x5577f1653029 <unknown>
+#5 0x5577f1691ccc <unknown>
+#6 0x5577f169147f <unknown>
+#7 0x5577f1688de3 <unknown>
+#8 0x5577f165e2dd <unknown>
+#9 0x5577f165f34e <unknown>
+#10 0x5577f18be3e4 <unknown>
+#11 0x5577f18c23d7 <unknown>
+#12 0x5577f18ccb20 <unknown>
+#13 0x5577f18c3023 <unknown>
+#14 0x5577f18911aa <unknown>
+#15 0x5577f18e76b8 <unknown>
+#16 0x5577f18e7847 <unknown>
+#17 0x5577f18f7243 <unknown>
+#18 0x7ffa4dfa9ea7 start_thread
+
+[2025-02-28T09:20:25.269+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5558fa9ee4e3 <unknown>
+#1 0x5558fa71dc76 <unknown>
+#2 0x5558fa74b04a <unknown>
+#3 0x5558fa7464a1 <unknown>
+#4 0x5558fa743029 <unknown>
+#5 0x5558fa781ccc <unknown>
+#6 0x5558fa78147f <unknown>
+#7 0x5558fa778de3 <unknown>
+#8 0x5558fa74e2dd <unknown>
+#9 0x5558fa74f34e <unknown>
+#10 0x5558fa9ae3e4 <unknown>
+#11 0x5558fa9b23d7 <unknown>
+#12 0x5558fa9bcb20 <unknown>
+#13 0x5558fa9b3023 <unknown>
+#14 0x5558fa9811aa <unknown>
+#15 0x5558fa9d76b8 <unknown>
+#16 0x5558fa9d7847 <unknown>
+#17 0x5558fa9e7243 <unknown>
+#18 0x7f63cedbeea7 start_thread
+
+[2025-02-28T09:20:25.514+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x564812a2b4e3 <unknown>
+#1 0x56481275ac76 <unknown>
+#2 0x56481278804a <unknown>
+#3 0x5648127834a1 <unknown>
+#4 0x564812780029 <unknown>
+#5 0x5648127beccc <unknown>
+#6 0x5648127be47f <unknown>
+#7 0x5648127b5de3 <unknown>
+#8 0x56481278b2dd <unknown>
+#9 0x56481278c34e <unknown>
+#10 0x5648129eb3e4 <unknown>
+#11 0x5648129ef3d7 <unknown>
+#12 0x5648129f9b20 <unknown>
+#13 0x5648129f0023 <unknown>
+#14 0x5648129be1aa <unknown>
+#15 0x564812a146b8 <unknown>
+#16 0x564812a14847 <unknown>
+#17 0x564812a24243 <unknown>
+#18 0x7fa4a3d5fea7 start_thread
+
+[2025-02-28T09:20:25.767+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5604b71b94e3 <unknown>
+#1 0x5604b6ee8c76 <unknown>
+#2 0x5604b6f1604a <unknown>
+#3 0x5604b6f114a1 <unknown>
+#4 0x5604b6f0e029 <unknown>
+#5 0x5604b6f4cccc <unknown>
+#6 0x5604b6f4c47f <unknown>
+#7 0x5604b6f43de3 <unknown>
+#8 0x5604b6f192dd <unknown>
+#9 0x5604b6f1a34e <unknown>
+#10 0x5604b71793e4 <unknown>
+#11 0x5604b717d3d7 <unknown>
+#12 0x5604b7187b20 <unknown>
+#13 0x5604b717e023 <unknown>
+#14 0x5604b714c1aa <unknown>
+#15 0x5604b71a26b8 <unknown>
+#16 0x5604b71a2847 <unknown>
+#17 0x5604b71b2243 <unknown>
+#18 0x7f3ae57e2ea7 start_thread
+
+[2025-02-28T09:20:26.017+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x555e1fdf24e3 <unknown>
+#1 0x555e1fb21c76 <unknown>
+#2 0x555e1fb4f04a <unknown>
+#3 0x555e1fb4a4a1 <unknown>
+#4 0x555e1fb47029 <unknown>
+#5 0x555e1fb85ccc <unknown>
+#6 0x555e1fb8547f <unknown>
+#7 0x555e1fb7cde3 <unknown>
+#8 0x555e1fb522dd <unknown>
+#9 0x555e1fb5334e <unknown>
+#10 0x555e1fdb23e4 <unknown>
+#11 0x555e1fdb63d7 <unknown>
+#12 0x555e1fdc0b20 <unknown>
+#13 0x555e1fdb7023 <unknown>
+#14 0x555e1fd851aa <unknown>
+#15 0x555e1fddb6b8 <unknown>
+#16 0x555e1fddb847 <unknown>
+#17 0x555e1fdeb243 <unknown>
+#18 0x7fb026238ea7 start_thread
+
+[2025-02-28T09:20:26.284+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5629426034e3 <unknown>
+#1 0x562942332c76 <unknown>
+#2 0x56294236004a <unknown>
+#3 0x56294235b4a1 <unknown>
+#4 0x562942358029 <unknown>
+#5 0x562942396ccc <unknown>
+#6 0x56294239647f <unknown>
+#7 0x56294238dde3 <unknown>
+#8 0x5629423632dd <unknown>
+#9 0x56294236434e <unknown>
+#10 0x5629425c33e4 <unknown>
+#11 0x5629425c73d7 <unknown>
+#12 0x5629425d1b20 <unknown>
+#13 0x5629425c8023 <unknown>
+#14 0x5629425961aa <unknown>
+#15 0x5629425ec6b8 <unknown>
+#16 0x5629425ec847 <unknown>
+#17 0x5629425fc243 <unknown>
+#18 0x7f9548a71ea7 start_thread
+
+[2025-02-28T09:20:26.553+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x563b410434e3 <unknown>
+#1 0x563b40d72c76 <unknown>
+#2 0x563b40da004a <unknown>
+#3 0x563b40d9b4a1 <unknown>
+#4 0x563b40d98029 <unknown>
+#5 0x563b40dd6ccc <unknown>
+#6 0x563b40dd647f <unknown>
+#7 0x563b40dcdde3 <unknown>
+#8 0x563b40da32dd <unknown>
+#9 0x563b40da434e <unknown>
+#10 0x563b410033e4 <unknown>
+#11 0x563b410073d7 <unknown>
+#12 0x563b41011b20 <unknown>
+#13 0x563b41008023 <unknown>
+#14 0x563b40fd61aa <unknown>
+#15 0x563b4102c6b8 <unknown>
+#16 0x563b4102c847 <unknown>
+#17 0x563b4103c243 <unknown>
+#18 0x7f4f06dcbea7 start_thread
+
+[2025-02-28T09:20:26.815+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x564e6e66c4e3 <unknown>
+#1 0x564e6e39bc76 <unknown>
+#2 0x564e6e3c904a <unknown>
+#3 0x564e6e3c44a1 <unknown>
+#4 0x564e6e3c1029 <unknown>
+#5 0x564e6e3ffccc <unknown>
+#6 0x564e6e3ff47f <unknown>
+#7 0x564e6e3f6de3 <unknown>
+#8 0x564e6e3cc2dd <unknown>
+#9 0x564e6e3cd34e <unknown>
+#10 0x564e6e62c3e4 <unknown>
+#11 0x564e6e6303d7 <unknown>
+#12 0x564e6e63ab20 <unknown>
+#13 0x564e6e631023 <unknown>
+#14 0x564e6e5ff1aa <unknown>
+#15 0x564e6e6556b8 <unknown>
+#16 0x564e6e655847 <unknown>
+#17 0x564e6e665243 <unknown>
+#18 0x7f6079e65ea7 start_thread
+
+[2025-02-28T09:20:27.087+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5612399574e3 <unknown>
+#1 0x561239686c76 <unknown>
+#2 0x5612396b404a <unknown>
+#3 0x5612396af4a1 <unknown>
+#4 0x5612396ac029 <unknown>
+#5 0x5612396eaccc <unknown>
+#6 0x5612396ea47f <unknown>
+#7 0x5612396e1de3 <unknown>
+#8 0x5612396b72dd <unknown>
+#9 0x5612396b834e <unknown>
+#10 0x5612399173e4 <unknown>
+#11 0x56123991b3d7 <unknown>
+#12 0x561239925b20 <unknown>
+#13 0x56123991c023 <unknown>
+#14 0x5612398ea1aa <unknown>
+#15 0x5612399406b8 <unknown>
+#16 0x561239940847 <unknown>
+#17 0x561239950243 <unknown>
+#18 0x7f6796cd7ea7 start_thread
+
+[2025-02-28T09:20:27.367+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55feb74574e3 <unknown>
+#1 0x55feb7186c76 <unknown>
+#2 0x55feb71b404a <unknown>
+#3 0x55feb71af4a1 <unknown>
+#4 0x55feb71ac029 <unknown>
+#5 0x55feb71eaccc <unknown>
+#6 0x55feb71ea47f <unknown>
+#7 0x55feb71e1de3 <unknown>
+#8 0x55feb71b72dd <unknown>
+#9 0x55feb71b834e <unknown>
+#10 0x55feb74173e4 <unknown>
+#11 0x55feb741b3d7 <unknown>
+#12 0x55feb7425b20 <unknown>
+#13 0x55feb741c023 <unknown>
+#14 0x55feb73ea1aa <unknown>
+#15 0x55feb74406b8 <unknown>
+#16 0x55feb7440847 <unknown>
+#17 0x55feb7450243 <unknown>
+#18 0x7f0a3a1dbea7 start_thread
+
+[2025-02-28T09:20:27.607+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x555c5c9ad4e3 <unknown>
+#1 0x555c5c6dcc76 <unknown>
+#2 0x555c5c70a04a <unknown>
+#3 0x555c5c7054a1 <unknown>
+#4 0x555c5c702029 <unknown>
+#5 0x555c5c740ccc <unknown>
+#6 0x555c5c74047f <unknown>
+#7 0x555c5c737de3 <unknown>
+#8 0x555c5c70d2dd <unknown>
+#9 0x555c5c70e34e <unknown>
+#10 0x555c5c96d3e4 <unknown>
+#11 0x555c5c9713d7 <unknown>
+#12 0x555c5c97bb20 <unknown>
+#13 0x555c5c972023 <unknown>
+#14 0x555c5c9401aa <unknown>
+#15 0x555c5c9966b8 <unknown>
+#16 0x555c5c996847 <unknown>
+#17 0x555c5c9a6243 <unknown>
+#18 0x7fd3fb5e5ea7 start_thread
+
+[2025-02-28T09:20:27.847+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56399f2204e3 <unknown>
+#1 0x56399ef4fc76 <unknown>
+#2 0x56399ef7d04a <unknown>
+#3 0x56399ef784a1 <unknown>
+#4 0x56399ef75029 <unknown>
+#5 0x56399efb3ccc <unknown>
+#6 0x56399efb347f <unknown>
+#7 0x56399efaade3 <unknown>
+#8 0x56399ef802dd <unknown>
+#9 0x56399ef8134e <unknown>
+#10 0x56399f1e03e4 <unknown>
+#11 0x56399f1e43d7 <unknown>
+#12 0x56399f1eeb20 <unknown>
+#13 0x56399f1e5023 <unknown>
+#14 0x56399f1b31aa <unknown>
+#15 0x56399f2096b8 <unknown>
+#16 0x56399f209847 <unknown>
+#17 0x56399f219243 <unknown>
+#18 0x7fea42a0dea7 start_thread
+
+[2025-02-28T09:20:28.105+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x561e8d5124e3 <unknown>
+#1 0x561e8d241c76 <unknown>
+#2 0x561e8d26f04a <unknown>
+#3 0x561e8d26a4a1 <unknown>
+#4 0x561e8d267029 <unknown>
+#5 0x561e8d2a5ccc <unknown>
+#6 0x561e8d2a547f <unknown>
+#7 0x561e8d29cde3 <unknown>
+#8 0x561e8d2722dd <unknown>
+#9 0x561e8d27334e <unknown>
+#10 0x561e8d4d23e4 <unknown>
+#11 0x561e8d4d63d7 <unknown>
+#12 0x561e8d4e0b20 <unknown>
+#13 0x561e8d4d7023 <unknown>
+#14 0x561e8d4a51aa <unknown>
+#15 0x561e8d4fb6b8 <unknown>
+#16 0x561e8d4fb847 <unknown>
+#17 0x561e8d50b243 <unknown>
+#18 0x7f2771dfeea7 start_thread
+
+[2025-02-28T09:20:28.358+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x56017af694e3 <unknown>
+#1 0x56017ac98c76 <unknown>
+#2 0x56017acc604a <unknown>
+#3 0x56017acc14a1 <unknown>
+#4 0x56017acbe029 <unknown>
+#5 0x56017acfcccc <unknown>
+#6 0x56017acfc47f <unknown>
+#7 0x56017acf3de3 <unknown>
+#8 0x56017acc92dd <unknown>
+#9 0x56017acca34e <unknown>
+#10 0x56017af293e4 <unknown>
+#11 0x56017af2d3d7 <unknown>
+#12 0x56017af37b20 <unknown>
+#13 0x56017af2e023 <unknown>
+#14 0x56017aefc1aa <unknown>
+#15 0x56017af526b8 <unknown>
+#16 0x56017af52847 <unknown>
+#17 0x56017af62243 <unknown>
+#18 0x7f8551460ea7 start_thread
+
+[2025-02-28T09:20:28.624+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x561d7bc534e3 <unknown>
+#1 0x561d7b982c76 <unknown>
+#2 0x561d7b9b004a <unknown>
+#3 0x561d7b9ab4a1 <unknown>
+#4 0x561d7b9a8029 <unknown>
+#5 0x561d7b9e6ccc <unknown>
+#6 0x561d7b9e647f <unknown>
+#7 0x561d7b9ddde3 <unknown>
+#8 0x561d7b9b32dd <unknown>
+#9 0x561d7b9b434e <unknown>
+#10 0x561d7bc133e4 <unknown>
+#11 0x561d7bc173d7 <unknown>
+#12 0x561d7bc21b20 <unknown>
+#13 0x561d7bc18023 <unknown>
+#14 0x561d7bbe61aa <unknown>
+#15 0x561d7bc3c6b8 <unknown>
+#16 0x561d7bc3c847 <unknown>
+#17 0x561d7bc4c243 <unknown>
+#18 0x7f34524c1ea7 start_thread
+
+[2025-02-28T09:20:28.876+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5612bc3da4e3 <unknown>
+#1 0x5612bc109c76 <unknown>
+#2 0x5612bc13704a <unknown>
+#3 0x5612bc1324a1 <unknown>
+#4 0x5612bc12f029 <unknown>
+#5 0x5612bc16dccc <unknown>
+#6 0x5612bc16d47f <unknown>
+#7 0x5612bc164de3 <unknown>
+#8 0x5612bc13a2dd <unknown>
+#9 0x5612bc13b34e <unknown>
+#10 0x5612bc39a3e4 <unknown>
+#11 0x5612bc39e3d7 <unknown>
+#12 0x5612bc3a8b20 <unknown>
+#13 0x5612bc39f023 <unknown>
+#14 0x5612bc36d1aa <unknown>
+#15 0x5612bc3c36b8 <unknown>
+#16 0x5612bc3c3847 <unknown>
+#17 0x5612bc3d3243 <unknown>
+#18 0x7f2b89ec9ea7 start_thread
+
+[2025-02-28T09:20:29.135+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5555b648b4e3 <unknown>
+#1 0x5555b61bac76 <unknown>
+#2 0x5555b61e804a <unknown>
+#3 0x5555b61e34a1 <unknown>
+#4 0x5555b61e0029 <unknown>
+#5 0x5555b621eccc <unknown>
+#6 0x5555b621e47f <unknown>
+#7 0x5555b6215de3 <unknown>
+#8 0x5555b61eb2dd <unknown>
+#9 0x5555b61ec34e <unknown>
+#10 0x5555b644b3e4 <unknown>
+#11 0x5555b644f3d7 <unknown>
+#12 0x5555b6459b20 <unknown>
+#13 0x5555b6450023 <unknown>
+#14 0x5555b641e1aa <unknown>
+#15 0x5555b64746b8 <unknown>
+#16 0x5555b6474847 <unknown>
+#17 0x5555b6484243 <unknown>
+#18 0x7f87d3640ea7 start_thread
+
+[2025-02-28T09:20:29.393+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55ca417eb4e3 <unknown>
+#1 0x55ca4151ac76 <unknown>
+#2 0x55ca4154804a <unknown>
+#3 0x55ca415434a1 <unknown>
+#4 0x55ca41540029 <unknown>
+#5 0x55ca4157eccc <unknown>
+#6 0x55ca4157e47f <unknown>
+#7 0x55ca41575de3 <unknown>
+#8 0x55ca4154b2dd <unknown>
+#9 0x55ca4154c34e <unknown>
+#10 0x55ca417ab3e4 <unknown>
+#11 0x55ca417af3d7 <unknown>
+#12 0x55ca417b9b20 <unknown>
+#13 0x55ca417b0023 <unknown>
+#14 0x55ca4177e1aa <unknown>
+#15 0x55ca417d46b8 <unknown>
+#16 0x55ca417d4847 <unknown>
+#17 0x55ca417e4243 <unknown>
+#18 0x7f237cd97ea7 start_thread
+
+[2025-02-28T09:20:29.654+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55f9a9e6b4e3 <unknown>
+#1 0x55f9a9b9ac76 <unknown>
+#2 0x55f9a9bc804a <unknown>
+#3 0x55f9a9bc34a1 <unknown>
+#4 0x55f9a9bc0029 <unknown>
+#5 0x55f9a9bfeccc <unknown>
+#6 0x55f9a9bfe47f <unknown>
+#7 0x55f9a9bf5de3 <unknown>
+#8 0x55f9a9bcb2dd <unknown>
+#9 0x55f9a9bcc34e <unknown>
+#10 0x55f9a9e2b3e4 <unknown>
+#11 0x55f9a9e2f3d7 <unknown>
+#12 0x55f9a9e39b20 <unknown>
+#13 0x55f9a9e30023 <unknown>
+#14 0x55f9a9dfe1aa <unknown>
+#15 0x55f9a9e546b8 <unknown>
+#16 0x55f9a9e54847 <unknown>
+#17 0x55f9a9e64243 <unknown>
+#18 0x7f8d578ccea7 start_thread
+
+[2025-02-28T09:20:29.907+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55b0c7e8e4e3 <unknown>
+#1 0x55b0c7bbdc76 <unknown>
+#2 0x55b0c7beb04a <unknown>
+#3 0x55b0c7be64a1 <unknown>
+#4 0x55b0c7be3029 <unknown>
+#5 0x55b0c7c21ccc <unknown>
+#6 0x55b0c7c2147f <unknown>
+#7 0x55b0c7c18de3 <unknown>
+#8 0x55b0c7bee2dd <unknown>
+#9 0x55b0c7bef34e <unknown>
+#10 0x55b0c7e4e3e4 <unknown>
+#11 0x55b0c7e523d7 <unknown>
+#12 0x55b0c7e5cb20 <unknown>
+#13 0x55b0c7e53023 <unknown>
+#14 0x55b0c7e211aa <unknown>
+#15 0x55b0c7e776b8 <unknown>
+#16 0x55b0c7e77847 <unknown>
+#17 0x55b0c7e87243 <unknown>
+#18 0x7f0b294e8ea7 start_thread
+
+[2025-02-28T09:20:30.177+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x563895d104e3 <unknown>
+#1 0x563895a3fc76 <unknown>
+#2 0x563895a6d04a <unknown>
+#3 0x563895a684a1 <unknown>
+#4 0x563895a65029 <unknown>
+#5 0x563895aa3ccc <unknown>
+#6 0x563895aa347f <unknown>
+#7 0x563895a9ade3 <unknown>
+#8 0x563895a702dd <unknown>
+#9 0x563895a7134e <unknown>
+#10 0x563895cd03e4 <unknown>
+#11 0x563895cd43d7 <unknown>
+#12 0x563895cdeb20 <unknown>
+#13 0x563895cd5023 <unknown>
+#14 0x563895ca31aa <unknown>
+#15 0x563895cf96b8 <unknown>
+#16 0x563895cf9847 <unknown>
+#17 0x563895d09243 <unknown>
+#18 0x7fa42db43ea7 start_thread
+
+[2025-02-28T09:20:30.427+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55b1fb9fd4e3 <unknown>
+#1 0x55b1fb72cc76 <unknown>
+#2 0x55b1fb75a04a <unknown>
+#3 0x55b1fb7554a1 <unknown>
+#4 0x55b1fb752029 <unknown>
+#5 0x55b1fb790ccc <unknown>
+#6 0x55b1fb79047f <unknown>
+#7 0x55b1fb787de3 <unknown>
+#8 0x55b1fb75d2dd <unknown>
+#9 0x55b1fb75e34e <unknown>
+#10 0x55b1fb9bd3e4 <unknown>
+#11 0x55b1fb9c13d7 <unknown>
+#12 0x55b1fb9cbb20 <unknown>
+#13 0x55b1fb9c2023 <unknown>
+#14 0x55b1fb9901aa <unknown>
+#15 0x55b1fb9e66b8 <unknown>
+#16 0x55b1fb9e6847 <unknown>
+#17 0x55b1fb9f6243 <unknown>
+#18 0x7fc3d1a0dea7 start_thread
+
+[2025-02-28T09:20:30.683+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55f06dae94e3 <unknown>
+#1 0x55f06d818c76 <unknown>
+#2 0x55f06d84604a <unknown>
+#3 0x55f06d8414a1 <unknown>
+#4 0x55f06d83e029 <unknown>
+#5 0x55f06d87cccc <unknown>
+#6 0x55f06d87c47f <unknown>
+#7 0x55f06d873de3 <unknown>
+#8 0x55f06d8492dd <unknown>
+#9 0x55f06d84a34e <unknown>
+#10 0x55f06daa93e4 <unknown>
+#11 0x55f06daad3d7 <unknown>
+#12 0x55f06dab7b20 <unknown>
+#13 0x55f06daae023 <unknown>
+#14 0x55f06da7c1aa <unknown>
+#15 0x55f06dad26b8 <unknown>
+#16 0x55f06dad2847 <unknown>
+#17 0x55f06dae2243 <unknown>
+#18 0x7fc2461a0ea7 start_thread
+
+[2025-02-28T09:20:30.927+0000] {data_stream.py:32} ERROR - An error occured: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55cdfffc44e3 <unknown>
+#1 0x55cdffcf3c76 <unknown>
+#2 0x55cdffd2104a <unknown>
+#3 0x55cdffd1c4a1 <unknown>
+#4 0x55cdffd19029 <unknown>
+#5 0x55cdffd57ccc <unknown>
+#6 0x55cdffd5747f <unknown>
+#7 0x55cdffd4ede3 <unknown>
+#8 0x55cdffd242dd <unknown>
+#9 0x55cdffd2534e <unknown>
+#10 0x55cdfff843e4 <unknown>
+#11 0x55cdfff883d7 <unknown>
+#12 0x55cdfff92b20 <unknown>
+#13 0x55cdfff89023 <unknown>
+#14 0x55cdfff571aa <unknown>
+#15 0x55cdfffad6b8 <unknown>
+#16 0x55cdfffad847 <unknown>
+#17 0x55cdfffbd243 <unknown>
+#18 0x7fdae5f2fea7 start_thread
+
+[2025-02-28T09:20:30.928+0000] {conn.py:928} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=broker:29092 <connected> [IPv4 ('172.18.0.9', 29092)]>: Closing connection. 
+[2025-02-28T09:20:30.930+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-02-28T09:20:30.945+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=stream_data, task_id=stream_data_from_api, execution_date=20250228T091929, start_date=20250228T091930, end_date=20250228T092030
+[2025-02-28T09:20:30.998+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-02-28T09:20:31.017+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

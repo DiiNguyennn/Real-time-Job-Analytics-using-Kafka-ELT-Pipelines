@@ -1,0 +1,38 @@
+[2025-03-11T08:31:57.553+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: job_data_stream.job_data_stream manual__2025-03-11T08:31:56.571003+00:00 [queued]>
+[2025-03-11T08:31:57.565+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: job_data_stream.job_data_stream manual__2025-03-11T08:31:56.571003+00:00 [queued]>
+[2025-03-11T08:31:57.565+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-03-11T08:31:57.582+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): job_data_stream> on 2025-03-11 08:31:56.571003+00:00
+[2025-03-11T08:31:57.587+0000] {standard_task_runner.py:57} INFO - Started process 51 to run task
+[2025-03-11T08:31:57.594+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'job_data_stream', 'job_data_stream', 'manual__2025-03-11T08:31:56.571003+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/data_stream.py', '--cfg-path', '/tmp/tmp50zx_kzz']
+[2025-03-11T08:31:57.596+0000] {standard_task_runner.py:85} INFO - Job 79: Subtask job_data_stream
+[2025-03-11T08:31:57.667+0000] {task_command.py:415} INFO - Running <TaskInstance: job_data_stream.job_data_stream manual__2025-03-11T08:31:56.571003+00:00 [running]> on host 0431913abdf0
+[2025-03-11T08:31:57.774+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='dii' AIRFLOW_CTX_DAG_ID='job_data_stream' AIRFLOW_CTX_TASK_ID='job_data_stream' AIRFLOW_CTX_EXECUTION_DATE='2025-03-11T08:31:56.571003+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-11T08:31:56.571003+00:00'
+[2025-03-11T08:31:57.840+0000] {conn.py:1542} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2025-03-11T08:31:57.841+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2025-03-11T08:31:57.842+0000] {conn.py:1219} INFO - Probing node bootstrap-0 broker version
+[2025-03-11T08:31:57.897+0000] {conn.py:1542} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2025-03-11T08:31:57.897+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2025-03-11T08:31:57.909+0000] {conn.py:1542} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2025-03-11T08:31:57.910+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2025-03-11T08:31:57.911+0000] {conn.py:1219} INFO - Probing node bootstrap-0 broker version
+[2025-03-11T08:31:57.925+0000] {conn.py:1542} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2025-03-11T08:31:57.925+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2025-03-11T08:31:57.926+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_stream.py", line 31, in stream_data
+    producer = KafkaProducer(bootstrap_servers=['broker:29092'])
+  File "/home/airflow/.local/lib/python3.8/site-packages/kafka/producer/kafka.py", line 383, in __init__
+    client = self.config['kafka_client'](
+  File "/home/airflow/.local/lib/python3.8/site-packages/kafka/client_async.py", line 241, in __init__
+    self.config['api_version'] = self.check_version(timeout=check_timeout)
+  File "/home/airflow/.local/lib/python3.8/site-packages/kafka/client_async.py", line 918, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+[2025-03-11T08:31:57.953+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=job_data_stream, task_id=job_data_stream, execution_date=20250311T083156, start_date=20250311T083157, end_date=20250311T083157
+[2025-03-11T08:31:57.970+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 79 for task job_data_stream (NoBrokersAvailable; 51)
+[2025-03-11T08:31:58.015+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-03-11T08:31:58.045+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

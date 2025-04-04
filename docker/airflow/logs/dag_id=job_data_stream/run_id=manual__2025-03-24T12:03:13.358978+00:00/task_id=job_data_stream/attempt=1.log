@@ -1,0 +1,72 @@
+[2025-03-24T12:03:14.965+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: job_data_stream.job_data_stream manual__2025-03-24T12:03:13.358978+00:00 [queued]>
+[2025-03-24T12:03:14.978+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: job_data_stream.job_data_stream manual__2025-03-24T12:03:13.358978+00:00 [queued]>
+[2025-03-24T12:03:14.979+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-03-24T12:03:14.995+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): job_data_stream> on 2025-03-24 12:03:13.358978+00:00
+[2025-03-24T12:03:15.001+0000] {standard_task_runner.py:57} INFO - Started process 6185 to run task
+[2025-03-24T12:03:15.005+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'job_data_stream', 'job_data_stream', 'manual__2025-03-24T12:03:13.358978+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/data_stream.py', '--cfg-path', '/tmp/tmpgokgw3cq']
+[2025-03-24T12:03:15.007+0000] {standard_task_runner.py:85} INFO - Job 43: Subtask job_data_stream
+[2025-03-24T12:03:15.079+0000] {task_command.py:415} INFO - Running <TaskInstance: job_data_stream.job_data_stream manual__2025-03-24T12:03:13.358978+00:00 [running]> on host 844ea759a987
+[2025-03-24T12:03:15.188+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='dii' AIRFLOW_CTX_DAG_ID='job_data_stream' AIRFLOW_CTX_TASK_ID='job_data_stream' AIRFLOW_CTX_EXECUTION_DATE='2025-03-24T12:03:13.358978+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-24T12:03:13.358978+00:00'
+[2025-03-24T12:03:15.192+0000] {conn.py:384} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.18.0.2', 29092)]>: connecting to broker:29092 [('172.18.0.2', 29092) IPv4]
+[2025-03-24T12:03:15.192+0000] {conn.py:1219} INFO - Probing node bootstrap-0 broker version
+[2025-03-24T12:03:15.193+0000] {conn.py:414} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.18.0.2', 29092)]>: Connection complete.
+[2025-03-24T12:03:15.301+0000] {conn.py:1282} INFO - Broker version identified as 2.6.0
+[2025-03-24T12:03:15.301+0000] {conn.py:1283} INFO - Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+[2025-03-24T12:03:28.192+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 201:70
+[2025-03-24T12:05:19.670+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 202:70
+[2025-03-24T12:07:10.685+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 203:70
+[2025-03-24T12:08:15.409+0000] {conn.py:384} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.2', 29092)]>: connecting to broker:29092 [('172.18.0.2', 29092) IPv4]
+[2025-03-24T12:08:15.414+0000] {conn.py:414} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.2', 29092)]>: Connection complete.
+[2025-03-24T12:08:15.415+0000] {conn.py:928} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=broker:29092 <connected> [IPv4 ('172.18.0.2', 29092)]>: Closing connection. 
+[2025-03-24T12:09:02.165+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 204:70
+[2025-03-24T12:10:52.162+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 205:70
+[2025-03-24T12:12:41.494+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 206:70
+[2025-03-24T12:14:30.501+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 207:70
+[2025-03-24T12:16:22.273+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 208:70
+[2025-03-24T12:18:13.313+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 209:70
+[2025-03-24T12:20:03.004+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 210:70
+[2025-03-24T12:21:53.922+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 211:70
+[2025-03-24T12:23:45.028+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 212:70
+[2025-03-24T12:25:35.260+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 213:70
+[2025-03-24T12:27:27.100+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 214:70
+[2025-03-24T12:29:17.819+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 215:70
+[2025-03-24T12:31:10.881+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 216:70
+[2025-03-24T12:33:01.944+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 217:70
+[2025-03-24T12:34:52.241+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 218:70
+[2025-03-24T12:36:42.991+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 219:70
+[2025-03-24T12:38:33.715+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 220:70
+[2025-03-24T12:40:24.444+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 221:70
+[2025-03-24T12:42:15.445+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 222:70
+[2025-03-24T12:44:06.434+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 223:70
+[2025-03-24T12:45:57.026+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 224:70
+[2025-03-24T12:47:47.182+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 225:70
+[2025-03-24T12:49:37.791+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 226:70
+[2025-03-24T12:51:29.407+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 227:70
+[2025-03-24T12:53:19.453+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 228:70
+[2025-03-24T12:55:10.421+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 229:70
+[2025-03-24T12:57:01.633+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 230:70
+[2025-03-24T12:58:54.107+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 231:70
+[2025-03-24T13:00:45.187+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 232:70
+[2025-03-24T13:02:36.811+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 233:70
+[2025-03-24T13:04:28.054+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 234:70
+[2025-03-24T13:06:18.867+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 235:70
+[2025-03-24T13:08:09.754+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 236:70
+[2025-03-24T13:10:00.746+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 237:70
+[2025-03-24T13:11:52.633+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 238:70
+[2025-03-24T13:13:43.733+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 239:70
+[2025-03-24T13:15:32.951+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 240:70
+[2025-03-24T13:17:23.446+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 241:70
+[2025-03-24T13:19:14.426+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 242:70
+[2025-03-24T13:21:05.265+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 243:70
+[2025-03-24T13:22:56.585+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 244:70
+[2025-03-24T13:24:47.743+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 245:70
+[2025-03-24T13:26:39.394+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 246:70
+[2025-03-24T13:28:30.633+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 247:70
+[2025-03-24T13:30:20.887+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 248:70
+[2025-03-24T13:32:10.679+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 249:70
+[2025-03-24T13:34:02.644+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 250:70
+[2025-03-24T13:35:43.695+0000] {conn.py:928} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=broker:29092 <connected> [IPv4 ('172.18.0.2', 29092)]>: Closing connection. 
+[2025-03-24T13:35:43.700+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-03-24T13:35:43.727+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=job_data_stream, task_id=job_data_stream, execution_date=20250324T120313, start_date=20250324T120314, end_date=20250324T133543
+[2025-03-24T13:35:43.783+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-03-24T13:35:43.831+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

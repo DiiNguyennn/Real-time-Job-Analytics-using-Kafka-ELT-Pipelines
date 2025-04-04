@@ -1,0 +1,315 @@
+[2025-03-01T01:57:53.881+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stream_data.stream_data_from_api scheduled__2025-02-28T00:00:00+00:00 [queued]>
+[2025-03-01T01:57:53.890+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stream_data.stream_data_from_api scheduled__2025-02-28T00:00:00+00:00 [queued]>
+[2025-03-01T01:57:53.891+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-03-01T01:57:53.902+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): stream_data_from_api> on 2025-02-28 00:00:00+00:00
+[2025-03-01T01:57:53.907+0000] {standard_task_runner.py:57} INFO - Started process 51 to run task
+[2025-03-01T01:57:53.911+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'stream_data', 'stream_data_from_api', 'scheduled__2025-02-28T00:00:00+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/data_stream.py', '--cfg-path', '/tmp/tmpm8641gw7']
+[2025-03-01T01:57:53.913+0000] {standard_task_runner.py:85} INFO - Job 38: Subtask stream_data_from_api
+[2025-03-01T01:57:53.979+0000] {task_command.py:415} INFO - Running <TaskInstance: stream_data.stream_data_from_api scheduled__2025-02-28T00:00:00+00:00 [running]> on host 1f82383b7992
+[2025-03-01T01:57:54.069+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='dii' AIRFLOW_CTX_DAG_ID='stream_data' AIRFLOW_CTX_TASK_ID='stream_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2025-02-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-02-28T00:00:00+00:00'
+[2025-03-01T01:57:54.074+0000] {conn.py:384} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.18.0.3', 29092)]>: connecting to broker:29092 [('172.18.0.3', 29092) IPv4]
+[2025-03-01T01:57:54.075+0000] {conn.py:1219} INFO - Probing node bootstrap-0 broker version
+[2025-03-01T01:57:54.076+0000] {conn.py:414} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.18.0.3', 29092)]>: Connection complete.
+[2025-03-01T01:57:54.188+0000] {conn.py:1282} INFO - Broker version identified as 2.6.0
+[2025-03-01T01:57:54.189+0000] {conn.py:1283} INFO - Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+[2025-03-01T01:58:04.841+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 1:3
+[2025-03-01T01:58:09.193+0000] {logging_mixin.py:151} INFO - [
+   {
+      "job_title": "Online Marketing - SEO Associate - Shopee",
+      "company_name": "Shopee",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "1 week ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/online-marketing-seo-associate-shopee-at-shopee-4154137921?position=1&pageNum=0&refId=9e67hMMzghD0Xqg7foJzHQ%3D%3D&trackingId=78ntJ4G8YWQMAaid2nxzEw%3D%3D"
+   },
+   {
+      "job_title": "Digital Content/ Landing Page Specialist",
+      "company_name": "Crypto.com",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "1 week ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/digital-content-landing-page-specialist-at-crypto-com-4132626884?position=2&pageNum=0&refId=9e67hMMzghD0Xqg7foJzHQ%3D%3D&trackingId=XXEgeHcVrwz%2B8ORbewszjA%3D%3D"
+   },
+   {
+      "job_title": "Marketing Executive",
+      "company_name": "Hegka Job Match",
+      "address": "Ho Chi Minh City Metropolitan Area",
+      "posted_time": "5 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/marketing-executive-at-hegka-job-match-4162846185?position=3&pageNum=0&refId=9e67hMMzghD0Xqg7foJzHQ%3D%3D&trackingId=EC5SyEG0wE3P3AiQS%2FxQjQ%3D%3D"
+   }
+]
+[2025-03-01T01:58:09.208+0000] {conn.py:384} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.3', 29092)]>: connecting to broker:29092 [('172.18.0.3', 29092) IPv4]
+[2025-03-01T01:58:09.210+0000] {conn.py:414} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.3', 29092)]>: Connection complete.
+[2025-03-01T01:58:09.211+0000] {conn.py:928} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=broker:29092 <connected> [IPv4 ('172.18.0.3', 29092)]>: Closing connection. 
+[2025-03-01T01:58:19.296+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 1:38
+[2025-03-01T01:59:14.392+0000] {logging_mixin.py:151} INFO - [
+   {
+      "job_title": "Online Marketing - SEO Associate - Shopee",
+      "company_name": "Shopee",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "1 week ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/online-marketing-seo-associate-shopee-at-shopee-4154137921?position=1&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=PRf0cY9KlvFrKbLgl1AEzg%3D%3D"
+   },
+   {
+      "job_title": "Digital Content/ Landing Page Specialist",
+      "company_name": "Crypto.com",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "1 week ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/digital-content-landing-page-specialist-at-crypto-com-4132626884?position=2&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=NGIuBRFFyeXawW%2FVAtSeTQ%3D%3D"
+   },
+   {
+      "job_title": "Marketing Executive",
+      "company_name": "Hegka Job Match",
+      "address": "Ho Chi Minh City Metropolitan Area",
+      "posted_time": "5 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/marketing-executive-at-hegka-job-match-4162846185?position=3&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=7e1OrI2lgQMeQvFT8e%2Fa5A%3D%3D"
+   },
+   {
+      "job_title": "Marketing Executive",
+      "company_name": "Hegka Job Match",
+      "address": "Ho Chi Minh City Metropolitan Area",
+      "posted_time": "5 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/marketing-executive-at-hegka-job-match-4162846187?position=4&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=SvF1eAmrsJtUgE2%2FF%2BSiiw%3D%3D"
+   },
+   {
+      "job_title": "Growth Marketing Manager (B2B SaaS)",
+      "company_name": "Portcast",
+      "address": "Ho Chi Minh City Metropolitan Area",
+      "posted_time": "1 month ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/growth-marketing-manager-b2b-saas-at-portcast-4129694752?position=5&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=GKLyzZ6aBPqzWmJxqJSjBQ%3D%3D"
+   },
+   {
+      "job_title": "Junior Content Marketing Associate",
+      "company_name": "OOOLAB",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "1 month ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/junior-content-marketing-associate-at-ooolab-4129625737?position=6&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=BXd%2FoFt1AIm823%2BB65ftUg%3D%3D"
+   },
+   {
+      "job_title": "PR & Communications Associate",
+      "company_name": "Lalamove",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "2 weeks ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/pr-communications-associate-at-lalamove-4148607498?position=7&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=06uMGVwRroV8cpbkRm%2BUiA%3D%3D"
+   },
+   {
+      "job_title": "SEO Intern",
+      "company_name": "Ematic Solutions",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "3 weeks ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/seo-intern-at-ematic-solutions-4145058760?position=8&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=SIcgCPL0GX9PwlvvavFB6g%3D%3D"
+   },
+   {
+      "job_title": "Visual and Content Admin Executive",
+      "company_name": "Intrepid Asia",
+      "address": "Ho Chi Minh City Metropolitan Area",
+      "posted_time": "3 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/visual-and-content-admin-executive-at-intrepid-asia-4165058909?position=9&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=oVGJzcd8e%2BVNEauVic1wZQ%3D%3D"
+   },
+   {
+      "job_title": "Digital Marketing Executive",
+      "company_name": "Hanna Instruments Việt Nam",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "3 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/digital-marketing-executive-at-hanna-instruments-vi%E1%BB%87t-nam-4165792920?position=10&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=b96Ver%2FlGkBzJt7VKL0Qdg%3D%3D"
+   },
+   {
+      "job_title": "Digital Marketing Executive (Full-time)",
+      "company_name": "ECOMBEST LLC",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "2 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/digital-marketing-executive-full-time-at-ecombest-llc-4150940197?position=11&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=is%2FNhFOyyfxtXoV8hy6TRw%3D%3D"
+   },
+   {
+      "job_title": "Brand Safety & Media Operation Manager",
+      "company_name": "Unilever",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "1 week ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/brand-safety-media-operation-manager-at-unilever-4157304067?position=12&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=IPsX5zlNM6KVub5NQnD9eg%3D%3D"
+   },
+   {
+      "job_title": "Senior Marketing Specialist",
+      "company_name": "LARION",
+      "address": "Quận 12, Ho Chi Minh City, Vietnam",
+      "posted_time": "1 week ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/senior-marketing-specialist-at-larion-4156287950?position=13&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=Hu4SWj%2B%2FetJph0A%2FXKNCWQ%3D%3D"
+   },
+   {
+      "job_title": "Senior Marketing Executive",
+      "company_name": "Zalopay",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "4 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/senior-marketing-executive-at-zalopay-4163862006?position=14&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=JzbuRK%2BTB7GWdT9ISzUjXw%3D%3D"
+   },
+   {
+      "job_title": "Senior Digital Marketing Executive (F&B, Retail, Entertainment)",
+      "company_name": "TINI CORP",
+      "address": "Ho Chi Minh City Metropolitan Area",
+      "posted_time": "1 week ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/senior-digital-marketing-executive-f-b-retail-entertainment-at-tini-corp-4155845399?position=15&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=iuzjwjdlbYnixc0qS4Qvkg%3D%3D"
+   },
+   {
+      "job_title": "ASO Manager",
+      "company_name": "Gameloft",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "2 weeks ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/aso-manager-at-gameloft-4151308346?position=16&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=sy3MPi0g4XAMyi2%2F2G4MOg%3D%3D"
+   },
+   {
+      "job_title": "Public Relations Specialist (US Market)",
+      "company_name": "Autonomous Inc.",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "4 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/public-relations-specialist-us-market-at-autonomous-inc-4163865032?position=17&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=1zgY9PqeahSmsegxjjzlLA%3D%3D"
+   },
+   {
+      "job_title": "SEO Intern",
+      "company_name": "Ematic Solutions",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "1 week ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/seo-intern-at-ematic-solutions-4159329635?position=18&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=%2BTk%2Bi0SgvTId7mgimSFwZw%3D%3D"
+   },
+   {
+      "job_title": "SEO Manager / Leader",
+      "company_name": "GTV SEO",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "2 weeks ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/seo-manager-leader-at-gtv-seo-4151284880?position=19&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=nh9F8THk%2Fa99yCxVAaaXdA%3D%3D"
+   },
+   {
+      "job_title": "Senior Content Marketing Specialist",
+      "company_name": "Gearment Inc.",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "3 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/senior-content-marketing-specialist-at-gearment-inc-4164796439?position=20&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=WPFv5nFZWIy%2FCO1nru4yxw%3D%3D"
+   },
+   {
+      "job_title": "Senior Marketing Specialist - Digital & SEO",
+      "company_name": "LARION",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "1 day ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/senior-marketing-specialist-digital-seo-at-larion-4167950639?position=21&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=w3oacJN5XXA%2Bb7%2BYx76kOw%3D%3D"
+   },
+   {
+      "job_title": "SEO & SEM Marketing Specialist",
+      "company_name": "Pancake",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "3 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/seo-sem-marketing-specialist-at-pancake-4164738345?position=22&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=iI9tMptrNoduQQFx7eTOaw%3D%3D"
+   },
+   {
+      "job_title": "Paid Search Manager",
+      "company_name": "HubbedIn AI Solutions",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "3 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/paid-search-manager-at-hubbedin-ai-solutions-4164756607?position=23&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=8qswo79tuqmLvavFja%2Fzig%3D%3D"
+   },
+   {
+      "job_title": "Senior Digital Marketing (US Market)",
+      "company_name": "Lixibox",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "2 months ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/senior-digital-marketing-us-market-at-lixibox-4106750641?position=24&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=ZMHPqPAFVmM1CQqd4gQ4sg%3D%3D"
+   },
+   {
+      "job_title": "SEO Specialist",
+      "company_name": "Chợ Tốt",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "1 week ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/seo-specialist-at-ch%E1%BB%A3-t%E1%BB%91t-4112641908?position=25&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=0%2F72YEEUOrzm7OvzooM%2Few%3D%3D"
+   },
+   {
+      "job_title": "VN Digital Marketing Executive / SEO Analyst (ManageEngine)",
+      "company_name": "Zoho APAC",
+      "address": "Ho Chi Minh City Metropolitan Area",
+      "posted_time": "2 months ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/vn-digital-marketing-executive-seo-analyst-manageengine-at-zoho-apac-4090126844?position=26&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=Qr9%2FH7nALgMUrlY9RbLWbg%3D%3D"
+   },
+   {
+      "job_title": "SEO Manager",
+      "company_name": "Professions Vietnam",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "1 week ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/seo-manager-at-professions-vietnam-4159898341?position=27&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=uUWRrr2MsEhP6pQ4lM%2FFfg%3D%3D"
+   },
+   {
+      "job_title": "Senior Digital Marketing Specialist, KMS Solutions",
+      "company_name": "KMS Solutions, Inc.",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "3 weeks ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/senior-digital-marketing-specialist-kms-solutions-at-kms-solutions-inc-4145076667?position=28&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=QE800Jnct6pzCHS%2Fh0apig%3D%3D"
+   },
+   {
+      "job_title": "App Store Optimization (ASO) Specialist",
+      "company_name": "Herond Labs",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "1 day ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/app-store-optimization-aso-specialist-at-herond-labs-4168205727?position=29&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=XyHQr3RrVFOWudZaYQJQCg%3D%3D"
+   },
+   {
+      "job_title": "Search Engine Optimization Specialist",
+      "company_name": "Marketing Wiz Australia",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "5 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/search-engine-optimization-specialist-at-marketing-wiz-australia-4162880151?position=30&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=OkaTPVjSy0dwFkAJwubIQQ%3D%3D"
+   },
+   {
+      "job_title": "Technical SEO",
+      "company_name": "FireGroup Technology",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "3 days ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/technical-seo-at-firegroup-technology-4164757494?position=31&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=6Pp2FfXGghSg5IHiqciFZw%3D%3D"
+   },
+   {
+      "job_title": "Senior SEO Executive",
+      "company_name": "upGrad",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "2 weeks ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/senior-seo-executive-at-upgrad-4152153718?position=32&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=i5DbNXmUePuSH%2B8vCnJDeQ%3D%3D"
+   },
+   {
+      "job_title": "Marketing Content Specialist",
+      "company_name": "N&H Logistics",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "2 weeks ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/marketing-content-specialist-at-n-h-logistics-4146585552?position=33&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=ykjJifGGBxFm%2Fg5IRQ5eYQ%3D%3D"
+   },
+   {
+      "job_title": "Search Engine Optimization Specialist",
+      "company_name": "Saigon Digital",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "2 weeks ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/search-engine-optimization-specialist-at-saigon-digital-4150984507?position=34&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=xfOeyeiX%2BR2iqsc1PARuQw%3D%3D"
+   },
+   {
+      "job_title": "SCL E2E Media Lead",
+      "company_name": "Unilever",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "1 week ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/scl-e2e-media-lead-at-unilever-4157385034?position=35&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=6Dl%2Bsqa6GL3BlGjV7eXiLA%3D%3D"
+   },
+   {
+      "job_title": "ASO Specialist, Publisher Growth",
+      "company_name": "AnyMind Group",
+      "address": "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+      "posted_time": "1 week ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/aso-specialist-publisher-growth-at-anymind-group-4157160186?position=36&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=m%2B1S7k8jVj1bk%2BVDNTA%2BWw%3D%3D"
+   },
+   {
+      "job_title": "Performance Optimizer",
+      "company_name": "Omnicom Media Group",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "9 months ago",
+      "job_link": "https://vn.linkedin.com/jobs/view/performance-optimizer-at-omnicom-media-group-3903647910?position=37&pageNum=0&refId=CKYDoNDtwprUjUUYJ3fsQQ%3D%3D&trackingId=gjcWx%2Bfnz6XzDr4sBDZY4Q%3D%3D"
+   },
+   {
+      "job_title": "COMMERCIAL CONTENT SPECIALIST",
+      "company_name": "Công ty TNHH Nail La Mos",
+      "address": "Ho Chi Minh City, Vietnam",
+      "posted_time": "1 week ago",
+      "job_link": null
+   }
+]
+[2025-03-01T01:59:14.400+0000] {conn.py:928} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=broker:29092 <connected> [IPv4 ('172.18.0.3', 29092)]>: Closing connection. 
+[2025-03-01T01:59:14.401+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-03-01T01:59:14.417+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=stream_data, task_id=stream_data_from_api, execution_date=20250228T000000, start_date=20250301T015753, end_date=20250301T015914
+[2025-03-01T01:59:14.439+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-03-01T01:59:14.456+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

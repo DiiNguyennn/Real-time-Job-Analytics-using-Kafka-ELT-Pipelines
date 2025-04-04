@@ -1,0 +1,42 @@
+# Sử dụng Apache Airflow 2.7.0 làm base image
+FROM apache/airflow:2.7.0
+
+# Chạy với quyền root để cài đặt các gói hệ thống
+USER root
+
+# Bước 1: Cài đặt các gói hệ thống cần thiết
+RUN apt-get update --fix-missing && \
+    apt-get install -y --no-install-recommends \
+        apt-utils \
+        wget \
+        unzip \
+        curl \
+        gnupg \
+        jq && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Bước 2: Cài đặt Google Chrome mới nhất
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
+    echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list && \
+    apt-get update && \
+    apt-get install -y --no-install-recommends google-chrome-stable && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Bước 3: Tự động lấy ChromeDriver tương thích với Chrome hiện tại
+RUN CHROME_VERSION=$(google-chrome --version | awk '{print $3}') && \
+    CHROMEDRIVER_URL=$(wget -qO- "https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json" | jq -r --arg ver "$CHROME_VERSION" '.versions[] | select(.version==$ver) | .downloads.chromedriver[] | select(.platform=="linux64") | .url') && \
+    wget -O /tmp/chromedriver.zip "$CHROMEDRIVER_URL" && \
+    unzip /tmp/chromedriver.zip -d /tmp/ && \
+    mv /tmp/chromedriver-linux64/chromedriver /usr/bin/chromedriver && \
+    rm -rf /tmp/chromedriver.zip /tmp/chromedriver-linux64 && \
+    chmod +x /usr/bin/chromedriver
+
+
+# Chuyển về người dùng airflow
+USER airflow
+
+# Cài đặt các thư viện Python cần thiết
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir pyspark selenium kafka-python redis psycopg2-binary

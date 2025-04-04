@@ -1,0 +1,33 @@
+[2025-03-11T03:01:37.817+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stream_data.stream_data manual__2025-03-11T03:01:36.174596+00:00 [queued]>
+[2025-03-11T03:01:37.828+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stream_data.stream_data manual__2025-03-11T03:01:36.174596+00:00 [queued]>
+[2025-03-11T03:01:37.828+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-03-11T03:01:37.842+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): stream_data> on 2025-03-11 03:01:36.174596+00:00
+[2025-03-11T03:01:37.848+0000] {standard_task_runner.py:57} INFO - Started process 53 to run task
+[2025-03-11T03:01:37.852+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'stream_data', 'stream_data', 'manual__2025-03-11T03:01:36.174596+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/data_stream.py', '--cfg-path', '/tmp/tmpl5c_m02o']
+[2025-03-11T03:01:37.854+0000] {standard_task_runner.py:85} INFO - Job 71: Subtask stream_data
+[2025-03-11T03:01:37.923+0000] {task_command.py:415} INFO - Running <TaskInstance: stream_data.stream_data manual__2025-03-11T03:01:36.174596+00:00 [running]> on host 0431913abdf0
+[2025-03-11T03:01:38.023+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='dii' AIRFLOW_CTX_DAG_ID='stream_data' AIRFLOW_CTX_TASK_ID='stream_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-11T03:01:36.174596+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-11T03:01:36.174596+00:00'
+[2025-03-11T03:01:38.051+0000] {conn.py:1542} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2025-03-11T03:01:38.052+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2025-03-11T03:01:38.052+0000] {conn.py:1219} INFO - Probing node bootstrap-0 broker version
+[2025-03-11T03:01:38.074+0000] {conn.py:1542} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2025-03-11T03:01:38.076+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2025-03-11T03:01:38.077+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_stream.py", line 31, in stream_data
+    producer = KafkaProducer(bootstrap_servers=['broker:29092'])
+  File "/home/airflow/.local/lib/python3.8/site-packages/kafka/producer/kafka.py", line 383, in __init__
+    client = self.config['kafka_client'](
+  File "/home/airflow/.local/lib/python3.8/site-packages/kafka/client_async.py", line 241, in __init__
+    self.config['api_version'] = self.check_version(timeout=check_timeout)
+  File "/home/airflow/.local/lib/python3.8/site-packages/kafka/client_async.py", line 918, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+[2025-03-11T03:01:38.092+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=stream_data, task_id=stream_data, execution_date=20250311T030136, start_date=20250311T030137, end_date=20250311T030138
+[2025-03-11T03:01:38.104+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 71 for task stream_data (NoBrokersAvailable; 53)
+[2025-03-11T03:01:38.115+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-03-11T03:01:38.135+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

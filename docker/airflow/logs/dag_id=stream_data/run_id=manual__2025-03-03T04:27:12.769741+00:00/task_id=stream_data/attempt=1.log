@@ -1,0 +1,23 @@
+[2025-03-03T04:27:13.685+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stream_data.stream_data manual__2025-03-03T04:27:12.769741+00:00 [queued]>
+[2025-03-03T04:27:13.699+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stream_data.stream_data manual__2025-03-03T04:27:12.769741+00:00 [queued]>
+[2025-03-03T04:27:13.699+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-03-03T04:27:13.713+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): stream_data> on 2025-03-03 04:27:12.769741+00:00
+[2025-03-03T04:27:13.718+0000] {standard_task_runner.py:57} INFO - Started process 1245 to run task
+[2025-03-03T04:27:13.723+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'stream_data', 'stream_data', 'manual__2025-03-03T04:27:12.769741+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/data_stream.py', '--cfg-path', '/tmp/tmpm7r_7t71']
+[2025-03-03T04:27:13.724+0000] {standard_task_runner.py:85} INFO - Job 7: Subtask stream_data
+[2025-03-03T04:27:13.802+0000] {task_command.py:415} INFO - Running <TaskInstance: stream_data.stream_data manual__2025-03-03T04:27:12.769741+00:00 [running]> on host 490145d03e49
+[2025-03-03T04:27:13.928+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='dii' AIRFLOW_CTX_DAG_ID='stream_data' AIRFLOW_CTX_TASK_ID='stream_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-03T04:27:12.769741+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-03T04:27:12.769741+00:00'
+[2025-03-03T04:27:13.932+0000] {conn.py:384} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.18.0.3', 29092)]>: connecting to broker:29092 [('172.18.0.3', 29092) IPv4]
+[2025-03-03T04:27:13.932+0000] {conn.py:1219} INFO - Probing node bootstrap-0 broker version
+[2025-03-03T04:27:13.933+0000] {conn.py:414} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.18.0.3', 29092)]>: Connection complete.
+[2025-03-03T04:27:14.044+0000] {conn.py:1282} INFO - Broker version identified as 2.6.0
+[2025-03-03T04:27:14.045+0000] {conn.py:1283} INFO - Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+[2025-03-03T04:27:24.508+0000] {logging_mixin.py:151} INFO - Số công việc tìm thấy trên trang 1:39
+[2025-03-03T04:28:20.540+0000] {conn.py:384} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.3', 29092)]>: connecting to broker:29092 [('172.18.0.3', 29092) IPv4]
+[2025-03-03T04:28:20.541+0000] {conn.py:414} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.3', 29092)]>: Connection complete.
+[2025-03-03T04:28:20.542+0000] {conn.py:928} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=broker:29092 <connected> [IPv4 ('172.18.0.3', 29092)]>: Closing connection. 
+[2025-03-03T04:28:20.550+0000] {conn.py:928} INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=broker:29092 <connected> [IPv4 ('172.18.0.3', 29092)]>: Closing connection. 
+[2025-03-03T04:28:20.552+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-03-03T04:28:20.567+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=stream_data, task_id=stream_data, execution_date=20250303T042712, start_date=20250303T042713, end_date=20250303T042820
+[2025-03-03T04:28:20.595+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-03-03T04:28:20.628+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check
