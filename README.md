@@ -6,35 +6,32 @@ This project implements a **real-time job analytics system** using a **Kafka-bas
 
 ## 🔍 Research Scope
 
-The project focuses on **data ingestion, transformation, and analysis** using the following technologies:
+The project focuses on **real-time data ingestion, transformation, and storage** using:
 - **Kafka**: Streaming job data in real time.
 - **Apache Spark**: Transforming and analyzing job listings.
+- **Apache Cassandra**: Storing large-scale job data efficiently.
 - **Apache Airflow**: Automating the ELT workflow.
-- **SQL/NoSQL databases**: Storing processed data for analytics.
 
 ---
 
 ## 🛠 System Architecture
 
-### 🔹 Data Flow Overview
-1. **Data Extraction (Extract)**
+### 🔹 ELT Workflow
+1. **Extract**
    - **Source**: Job APIs (LinkedIn, Indeed, VietnamWorks, TopCV, etc.).
    - **Format**: JSON data streamed into Kafka topics.
 
-2. **Data Transformation (Transform)**
-   - **Data Cleaning**: Removing duplicates and missing values.
-   - **Processing**: Parsing job details, normalizing text fields, and converting to structured format.
+2. **Load**
+   - **Storage**: Raw job data is **directly loaded into Cassandra**.
 
-3. **Data Loading (Load)**
-   - **Storage**: Processed data is saved into a database.
-   - **Batch Queries**: Using Apache Spark for analytics.
+3. **Transform**
+   - **Processing**: Using Apache Spark to clean and structure job data.
+   - **Data Analysis**:
+     - Job demand trends by industry and location.
+     - Skill demand analysis across different job categories.
+     - **Recruitment trends over the year**.
 
-4. **Data Analysis**
-   - **Job demand trends** by industry and location.
-   - **Skill demand analysis** across different job categories.
-   - **Salary distribution** analysis.
-
-5. **Automation with Apache Airflow**
+4. **Automation with Apache Airflow**
    - DAGs orchestrate job scheduling and pipeline execution.
 
 ---
