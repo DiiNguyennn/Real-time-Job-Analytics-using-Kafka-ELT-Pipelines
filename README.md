@@ -6,11 +6,10 @@ The dataset consists of job posting data collected from LinkedIn, focusing on jo
 ### Research Scope  
 This project aims to design and deploy an **ELT (Extract-Load-Transform)** system in a local environment with scalability to process real-time job posting data. The project then analyzes this data to uncover recruitment trends and insights. Key components include:  
 
-- **ELT Process**: Leveraging Selenium for data extraction, Apache Kafka for real-time streaming, Apache Spark for data processing, and Cassandra for storage.  
+- **ELT Process**: Leveraging Selenium for data extraction, **Apache Kafka (running in KRaft mode)** for real-time streaming, Apache Spark for data processing, and Cassandra for storage. The use of KRaft mode enhances Kafka's scalability, simplifies cluster management by removing ZooKeeper dependency, and improves system stability.  
 - **Database Management**: Storing raw data in **Cassandra** for distributed, scalable access.  
 - **Data Analysis**: Using Apache Spark and Python (with Matplotlib) to analyze recruitment trends.  
-- **Automation System**: Automating the workflow with **Apache Airflow** deployed on **Docker**.  
-
+- **Automation System**: Automating the workflow with **Apache Airflow** deployed on **Docker**.
 ---
 
 # System Workflow
