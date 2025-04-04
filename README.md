@@ -43,6 +43,10 @@ This project aims to design and deploy an **ELT (Extract-Load-Transform)** syste
   3. Which job field has the most postings?  
   4. How do job postings vary over time (daily, weekly, monthly)?  
 
+1. How many companies are recruiting programmers?  
+2. What are the top 20 recruiting companies?  
+3. Which job field has the most postings?  
+4. How do job postings vary over time (daily, monthly)?  
 <img src="img/Tools.png" alt="ELT Tools">
 
 ### 5. Automation with Apache Airflow  
