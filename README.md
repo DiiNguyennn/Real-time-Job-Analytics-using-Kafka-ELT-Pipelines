@@ -14,7 +14,7 @@ This project aims to design and deploy an **ELT (Extract-Load-Transform)** syste
 ---
 
 # System Workflow
-![Task Flow](images/taskflow.png)
+<img src="img/Task_flow.png" alt="Task Flow">
 
 ### 1. Data Extraction (Extract)  
 - **Data Source**: Scraping job postings from LinkedIn using Selenium (Python).  
@@ -42,14 +42,11 @@ This project aims to design and deploy an **ELT (Extract-Load-Transform)** syste
   2. What are the top 20 recruiting companies?  
   3. Which job field has the most postings?  
   4. How do job postings vary over time (daily, weekly, monthly)?  
-- **Details**: See [Data Analysis Notebook](Project_Kafka/DA/DataAnalysis.ipynb).
 
-![ETL Tools](images/etl_tools.png)
-![File System](images/file_system.png)
+<img src="img/Tools.png" alt="ELT Tools">
 
 ### 5. Automation with Apache Airflow  
 The ELT workflow is automated using Directed Acyclic Graphs (DAGs) in Apache Airflow, ensuring systematic data collection, streaming, and loading from LinkedIn.  
-![DAGs Design](images/DAGs.png)
 
 ---
 
@@ -65,7 +62,7 @@ Data analysis is conducted using **Python** and **Apache Spark** for processing,
 4. **How do job postings vary over time?**  
    - Analyzes trends by day (peaks on days 17, 18, 25) and month (peak in March, decline in July-October).  
 
-**Details**: See [Data Analysis Notebook](Project_Kafka/DA/DataAnalysis.ipynb).
+**Details**: See [Data Analysis Notebook](DA/DA.ipynb).
 
 ---
 
@@ -85,7 +82,7 @@ To run the project, follow these steps:
    - Spark: `localhost:9090`.  
    - Cassandra: `localhost:9042`.  
 7. **Execute the ELT Workflow**: Trigger the Airflow DAGs to start the extraction, loading, and transformation process.  
-8. **Run Data Analysis**: Execute the analysis script/notebook at [DataAnalysis.ipynb](Project_Kafka/DA/DataAnalysis.ipynb).
+8. **Run Data Analysis**: Execute the analysis script/notebook at [DataAnalysis.ipynb](DA/DA.ipynb).
 
 ---
 
