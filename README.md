@@ -73,7 +73,7 @@ To run the project, follow these steps:
 2. **Set up Apache Airflow**: Refer to [Airflow Docker Setup](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html).  
 3. **Install Dependencies**:  
    - Ensure **Java JDK 8+**, **Python 3.6+**, and required libraries (Selenium, Matplotlib) are installed.  
-   - Configure Kafka, Spark, and Cassandra as per the report (see Chapter 4).  
+   - Configure Kafka, Spark, and Cassandra as per the report.  
 4. **Navigate to Project Directory**: Open a terminal in the `Project_Kafka` folder.  
 5. **Run Docker Compose**: Execute `docker-compose up` to start Airflow, Kafka, Spark, and Cassandra containers.  
 6. **Access Services**:  
