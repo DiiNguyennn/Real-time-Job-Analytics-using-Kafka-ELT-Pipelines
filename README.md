@@ -75,7 +75,7 @@ To run the project, follow these steps:
 4. **Navigate to Project Directory**: Open a terminal in the `Project_Kafka` folder.  
 5. **Run Docker Compose**: Execute `docker-compose up` to start Airflow, Kafka, Spark, and Cassandra containers.  
 6. **Access Services**:  
-   - Airflow UI: [**localhost:8080**](http://localhost:8080) (user: admin, password: admin).  
+   - Airflow UI: `localhost:8080`. (user: admin, password: admin).  
    - Kafka: `localhost:9092`.  
    - Spark: `localhost:9090`.  
    - Cassandra: `localhost:9042`.  
